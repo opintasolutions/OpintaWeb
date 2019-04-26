@@ -5,6 +5,13 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+import img1 from "../assets/images/icons/apps/1.png"
+import img2 from "../assets/images/icons/apps/2.png"
+import img3 from "../assets/images/icons/apps/3.png"
+import img4 from "../assets/images/icons/apps/4.png"
+import img5 from "../assets/images/icons/apps/5.png"
+import img6 from "../assets/images/icons/apps/6.png"
+
 const IndexPage = () => (
   <Layout>
     {
@@ -46,7 +53,7 @@ const IndexPage = () => (
               <Link to="blue-app-single.html" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <Image />
+                    <img src={img6} alt="" />
                   </div>
                   <div className="app-title">
                     <h5 className="title">Mobile Stats</h5>
@@ -107,7 +114,7 @@ const IndexPage = () => (
               <Link to="blue-app-single.html" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <img src="../assets/images/icons/apps/2.png" alt="" />
+                    <img src={img1} alt="" />
                   </div>
                   <div className="app-title">
                     <h5 className="title">Online Shopping</h5>
@@ -171,7 +178,7 @@ const IndexPage = () => (
               <Link to="blue-app-single.html" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <img src="../assets/images/icons/apps/3.png" alt="" />
+                    <img src={img2} alt="" />
                   </div>
                   <div className="app-title">
                     <h5 className="title">Pocket Office</h5>
@@ -235,7 +242,7 @@ const IndexPage = () => (
               <Link to="blue-app-single.html" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <img src="../assets/images/icons/apps/4.png" alt="" />
+                    <img src={img3} alt="" />
                   </div>
                   <div className="app-title">
                     <h5 className="title">Awesome Mail</h5>
@@ -297,7 +304,7 @@ const IndexPage = () => (
               <Link to="blue-app-single.html" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <img src="../assets/images/icons/apps/5.png" alt="" />
+                    <img src={img4} alt="" />
                   </div>
                   <div className="app-title">
                     <h5 className="title">Coding Life</h5>
@@ -359,7 +366,7 @@ const IndexPage = () => (
               <Link to="blue-app-single.html" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <img src="../assets/images/icons/apps/6.png" alt="" />
+                    <img src={img5} alt="" />
                   </div>
                   <div className="app-title">
                     <h5 className="title">Call Recorder</h5>

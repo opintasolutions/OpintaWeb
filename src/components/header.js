@@ -5,6 +5,9 @@ import React from "react"
 import "../assets/css/bootstrap.min.css"
 import "../assets/css/font-awesome.min.css"
 import "../assets/css/blue.css"
+
+import logo from "../assets/images/blue-logo-white.svg"
+import logoB from "../assets/images/blue-logo-dark.svg"
 const Header = ({ siteTitle }) => (
   // <header
   //   style={{
@@ -38,16 +41,8 @@ const Header = ({ siteTitle }) => (
         <div class="col-lg-12">
           <nav class="main-nav">
             <a href="blue-index.html" class="logo">
-              <img
-                src="assets/images/blue-logo-white.svg"
-                class="light-logo"
-                alt="Gaus"
-              />
-              <img
-                src="assets/images/blue-logo-dark.svg"
-                class="dark-logo"
-                alt="Gaus"
-              />
+              <img src={logo} class="light-logo" alt="Gaus" />
+              <img src={logoB} class="dark-logo" alt="Gaus" />
             </a>
 
             <ul class="nav">
