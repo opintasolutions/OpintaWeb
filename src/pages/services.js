@@ -4,6 +4,8 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import img1 from "../assets/images/photos/services/1.jpg"
+
 const ServicePage = () => (
   <Layout>
     <section className="page">
@@ -32,7 +34,7 @@ const ServicePage = () => (
             <div className="col-lg-4 col-md-6 col-sm-12">
               <Link to="blue-services-single.html" className="services-post">
                 <div className="img">
-                  <img src="assets/images/photos/services/1.jpg" alt="" />
+                  <img src={img1} alt="" />
                 </div>
                 <div className="post-content">
                   <div className="icon">
@@ -49,7 +51,7 @@ const ServicePage = () => (
             <div className="col-lg-4 col-md-6 col-sm-12">
               <Link to="blue-services-single.html" className="services-post">
                 <div className="img">
-                  <img src="assets/images/photos/services/2.jpg" alt="" />
+                  <img src={img1} alt="" />
                 </div>
                 <div className="post-content">
                   <div className="icon">
@@ -66,7 +68,7 @@ const ServicePage = () => (
             <div className="col-lg-4 col-md-6 col-sm-12">
               <Link to="blue-services-single.html" className="services-post">
                 <div className="img">
-                  <img src="assets/images/photos/services/3.jpg" alt="" />
+                  <img src={img1} alt="" />
                 </div>
                 <div className="post-content">
                   <div className="icon">
@@ -83,7 +85,7 @@ const ServicePage = () => (
             <div className="col-lg-4 col-md-6 col-sm-12">
               <Link to="blue-services-single.html" className="services-post">
                 <div className="img">
-                  <img src="assets/images/photos/services/4.jpg" alt="" />
+                  <img src={img1} alt="" />
                 </div>
                 <div className="post-content">
                   <div className="icon">
@@ -100,7 +102,7 @@ const ServicePage = () => (
             <div className="col-lg-4 col-md-6 col-sm-12">
               <Link to="blue-services-single.html" className="services-post">
                 <div className="img">
-                  <img src="assets/images/photos/services/5.jpg" alt="" />
+                  <img src={img1} alt="" />
                 </div>
                 <div className="post-content">
                   <div className="icon">
@@ -117,7 +119,7 @@ const ServicePage = () => (
             <div className="col-lg-4 col-md-6 col-sm-12">
               <Link to="blue-services-single.html" className="services-post">
                 <div className="img">
-                  <img src="assets/images/photos/services/6.jpg" alt="" />
+                  <img src={img1} alt="" />
                 </div>
                 <div className="post-content">
                   <div className="icon">

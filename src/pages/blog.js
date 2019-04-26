@@ -4,6 +4,8 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import img1 from "../assets/images/photos/about/1.jpg"
+
 const BlogPage = () => (
   <Layout>
     <section className="page">
@@ -35,7 +37,7 @@ const BlogPage = () => (
                   <div className="col-lg-12">
                     <div className="blog-post-thumb big">
                       <div className="img">
-                        <img src="assets/images/photos/blog/1.jpg" alt="" />
+                        <img src={img1} alt="" />
                       </div>
                       <div className="post-content">
                         <div className="date">APR 09</div>
@@ -77,7 +79,7 @@ const BlogPage = () => (
                   <div className="col-lg-6 col-md-6 col-sm-12">
                     <div className="blog-post-thumb">
                       <div className="img">
-                        <img src="assets/images/photos/blog/2.jpg" alt="" />
+                        <img src={img1} alt="" />
                       </div>
                       <div className="post-content">
                         <div className="date">APR 09</div>
@@ -117,7 +119,7 @@ const BlogPage = () => (
                   <div className="col-lg-6 col-md-6 col-sm-12">
                     <div className="blog-post-thumb">
                       <div className="img">
-                        <img src="assets/images/photos/blog/3.jpg" alt="" />
+                        <img src={img1} alt="" />
                       </div>
                       <div className="post-content">
                         <div className="date">APR 09</div>
@@ -157,7 +159,7 @@ const BlogPage = () => (
                   <div className="col-lg-6 col-md-6 col-sm-12">
                     <div className="blog-post-thumb">
                       <div className="img">
-                        <img src="assets/images/photos/about/3.jpg" alt="" />
+                        <img src={img1} alt="" />
                       </div>
                       <div className="post-content">
                         <div className="date">APR 09</div>
@@ -197,7 +199,7 @@ const BlogPage = () => (
                   <div className="col-lg-6 col-md-6 col-sm-12">
                     <div className="blog-post-thumb">
                       <div className="img">
-                        <img src="assets/images/photos/about/1.jpg" alt="" />
+                        <img src={img1} alt="" />
                       </div>
                       <div className="post-content">
                         <div className="date">APR 09</div>

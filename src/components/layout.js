@@ -17,6 +17,8 @@ import "../assets/css/blue.css"
 import Header from "./header"
 import "./layout.css"
 
+import img from "../assets/images/blue-logo-white.svg"
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -50,11 +52,7 @@ const Layout = ({ children }) => (
             <div className="container">
               <div className="row">
                 <div className="col-lg-5 col-md-12 col-sm-12">
-                  <img
-                    src="assets/images/blue-logo-white.svg"
-                    className="logo"
-                    alt=""
-                  />
+                  <img src={img} className="logo" alt="" />
                   <div className="text">
                     Morbi convallis bibendum urna ut viverra. Maecenas quis
                     consequat libero, a feugiat eros. Nunc ut lacinia tortor

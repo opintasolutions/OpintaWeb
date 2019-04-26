@@ -37,11 +37,9 @@ const Header = ({ siteTitle }) => (
                 </Link>
               </li>
             </ul>
-            {
-              // <Link className="menu-trigger">
-              //   <span>Menu</span>
-              // </Link>
-            }
+            <Link className="menu-trigger" to="#">
+              <span>Menu</span>
+            </Link>
           </nav>
         </div>
       </div>

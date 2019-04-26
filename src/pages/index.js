@@ -4,6 +4,11 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import img1 from "../assets/images/icons/apps/1.png"
+import img2 from "../assets/images/mockup/home-mockup.png"
+import img3 from "../assets/images/photos/team/1.jpg"
+import img4 from "../assets/images/photos/blog/1.jpg"
+
 const IndexPage = () => (
   <Layout>
     {
@@ -44,74 +49,42 @@ const IndexPage = () => (
             <div className="apps">
               <Link to="blue-app-single.html" className="app-item">
                 <div className="icon">
-                  <img
-                    src="assets/images/icons/apps/1.png"
-                    className="img-fluid"
-                    alt=""
-                  />
+                  <img src={img1} className="img-fluid" alt="" />
                 </div>
               </Link>
               <Link to="blue-app-single.html" className="app-item">
                 <div className="icon">
-                  <img
-                    src="assets/images/icons/apps/2.png"
-                    className="img-fluid"
-                    alt=""
-                  />
+                  <img src={img1} className="img-fluid" alt="" />
                 </div>
               </Link>
               <Link to="blue-app-single.html" className="app-item">
                 <div className="icon">
-                  <img
-                    src="assets/images/icons/apps/3.png"
-                    className="img-fluid"
-                    alt=""
-                  />
+                  <img src={img1} className="img-fluid" alt="" />
                 </div>
               </Link>
               <Link to="blue-app-single.html" className="app-item">
                 <div className="icon">
-                  <img
-                    src="assets/images/icons/apps/4.png"
-                    className="img-fluid"
-                    alt=""
-                  />
+                  <img src={img1} className="img-fluid" alt="" />
                 </div>
               </Link>
               <Link to="blue-app-single.html" className="app-item">
                 <div className="icon">
-                  <img
-                    src="assets/images/icons/apps/5.png"
-                    className="img-fluid"
-                    alt=""
-                  />
+                  <img src={img1} className="img-fluid" alt="" />
                 </div>
               </Link>
               <Link to="blue-app-single.html" className="app-item">
                 <div className="icon">
-                  <img
-                    src="assets/images/icons/apps/6.png"
-                    className="img-fluid"
-                    alt=""
-                  />
+                  <img src={img1} className="img-fluid" alt="" />
                 </div>
               </Link>
               <Link to="blue-app-single.html" className="app-item">
                 <div className="icon">
-                  <img
-                    src="assets/images/icons/apps/7.png"
-                    className="img-fluid"
-                    alt=""
-                  />
+                  <img src={img1} className="img-fluid" alt="" />
                 </div>
               </Link>
               <Link to="blue-app-single.html" className="app-item">
                 <div className="icon">
-                  <img
-                    src="assets/images/icons/apps/8.png"
-                    className="img-fluid"
-                    alt=""
-                  />
+                  <img src={img1} className="img-fluid" alt="" />
                 </div>
               </Link>
             </div>
@@ -206,11 +179,7 @@ const IndexPage = () => (
       <div className="container">
         <div className="row">
           <div className="col-lg-5 col-md-12 col-sm-12 col-xs-12 align-self-center mobile-bottom-fix">
-            <img
-              src="assets/images/mockup/home-mockup.png"
-              className="img-fluid d-block mx-auto"
-              alt=""
-            />
+            <img src={img2} className="img-fluid d-block mx-auto" alt="" />
           </div>
           <div className="col-lg-7 col-md-12 col-sm-12 col-xs-12 align-self-center">
             <ul className="features">
@@ -308,7 +277,7 @@ const IndexPage = () => (
             <div className="team-item">
               <div className="header">
                 <div className="img">
-                  <img src="assets/images/photos/team/1.jpg" alt="" />
+                  <img src={img3} alt="" />
                 </div>
                 <div className="info">
                   <strong>Fletch Skinner</strong>
@@ -347,7 +316,7 @@ const IndexPage = () => (
             <div className="team-item active">
               <div className="header">
                 <div className="img">
-                  <img src="assets/images/photos/team/2.jpg" alt="" />
+                  <img src={img3} alt="" />
                 </div>
                 <div className="info">
                   <strong>Lance Bogrol</strong>
@@ -386,7 +355,7 @@ const IndexPage = () => (
             <div className="team-item">
               <div className="header">
                 <div className="img">
-                  <img src="assets/images/photos/team/3.jpg" alt="" />
+                  <img src={img3} alt="" />
                 </div>
                 <div className="info">
                   <strong>Valent Morose</strong>
@@ -425,7 +394,7 @@ const IndexPage = () => (
             <div className="team-item">
               <div className="header">
                 <div className="img">
-                  <img src="assets/images/photos/team/4.jpg" alt="" />
+                  <img src={img3} alt="" />
                 </div>
                 <div className="info">
                   <strong>Giles Posture</strong>
@@ -532,7 +501,7 @@ const IndexPage = () => (
           <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="blog-post-thumb">
               <div className="img">
-                <img src="assets/images/photos/blog/1.jpg" alt="" />
+                <img src={img4} alt="" />
               </div>
               <div className="post-content">
                 <div className="date">APR 09</div>
@@ -554,7 +523,7 @@ const IndexPage = () => (
           <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="blog-post-thumb">
               <div className="img">
-                <img src="assets/images/photos/blog/2.jpg" alt="" />
+                <img src={img4} alt="" />
               </div>
               <div className="post-content">
                 <div className="date">APR 09</div>
@@ -576,7 +545,7 @@ const IndexPage = () => (
           <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="blog-post-thumb">
               <div className="img">
-                <img src="assets/images/photos/blog/3.jpg" alt="" />
+                <img src={img4} alt="" />
               </div>
               <div className="post-content">
                 <div className="date">APR 09</div>

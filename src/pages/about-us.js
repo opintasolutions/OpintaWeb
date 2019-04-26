@@ -4,6 +4,9 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import img1 from "../assets/images/photos/about/1.jpg"
+import img2 from "../assets/images/photos/team/1.jpg"
+
 const SecondPage = () => (
   <Layout>
     {/*    <SEO title="Page two" />
@@ -36,7 +39,7 @@ const SecondPage = () => (
             <div className="col-lg-12">
               <div className="about">
                 <div className="about-image">
-                  <img src="assets/images/photos/about/1.jpg" alt="" />
+                  <img src={img1} alt="" />
                 </div>
                 <div className="about-text">
                   <h2>We're makers and creative</h2>
@@ -56,7 +59,7 @@ const SecondPage = () => (
               </div>
               <div className="about left mbottom-30">
                 <div className="about-image">
-                  <img src="assets/images/photos/about/2.jpg" alt="" />
+                  <img src={img1} alt="" />
                 </div>
                 <div className="about-text">
                   <h2>Our ideas are beyond their limits.</h2>
@@ -118,7 +121,7 @@ const SecondPage = () => (
             <div className="team-item">
               <div className="header">
                 <div className="img">
-                  <img src="assets/images/photos/team/1.jpg" alt="" />
+                  <img src={img2} alt="" />
                 </div>
                 <div className="info">
                   <strong>Fletch Skinner</strong>
@@ -157,7 +160,7 @@ const SecondPage = () => (
             <div className="team-item">
               <div className="header">
                 <div className="img">
-                  <img src="assets/images/photos/team/2.jpg" alt="" />
+                  <img src={img2} alt="" />
                 </div>
                 <div className="info">
                   <strong>Lance Bogrol</strong>
@@ -196,7 +199,7 @@ const SecondPage = () => (
             <div className="team-item">
               <div className="header">
                 <div className="img">
-                  <img src="assets/images/photos/team/3.jpg" alt="" />
+                  <img src={img2} alt="" />
                 </div>
                 <div className="info">
                   <strong>Valentino Morose</strong>
@@ -235,7 +238,7 @@ const SecondPage = () => (
             <div className="team-item">
               <div className="header">
                 <div className="img">
-                  <img src="assets/images/photos/team/4.jpg" alt="" />
+                  <img src={img2} alt="" />
                 </div>
                 <div className="info">
                   <strong>Giles Posture</strong>
