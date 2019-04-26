@@ -2,74 +2,46 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import "../assets/css/bootstrap.min.css"
-import "../assets/css/font-awesome.min.css"
-import "../assets/css/blue.css"
-
 import logo from "../assets/images/blue-logo-white.svg"
 import logoB from "../assets/images/blue-logo-dark.svg"
 const Header = ({ siteTitle }) => (
-  // <header
-  //   style={{
-  //     background: `rebeccapurple`,
-  //     marginBottom: `1.45rem`,
-  //   }}
-  // >
-  //   <div
-  //     style={{
-  //       margin: `0 auto`,
-  //       maxWidth: 960,
-  //       padding: `1.45rem 1.0875rem`,
-  //     }}
-  //   >
-  //     <h1 style={{ margin: 0 }}>
-  //       <Link
-  //         to="/"
-  //         style={{
-  //           color: `white`,
-  //           textDecoration: `none`,
-  //         }}
-  //       >
-  //         {siteTitle}
-  //       </Link>
-  //     </h1>
-  //   </div>
-  // </header>
-  <header class="header-area header-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <nav class="main-nav">
-            <a href="blue-index.html" class="logo">
-              <img src={logo} class="light-logo" alt="Gaus" />
-              <img src={logoB} class="dark-logo" alt="Gaus" />
-            </a>
+  <header className="header-area header-white">
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-12">
+          <nav className="main-nav">
+            <Link to="blue-index.html" className="logo">
+              <img src={logo} className="light-logo" alt="Gaus" />
+              <img src={logoB} className="dark-logo" alt="Gaus" />
+            </Link>
 
-            <ul class="nav">
+            <ul className="nav">
               <li>
-                <a href="blue-index.html">HOME</a>
+                <Link to="/">HOME</Link>
               </li>
               <li>
-                <a href="blue-our-work.html">OUR WORK</a>
+                <Link to="/our-work/">OUR WORK</Link>
               </li>
               <li>
-                <a href="blue-about-us.html">ABOUT US</a>
+                <Link to="/about-us/">ABOUT US</Link>
               </li>
               <li>
-                <a href="blue-services.html">SERVICES</a>
+                <Link to="/services/">SERVICES</Link>
               </li>
               <li>
-                <a href="blue-blog.html">BLOG</a>
+                <Link to="/blog/">BLOG</Link>
               </li>
               <li>
-                <a href="blue-contact.html" class="btn-nav-line">
+                <Link to="/contact/" className="btn-nav-line">
                   CONTACT
-                </a>
+                </Link>
               </li>
             </ul>
-            <a class="menu-trigger">
-              <span>Menu</span>
-            </a>
+            {
+              // <Link className="menu-trigger">
+              //   <span>Menu</span>
+              // </Link>
+            }
           </nav>
         </div>
       </div>
