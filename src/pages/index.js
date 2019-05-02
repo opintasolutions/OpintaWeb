@@ -28,14 +28,14 @@ const IndexPage = () => (
         <div className="container">
           <div className="row">
             <div className="offset-lg-3 offset-md-2 col-lg-6 col-md-8 col-sm-12">
-              <h1>Check out our mobile apps we're working on.</h1>
+              <h1>Make Digital Presence of Your Business</h1>
               <p>
-                We design and develop mobile apps that delight your users and
-                grow your business. Enterprise-grade development combined with
-                outstanding design.
+                Everything we do, every recommendation we make, is based on
+                research and experience in each of our clients industries and on
+                their projects.
               </p>
               <Link className="btn-white-line" to="#">
-                ALL WORKS
+                Contact Us Today
               </Link>
             </div>
           </div>
@@ -97,23 +97,18 @@ const IndexPage = () => (
         <div className="row">
           <div className="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
             <div className="left-heading">
-              <h2 className="section-title">
-                Start-to-end app development agency
-              </h2>
+              <h2 className="section-title">IT Support and Services</h2>
             </div>
             <div className="left-text">
               <p className="dark">
-                Pellentesque posuere vestibulum lorem, ut efficitur erat
-                tristique sed. Ut vitae tincidunt ante.{" "}
-              </p>
-              <p>
-                Donec vulputate urna sed rutrum venenatis. Cras consequat magna
-                quis arcu elementum, quis congue risus volutpat. Praesent tortor
-                nulla, ullamcorper.
+                Opinta Solutions provide the services that refer to the
+                application of business and technical expertise to enable
+                organisation in the creation, management and the optimization of
+                or accesss to information and business processes.
               </p>
             </div>
             <Link to="#" className="btn-primary-line">
-              SERVICES
+              Services
             </Link>
           </div>
           <div className="offset-lg-1 col-lg-6 col-md-12 col-sm-12 align-self-center">
@@ -147,7 +142,7 @@ const IndexPage = () => (
               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <Link
                   to="blue-services-single.html"
-                  className="home-services-item active"
+                  className="home-services-item"
                   data-scroll-reveal="enter bottom move 30px over 0.6s after 0.3s"
                 >
                   <i className="fa fa-object-ungroup" />

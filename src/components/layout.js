@@ -84,7 +84,7 @@ const Layout = ({ children }) => (
                   </div>
                 </div>
                 <div className="col-lg-2 col-md-4 col-sm-12">
-                  <h5 style={{ borderBottom: "1px solid #fff" }}>
+                  <h5 style={{ borderBottom: "1px solid #6E49B7" }}>
                     Helpful Links
                   </h5>
                   <ul className="footer-nav">
@@ -121,7 +121,7 @@ const Layout = ({ children }) => (
                   </ul>
                 </div>
                 <div className="col-lg-6 col-md-12 col-sm-12">
-                  <h5 style={{ borderBottom: "1px solid #fff" }}>
+                  <h5 style={{ borderBottom: "1px solid #6E49B7" }}>
                     Our Offices
                   </h5>
                   <div className="row">
