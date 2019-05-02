@@ -18,6 +18,8 @@ import Header from "./header"
 import "./layout.css"
 
 import img from "../assets/images/blue-logo-white.svg"
+import investIndia from "../assets/images/investindia-logo.png"
+import cBridgeLogo from "../assets/images/C-Bridge-Logo.svg"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -51,22 +53,46 @@ const Layout = ({ children }) => (
           <footer>
             <div className="container">
               <div className="row">
-                <div className="col-lg-5 col-md-12 col-sm-12">
+                <div className="col-lg-4 col-md-8 col-sm-12">
                   <img src={img} className="logo" alt="" />
                   <div className="text">
-                    Morbi convallis bibendum urna ut viverra. Maecenas quis
-                    consequat libero, a feugiat eros. Nunc ut lacinia tortor
-                    morbi ultricies laoreet ullamcorper phasellus semper.
+                    Opinta Solutions provide the services that refer to the
+                    application of business and technical expertise to enable
+                    organisation in the creation, management and the
+                    optimization of or access to information and business
+                    processes.
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "flex-start",
+                      alignItems: "center",
+                      flexWrap: "wrap",
+                      width: "100%",
+                    }}
+                  >
+                    <img
+                      src={investIndia}
+                      style={{ width: "150px", margin: "20px 10px 20px 0" }}
+                      alt="invest-india-logo"
+                    />
+                    <img
+                      src={cBridgeLogo}
+                      style={{ width: "150px", margin: "20px" }}
+                      alt="c-bridge-logo"
+                    />
                   </div>
                 </div>
-                <div className="col-lg-2 col-md-4 col-sm-6 col-6">
-                  <h5>Helpful Links</h5>
+                <div className="col-lg-2 col-md-4 col-sm-12">
+                  <h5 style={{ borderBottom: "1px solid #fff" }}>
+                    Helpful Links
+                  </h5>
                   <ul className="footer-nav">
                     <li>
                       <a href="#">
                         <i className="fa fa-angle-right" />
                         <span>Our Work</span>
-                      </a>
+                      </a>{" "}
                     </li>
                     <li>
                       <a href="#">
@@ -94,87 +120,81 @@ const Layout = ({ children }) => (
                     </li>
                   </ul>
                 </div>
-                <div className="col-lg-2 col-md-4 col-sm-6 col-6">
-                  <h5>Latest Apps</h5>
-                  <ul className="footer-nav">
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-angle-right" />
-                        <span>Dance School</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-angle-right" />
-                        <span>Coiner</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-angle-right" />
-                        <span>Cloud Manager</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-angle-right" />
-                        <span>Coding Life</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-angle-right" />
-                        <span>Smart Office</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="col-lg-3 col-md-4 col-sm-12">
-                  <h5>Contact Us</h5>
-                  <div className="address">
-                    <p>
-                      455 West Orchard Street
-                      <br />
-                      Kings Mountain, NC 28086
-                    </p>
-                    <p>Phone: (272) 211-7370</p>
-                    <p>
-                      <span>E-Mail:</span>
-                      <a href="#">support@yourbrand.com</a>
-                    </p>
-                    <ul className="social">
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-facebook-square" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-twitter-square" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-linkedin-square" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-google-plus-square" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-github-square" />
-                        </a>
-                      </li>
-                    </ul>
+                <div className="col-lg-6 col-md-12 col-sm-12">
+                  <h5 style={{ borderBottom: "1px solid #fff" }}>
+                    Our Offices
+                  </h5>
+                  <div className="row">
+                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <div className="address">
+                        <p>
+                          <strong>Patna Office</strong>
+                        </p>
+                        <p>
+                          Chandi Vyapar Bhawan, F-4,
+                          <br />
+                          4th Floor, Exhibition Rd,
+                        </p>
+                        <p>Patna, Bihar</p>
+                        <p>800001</p>
+                        <br />
+                        <ul className="social" style={{ marginLeft: "0" }}>
+                          <li>
+                            <a href="#">
+                              <i className="fa fa-facebook-square" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i className="fa fa-twitter-square" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i className="fa fa-linkedin-square" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i className="fa fa-google-plus-square" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i className="fa fa-github-square" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <div className="address">
+                        <p>
+                          <strong>Head Office</strong>
+                        </p>
+                        <p>
+                          GAT NO-123 H.No-3131, 01
+                          <br />
+                          Moshi - Alandi Rd, Tal Haveli,
+                        </p>
+                        <p>Alandi, Pune, Maharashtra 412105</p>
+                        <br />
+                        <p>Phone: +91 8448450015</p>
+                        <p>
+                          <span>E-Mail: </span>
+                          <a href="#">mail@opintasolutions.com</a>
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="row">
                 <div className="col-lg-12">
-                  <p className="copyright">© 2018 Gaus. All Rights Reserved.</p>
+                  <p className="copyright">
+                    &copy; {new Date().getFullYear()} Opinta Solutions. All
+                    Rights Reserved.
+                  </p>
                 </div>
               </div>
             </div>
