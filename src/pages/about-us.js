@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import coverImg from "../assets/images/photos/parallax.jpg"
 import img1 from "../assets/images/photos/about/1.jpg"
 import img2 from "../assets/images/photos/team/1.jpg"
 
@@ -14,7 +15,7 @@ const SecondPage = () => (
     <p>Welcome to page 2</p>
     <Link to="/">Go back to the homepage</Link> /*/}
     <section className="page">
-      <div className="cover" data-image="assets/images/photos/parallax.jpg">
+      <div className="cover" style={{ backgroundImage: `url(${coverImg})` }}>
         <div className="page-top">
           <div className="container">
             <div className="row">

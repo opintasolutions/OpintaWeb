@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import bgImg from "../assets/images/photos/welcome.jpg"
 import img1 from "../assets/images/icons/apps/1.png"
 import img2 from "../assets/images/mockup/home-mockup.png"
 import img3 from "../assets/images/photos/team/1.jpg"
@@ -48,7 +49,12 @@ class IndexPage extends Component {
           //     <Link to="/page-2/">Go to page 2</Link>
         }
         <section className="welcome-area">
-          <div className="welcome-bg" />
+          <div
+            className="welcome-bg"
+            style={{
+              backgroundImage: `url(${bgImg})`,
+            }}
+          />
           <div className="welcome-content">
             <div className="container">
               <div className="row">
@@ -60,7 +66,7 @@ class IndexPage extends Component {
                     and on their projects.
                   </p>
                   <Link className="btn-white-line" to="#">
-                    Contact Us Today
+                    CONTACT NOW
                   </Link>
                 </div>
               </div>
