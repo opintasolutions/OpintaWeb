@@ -12,7 +12,7 @@ import img5 from "../assets/images/icons/apps/5.png"
 import img6 from "../assets/images/icons/apps/6.png"
 
 const OurWorkPage = () => (
-  <Layout>
+  <Layout headerClass={"header-area header-white"}>
     {
       //   <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       // <h1>Hi people</h1>

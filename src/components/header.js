@@ -4,8 +4,8 @@ import React from "react"
 
 import logo from "../assets/images/blue-logo-white.svg"
 import logoB from "../assets/images/blue-logo-dark.svg"
-const Header = ({ siteTitle }) => (
-  <header className="header-area header-white">
+const Header = ({ siteTitle, headerClass }) => (
+  <header className={headerClass}>
     <div className="container">
       <div className="row">
         <div className="col-lg-12">
@@ -49,10 +49,12 @@ const Header = ({ siteTitle }) => (
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  headerClass: PropTypes.string,
 }
 
 Header.defaultProps = {
   siteTitle: ``,
+  headerClass: ``,
 }
 
 export default Header

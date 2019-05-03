@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import img1 from "../assets/images/photos/about/1.jpg"
 
 const BlogPage = () => (
-  <Layout>
+  <Layout headerClass={"header-area header-white"}>
     <section className="page">
       <div className="cover" data-image="assets/images/photos/parallax.jpg">
         <div className="page-top">

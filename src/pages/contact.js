@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const ContactPage = () => (
-  <Layout>
+  <Layout headerClass={"header-area header-white"}>
     <section className="page">
       <div className="cover" data-image="assets/images/photos/parallax.jpg">
         <div className="page-top">

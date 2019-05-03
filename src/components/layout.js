@@ -21,7 +21,7 @@ import img from "../assets/images/blue-logo-white.svg"
 import investIndia from "../assets/images/investindia-logo.png"
 import cBridgeLogo from "../assets/images/C-Bridge-Logo.svg"
 
-const Layout = ({ children }) => (
+const Layout = ({ children, headerClass }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -41,10 +41,13 @@ const Layout = ({ children }) => (
             <div className="diamond" />
           </div>
         </div> */}
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          headerClass={headerClass}
+        />
         <div
           style={{
-            margin: `80px 0 0 0`,
+            margin: `0`,
             padding: `0px`,
             paddingTop: 0,
           }}
