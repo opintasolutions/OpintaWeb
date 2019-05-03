@@ -177,7 +177,9 @@ const Layout = ({ children }) => (
                           <br />
                           Moshi - Alandi Rd, Tal Haveli,
                         </p>
-                        <p>Alandi, Pune, Maharashtra 412105</p>
+                        <p>
+                          Alandi, Pune, Maharashtra <br /> 412105
+                        </p>
                         <br />
                         <p>Phone: +91 8448450015</p>
                         <p>

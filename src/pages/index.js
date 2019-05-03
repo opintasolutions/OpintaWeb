@@ -308,7 +308,7 @@ const IndexPage = () => (
             </div>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div className="team-item active">
+            <div className="team-item">
               <div className="header">
                 <div className="img">
                   <img src={img3} alt="" />
