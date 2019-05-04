@@ -1,0 +1,19 @@
+#background-video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+.img-apps {
+  filter: grayscale(100%);
+  width: 75px;
+  margin-bottom: 0;
+}
+.img-apps:hover {
+  filter: none;
+}
+.allign-center {
+  height: 75px;
+  display: flex;
+  align-items: center;
+}

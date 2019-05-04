@@ -17,7 +17,7 @@ import "../assets/css/blue.css"
 import Header from "./header"
 import "./layout.css"
 
-import img from "../assets/images/blue-logo-white.svg"
+import img from "../assets/images/Opinta-white.svg"
 import investIndia from "../assets/images/investindia-logo.png"
 import cBridgeLogo from "../assets/images/C-Bridge-Logo.svg"
 
@@ -57,7 +57,12 @@ const Layout = ({ children, headerClass }) => (
             <div className="container">
               <div className="row">
                 <div className="col-lg-4 col-md-8 col-sm-12">
-                  <img src={img} className="logo" alt="" />
+                  <img
+                    src={img}
+                    style={{ width: "90px" }}
+                    className="logo"
+                    alt=""
+                  />
                   <div className="text">
                     Opinta Solutions provide the services that refer to the
                     application of business and technical expertise to enable

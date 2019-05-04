@@ -4,8 +4,18 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import "../style.css"
+
 import bgImg from "../assets/images/photos/welcome.jpg"
-import img1 from "../assets/images/icons/apps/1.png"
+import bgVid from "../assets/vidBG.mp4"
+
+import img11 from "../assets/images/icons/apps/1.jpg"
+import img12 from "../assets/images/icons/apps/2.png"
+import img13 from "../assets/images/icons/apps/3.jpg"
+import img14 from "../assets/images/icons/apps/4.jpg"
+import img15 from "../assets/images/icons/apps/5.png"
+import img16 from "../assets/images/icons/apps/6.png"
+
 import img2 from "../assets/images/mockup/home-mockup.png"
 import img3 from "../assets/images/photos/team/1.jpg"
 import img4 from "../assets/images/photos/blog/1.jpg"
@@ -51,10 +61,15 @@ class IndexPage extends Component {
         <section className="welcome-area">
           <div
             className="welcome-bg"
-            style={{
-              backgroundImage: `url(${bgImg})`,
-            }}
-          />
+
+            // style={{
+            //   backgroundImage: `url(${bgImg})`,
+            // }}
+          >
+            <video id="background-video" autoPlay loop muted>
+              <source src={bgVid} type="video/mp4" />
+            </video>
+          </div>
           <div className="welcome-content">
             <div className="container">
               <div className="row">
@@ -79,43 +94,33 @@ class IndexPage extends Component {
               <div className="col-lg-12">
                 <div className="apps">
                   <Link to="blue-app-single.html" className="app-item">
-                    <div className="icon">
-                      <img src={img1} className="img-fluid" alt="" />
+                    <div className="icon allign-center">
+                      <img src={img11} className="img-fluid img-apps" alt="" />
                     </div>
                   </Link>
                   <Link to="blue-app-single.html" className="app-item">
-                    <div className="icon">
-                      <img src={img1} className="img-fluid" alt="" />
+                    <div className="icon allign-center">
+                      <img src={img12} className="img-fluid img-apps" alt="" />
                     </div>
                   </Link>
                   <Link to="blue-app-single.html" className="app-item">
-                    <div className="icon">
-                      <img src={img1} className="img-fluid" alt="" />
+                    <div className="icon allign-center">
+                      <img src={img13} className="img-fluid img-apps" alt="" />
                     </div>
                   </Link>
                   <Link to="blue-app-single.html" className="app-item">
-                    <div className="icon">
-                      <img src={img1} className="img-fluid" alt="" />
+                    <div className="icon allign-center">
+                      <img src={img14} className="img-fluid img-apps" alt="" />
                     </div>
                   </Link>
                   <Link to="blue-app-single.html" className="app-item">
-                    <div className="icon">
-                      <img src={img1} className="img-fluid" alt="" />
+                    <div className="icon allign-center">
+                      <img src={img15} className="img-fluid img-apps" alt="" />
                     </div>
                   </Link>
                   <Link to="blue-app-single.html" className="app-item">
-                    <div className="icon">
-                      <img src={img1} className="img-fluid" alt="" />
-                    </div>
-                  </Link>
-                  <Link to="blue-app-single.html" className="app-item">
-                    <div className="icon">
-                      <img src={img1} className="img-fluid" alt="" />
-                    </div>
-                  </Link>
-                  <Link to="blue-app-single.html" className="app-item">
-                    <div className="icon">
-                      <img src={img1} className="img-fluid" alt="" />
+                    <div className="icon allign-center">
+                      <img src={img16} className="img-fluid img-apps" alt="" />
                     </div>
                   </Link>
                 </div>
