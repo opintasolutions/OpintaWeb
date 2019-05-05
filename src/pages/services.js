@@ -8,6 +8,7 @@ import img1 from "../assets/images/photos/services/1.jpg"
 
 const ServicePage = () => (
   <Layout headerClass={"header-area header-white"}>
+    <SEO title="Services" />
     <section className="page">
       <div className="cover" data-image="assets/images/photos/parallax.jpg">
         <div className="page-top">

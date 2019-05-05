@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 
 const ContactPage = () => (
   <Layout headerClass={"header-area header-white"}>
+    <SEO title="Contact" />
     <section className="page">
       <div className="cover" data-image="assets/images/photos/parallax.jpg">
         <div className="page-top">

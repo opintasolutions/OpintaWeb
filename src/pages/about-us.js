@@ -10,7 +10,8 @@ import img2 from "../assets/images/photos/team/1.jpg"
 
 const SecondPage = () => (
   <Layout headerClass={"header-area header-white"}>
-    {/*    <SEO title="Page two" />
+    <SEO title="About" />
+    {/* 
     <h1>Hi from the second page</h1>
     <p>Welcome to page 2</p>
     <Link to="/">Go back to the homepage</Link> /*/}

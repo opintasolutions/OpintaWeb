@@ -1276,7 +1276,10 @@ welcome area
     float: left;
   }
   .welcome-apps .apps .app-item {
-    flex: 0 0 25%;
+    flex: 0 0 33.3%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 

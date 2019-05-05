@@ -3,10 +3,12 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ModalVideo from "react-modal-video"
 
 import "../style.css"
+import "react-modal-video/css/modal-video.min.css"
 
-import bgImg from "../assets/images/photos/welcome.jpg"
+import bgImg from "../assets/images/photos/bgImg.png"
 import bgVid from "../assets/vidBG.mp4"
 
 import img11 from "../assets/images/icons/apps/1.jpg"
@@ -16,7 +18,7 @@ import img14 from "../assets/images/icons/apps/4.jpg"
 import img15 from "../assets/images/icons/apps/5.png"
 import img16 from "../assets/images/icons/apps/6.png"
 
-import img2 from "../assets/images/mockup/home-mockup.png"
+import img2 from "../assets/images/photos/Opinta-Video.png"
 import img3 from "../assets/images/photos/team/1.jpg"
 import img4 from "../assets/images/photos/blog/1.jpg"
 
@@ -25,13 +27,15 @@ class IndexPage extends Component {
     super(props)
     this.state = {
       headerClass: "header-area",
+      modalIsOpen: false,
     }
     this.handleScroll = this.handleScroll.bind(this)
+    this.openModal = this.openModal.bind(this)
   }
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll)
   }
-  componentDidUnmount() {
+  componentWillUnmount() {
     window.removeEventListener("scroll", this.handleScroll)
   }
   handleScroll = ev => {
@@ -44,29 +48,16 @@ class IndexPage extends Component {
       this.setState({ headerClass: "header-area" })
     }
   }
+  openModal() {
+    this.setState({ modalIsOpen: true })
+  }
   render() {
     return (
       <Layout headerClass={this.state.headerClass}>
-        {
-          //   <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-          // <h1>Hi people</h1>
-          // <p>Welcome to your new Gatsby site.</p>
-          // <button classNameNameName="btn btn-success">Hello</button>
-          // <p>Now go build something great.</p>
-          // <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-          //   <Image />
-          // </div>
-          //     <Link to="/page-2/">Go to page 2</Link>
-        }
+        <SEO title="Home" />
         <section className="welcome-area">
-          <div
-            className="welcome-bg"
-
-            // style={{
-            //   backgroundImage: `url(${bgImg})`,
-            // }}
-          >
-            <video id="background-video" autoPlay loop muted>
+          <div className="welcome-bg">
+            <video id="background-video" poster={bgImg} autoPlay loop muted>
               <source src={bgVid} type="video/mp4" />
             </video>
           </div>
@@ -156,13 +147,13 @@ class IndexPage extends Component {
                       className="home-services-item"
                       data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s"
                     >
-                      <i className="fa fa-clone" />
+                      <i className="fa fa-object-ungroup" />
                       <h5 className="services-title">
-                        Mobility Services Strategy
+                        Web Design & Development
                       </h5>
                       <p>
-                        Morbi pharetra sapien ut mattis viverra. Curabitur sit
-                        amet mattis.
+                        We make websites and web applications that are most
+                        open, flexible and immediately accesible.
                       </p>
                     </Link>
                     <Link
@@ -173,8 +164,8 @@ class IndexPage extends Component {
                       <i className="fa fa-connectdevelop" />
                       <h5 className="services-title">Native App Development</h5>
                       <p>
-                        Proin arcu ligula, malesuada id tincidunt laoreet,
-                        facilisis at justo.
+                        We create native custom softwares that fit the needs of
+                        your business and tools to help it grow.
                       </p>
                     </Link>
                   </div>
@@ -184,13 +175,11 @@ class IndexPage extends Component {
                       className="home-services-item"
                       data-scroll-reveal="enter bottom move 30px over 0.6s after 0.3s"
                     >
-                      <i className="fa fa-object-ungroup" />
-                      <h5 className="services-title">
-                        Design & User Experience
-                      </h5>
+                      <i className="fa fa-clone" />
+                      <h5 className="services-title">Mobile App Development</h5>
                       <p>
-                        Donec pellentesque turpis utium lorem imperdiet semper
-                        viverra.
+                        Our teams rapidly deploy customized mobile apps for each
+                        client and every platform.
                       </p>
                     </Link>
                     <Link
@@ -200,11 +189,11 @@ class IndexPage extends Component {
                     >
                       <i className="fa fa-line-chart" />
                       <h5 className="services-title">
-                        Maintenance & Monitoring
+                        Digital & Social <br /> Media Marketing
                       </h5>
                       <p>
-                        Facilisis arcu ligula, malesuada id tincidunt laoreet,
-                        facilisis at justo.
+                        Our experts spread your words across all media outlets
+                        and increase your consumer base.
                       </p>
                     </Link>
                   </div>
@@ -217,79 +206,66 @@ class IndexPage extends Component {
           <div className="container">
             <div className="row">
               <div className="col-lg-5 col-md-12 col-sm-12 col-xs-12 align-self-center mobile-bottom-fix">
-                <img src={img2} className="img-fluid d-block mx-auto" alt="" />
+                <div onClick={this.openModal}>
+                  <span>
+                    <i className="fa fa-play-circle play-button" />
+                  </span>
+                </div>
+                <img
+                  src={img2}
+                  className="video-thumbnail img-fluid d-block mx-auto"
+                  alt=""
+                />
+                <ModalVideo
+                  channel="youtube"
+                  isOpen={this.state.modalIsOpen}
+                  videoId="fvfuamxXOSg"
+                  onClose={() => this.setState({ modalIsOpen: false })}
+                />
               </div>
               <div className="col-lg-7 col-md-12 col-sm-12 col-xs-12 align-self-center">
                 <ul className="features">
                   <li data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s">
                     <div className="count">
                       <span>
-                        <i className="fa fa-flash" />
+                        <i className="fa fa-bookmark-o" />
                       </span>
                     </div>
                     <div className="text">
-                      <h5 className="title">
-                        Design and UX that ensures your app will be loved and
-                        used
-                      </h5>
+                      <h5 className="title">Quality Standards</h5>
                       <p>
-                        Quisque nec consectetur arcu. Duis tellus ante, sodales
-                        sed molestie at, sagittis id neque. Quisque condimentum
-                        libero arcu. Mauris tellus sem, ultrices varius nisl at.
+                        At Opinta we give more emphasis to the quality of every
+                        product with the idea to be remembered for quality.
                       </p>
                     </div>
                   </li>
                   <li data-scroll-reveal="enter bottom move 30px over 0.6s after 0.3s">
                     <div className="count">
                       <span>
-                        <i className="fa fa-code-fork" />
+                        <i className="fa fa-clock-o" />
                       </span>
                     </div>
                     <div className="text">
-                      <h5 className="title">
-                        Enterprise-grade development secures reliability and
-                        quality
-                      </h5>
+                      <h5 className="title">Timely Completion</h5>
                       <p>
-                        Praesent tortor nulla, ullamcorper vel ante at, varius
-                        tincidunt augue. Cras vitae consectetur arcu. Proin at
-                        velit vel risus elementum accumsan sed non neque. Aenean
-                        risus.
+                        We believe deliverence is the key to successful business
+                        relation. We stand for quality products delivered on
+                        time.
                       </p>
                     </div>
                   </li>
                   <li data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
                     <div className="count">
                       <span>
-                        <i className="fa fa-link" />
+                        <i className="fa fa-heart-o" />
                       </span>
                     </div>
                     <div className="text">
-                      <h5 className="title">
-                        A proven and tested process guarantees your success
-                      </h5>
+                      <h5 className="title">Trusted Resources</h5>
                       <p>
-                        Aliquam bibendum velit ut ante cursus, et efficitur
-                        lectus rutrum. Maecenas ac convallis lorem, non
-                        ultricies sem. Duis elit metus, ullamcorper sed ante
-                        sed, viverra bibendum neque.
-                      </p>
-                    </div>
-                  </li>
-                  <li data-scroll-reveal="enter bottom move 30px over 0.6s after 0.5s">
-                    <div className="count">
-                      <span>
-                        <i className="fa fa-code" />
-                      </span>
-                    </div>
-                    <div className="text">
-                      <h5 className="title">
-                        Start-to-end app development agency
-                      </h5>
-                      <p>
-                        Cras imperdiet faucibus sem, a dignissim urna feugiat
-                        sed. Interdum et malesuada fames ac ante ipsum primis in
-                        faucibus. Pellentesque posuere vestibulum lorem.
+                        We use an array of most reliable resources for making
+                        robust applications that approve of our quality and
+                        standards.
                       </p>
                     </div>
                   </li>

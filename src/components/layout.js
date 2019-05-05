@@ -81,12 +81,12 @@ const Layout = ({ children, headerClass }) => (
                   >
                     <img
                       src={investIndia}
-                      style={{ width: "150px", margin: "20px 10px 20px 0" }}
+                      style={{ width: "150px", margin: "10px 5px 20px 0" }}
                       alt="invest-india-logo"
                     />
                     <img
                       src={cBridgeLogo}
-                      style={{ width: "150px", margin: "20px" }}
+                      style={{ width: "150px", margin: "5px 5px 20px 5px" }}
                       alt="c-bridge-logo"
                     />
                   </div>

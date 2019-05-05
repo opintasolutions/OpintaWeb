@@ -33,7 +33,7 @@ const Header = ({ siteTitle, headerClass }) => (
               </div>
             </Link>
 
-            <ul className="nav">
+            <ul className="nav" style={{ display: "none", marginLeft: "0" }}>
               <li>
                 <Link to="/">HOME</Link>
               </li>
@@ -55,9 +55,24 @@ const Header = ({ siteTitle, headerClass }) => (
                 </Link>
               </li>
             </ul>
-            <Link className="menu-trigger" to="#">
+            <div
+              className="menu-trigger"
+              onClick={() => {
+                if (document.querySelector(".nav").style.display === "none") {
+                  document.querySelector(".nav").style.display = "block"
+                  document
+                    .querySelector(".menu-trigger")
+                    .classList.add("active")
+                } else {
+                  document.querySelector(".nav").style.display = "none"
+                  document
+                    .querySelector(".menu-trigger")
+                    .classList.remove("active")
+                }
+              }}
+            >
               <span>Menu</span>
-            </Link>
+            </div>
           </nav>
         </div>
       </div>

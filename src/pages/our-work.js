@@ -5,25 +5,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import img1 from "../assets/images/icons/apps/1.png"
-import img2 from "../assets/images/icons/apps/2.png"
-import img3 from "../assets/images/icons/apps/3.png"
-import img4 from "../assets/images/icons/apps/4.png"
-import img5 from "../assets/images/icons/apps/5.png"
-import img6 from "../assets/images/icons/apps/6.png"
 
 const OurWorkPage = () => (
   <Layout headerClass={"header-area header-white"}>
-    {
-      //   <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      // <h1>Hi people</h1>
-      // <p>Welcome to your new Gatsby site.</p>
-      // <button classNameName="btn btn-success">Hello</button>
-      // <p>Now go build something great.</p>
-      // <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      //   <Image />
-      // </div>
-      //     <Link to="/page-2/">Go to page 2</Link>
-    }
+    <SEO title="Work" />
     <section className="page">
       <div className="cover" data-image="../assets/images/photos/parallax.jpg">
         <div className="page-top">
@@ -52,7 +37,7 @@ const OurWorkPage = () => (
               <Link to="blue-app-single.html" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <img src={img6} alt="" />
+                    <img src={img1} alt="" />
                   </div>
                   <div className="app-title">
                     <h5 className="title">Mobile Stats</h5>
@@ -177,7 +162,7 @@ const OurWorkPage = () => (
               <Link to="blue-app-single.html" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <img src={img2} alt="" />
+                    <img src={img1} alt="" />
                   </div>
                   <div className="app-title">
                     <h5 className="title">Pocket Office</h5>
@@ -241,7 +226,7 @@ const OurWorkPage = () => (
               <Link to="blue-app-single.html" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <img src={img3} alt="" />
+                    <img src={img1} alt="" />
                   </div>
                   <div className="app-title">
                     <h5 className="title">Awesome Mail</h5>
@@ -303,7 +288,7 @@ const OurWorkPage = () => (
               <Link to="blue-app-single.html" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <img src={img4} alt="" />
+                    <img src={img1} alt="" />
                   </div>
                   <div className="app-title">
                     <h5 className="title">Coding Life</h5>
@@ -365,7 +350,7 @@ const OurWorkPage = () => (
               <Link to="blue-app-single.html" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <img src={img5} alt="" />
+                    <img src={img1} alt="" />
                   </div>
                   <div className="app-title">
                     <h5 className="title">Call Recorder</h5>
