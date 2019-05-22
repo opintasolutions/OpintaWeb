@@ -1536,7 +1536,7 @@ home
 
 .team-item .header .info {
   margin-top: 22px;
-  float: left;
+  /* float: left;*/
 }
 
 .team-item .header .info strong {

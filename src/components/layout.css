@@ -620,3 +620,37 @@ pre tt:after {
     font-size: 100%;
   }
 }
+.fa-quote-left {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  bottom: 0px;
+  right: -350px;
+  font-size: 100px;
+  opacity: 0.2;
+}
+.fa-quote-left:before {
+  content: "\f10d";
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  display: block;
+}
+.carousel-button-wrapper {
+  /* position: absolute; */
+  /* top: 60%; */
+  /* left: 30%; */
+  /* margin: 0 auto; */
+  font-size: 60px;
+  padding: 0 20px !important;
+}
+.carousel-button-wrapper button {
+  background: inherit;
+  margin: 10px;
+  border: none;
+}

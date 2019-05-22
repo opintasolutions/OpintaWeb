@@ -1,5 +1,13 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+} from "pure-react-carousel"
+import "pure-react-carousel/dist/react-carousel.es.css"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -52,6 +60,76 @@ class IndexPage extends Component {
     this.setState({ modalIsOpen: true })
   }
   render() {
+    let testimonials = [
+      <div class="team-item testimonial">
+        <div class="header text-center mt-10">
+          <div class="info">
+            <strong>Anil Pandey</strong>
+            <span>Jankari Junctions</span>
+          </div>
+        </div>
+        <div class="body">
+          <i class="fa fa-quote-left" />
+          <p>
+            Thanks for the fantastic job on our site www.jankarijunction.com it
+            was pleasure working with Opinta Solutions as they worked closely
+            with us every step of the way, and we valued their creative input
+            that exceeded our expectations.{" "}
+          </p>
+        </div>
+      </div>,
+      <div class="team-item testimonial">
+        <div class="header text-center mt-10">
+          <div class="info">
+            <strong>Raju Singh</strong>
+            <span>Patanjali Dealer</span>
+          </div>
+        </div>
+        <div class="body">
+          <i class="fa fa-quote-left" />
+          <p>
+            Thanks for the fantastic job on our site www.jankarijunction.com it
+            was pleasure working with Opinta Solutions as they worked closely
+            with us every step of the way, and we valued their creative input
+            that exceeded our expectations.{" "}
+          </p>
+        </div>
+      </div>,
+      <div class="team-item testimonial">
+        <div class="header text-center mt-10">
+          <div class="info">
+            <strong>Kiran Soni</strong>
+            <span>KNS Restaurants</span>
+          </div>
+        </div>
+        <div class="body">
+          <i class="fa fa-quote-left" />
+          <p>
+            Thanks for the fantastic job on our site www.jankarijunction.com it
+            was pleasure working with Opinta Solutions as they worked closely
+            with us every step of the way, and we valued their creative input
+            that exceeded our expectations.{" "}
+          </p>
+        </div>
+      </div>,
+      <div class="team-item testimonial">
+        <div class="header text-center mt-10">
+          <div class="info">
+            <strong>Sunil Kumar</strong>
+            <span>Prayatna Eduventures</span>
+          </div>
+        </div>
+        <div class="body">
+          <i class="fa fa-quote-left" />
+          <p>
+            Thanks for the fantastic job on our site www.jankarijunction.com it
+            was pleasure working with Opinta Solutions as they worked closely
+            with us every step of the way, and we valued their creative input
+            that exceeded our expectations.{" "}
+          </p>
+        </div>
+      </div>,
+    ]
     return (
       <Layout headerClass={this.state.headerClass}>
         <SEO title="Home" />
@@ -279,7 +357,7 @@ class IndexPage extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="center-heading">
-                  <h2 className="section-title">Our Team</h2>
+                  <h2 className="section-title">Our Mentors</h2>
                 </div>
               </div>
               <div className="offset-lg-3 col-lg-6">
@@ -292,46 +370,10 @@ class IndexPage extends Component {
               </div>
             </div>
             <div className="row">
-              <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div className="team-item">
-                  <div className="header">
-                    <div className="img">
-                      <img src={img3} alt="" />
-                    </div>
-                    <div className="info">
-                      <strong>Fletch Skinner</strong>
-                      <span>Product Strategist</span>
-                    </div>
-                  </div>
-                  <ul className="social">
-                    <li>
-                      <Link to="#">
-                        <i className="fa fa-facebook" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="#">
-                        <i className="fa fa-twitter" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="#">
-                        <i className="fa fa-linkedin" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="#">
-                        <i className="fa fa-github" />
-                      </Link>
-                    </li>
-                  </ul>
-                  <div className="body">
-                    Proin arcu ligula, malesuada id tincidunt laoreet, facilisis
-                    at justo. Sed at lorem.
-                  </div>
-                </div>
+              <div className="col-lg-1 col-md-6 col-sm-6 col-xs-12">
+                <div className="team-item" />
               </div>
-              <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+              <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <div className="team-item">
                   <div className="header">
                     <div className="img">
@@ -370,7 +412,10 @@ class IndexPage extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+              <div className="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                <div className="team-item" />
+              </div>
+              <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <div className="team-item">
                   <div className="header">
                     <div className="img">
@@ -409,94 +454,52 @@ class IndexPage extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div className="team-item">
-                  <div className="header">
-                    <div className="img">
-                      <img src={img3} alt="" />
-                    </div>
-                    <div className="info">
-                      <strong>Giles Posture</strong>
-                      <span>iOS Developer</span>
-                    </div>
-                  </div>
-                  <ul className="social">
-                    <li>
-                      <Link to="#">
-                        <i className="fa fa-facebook" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="#">
-                        <i className="fa fa-twitter" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="#">
-                        <i className="fa fa-linkedin" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="#">
-                        <i className="fa fa-github" />
-                      </Link>
-                    </li>
-                  </ul>
-                  <div className="body">
-                    Proin arcu ligula, malesuada id tincidunt laoreet, facilisis
-                    at justo. Sed at lorem.
-                  </div>
-                </div>
+              <div className="col-lg-1 col-md-6 col-sm-6 col-xs-12">
+                <div className="team-item" />
               </div>
             </div>
           </div>
         </section>
-        <section className="parallax">
-          <div className="parallax-content">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-3 col-md-6 col-sm-12">
-                  <div className="count-item">
-                    <strong>126</strong>
-                    <span>
-                      Mobile App
-                      <br />
-                      Complate
-                    </span>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-6 col-sm-12">
-                  <div className="count-item">
-                    <strong>98</strong>
-                    <span>
-                      Happy
-                      <br />
-                      Customer
-                    </span>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-6 col-sm-12">
-                  <div className="count-item">
-                    <strong>176</strong>
-                    <span>
-                      App
-                      <br />
-                      Version
-                    </span>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-6 col-sm-12">
-                  <div className="count-item">
-                    <strong>16</strong>
-                    <span>
-                      Award
-                      <br />
-                      Win
-                    </span>
-                  </div>
+        <section class="section pbottom-70 background">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="center-heading">
+                  <h2 class="section-title">What people say..</h2>
                 </div>
               </div>
             </div>
+            <CarouselProvider totalSlides={4} interval={2500} isPlaying>
+              <Slider>
+                {testimonials.map((testi, i) => (
+                  <Slide index={i} style={{ height: "370px" }}>
+                    <div
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      <div
+                        class="item"
+                        style={{
+                          maxWidth: "900px",
+                          margin: "0 auto",
+                        }}
+                      >
+                        {testi}
+                      </div>
+                    </div>
+                  </Slide>
+                ))}
+              </Slider>
+              {/*<div className="carousel-button-wrapper">
+                <ButtonBack>‹</ButtonBack>
+                <ButtonNext>›</ButtonNext>
+              </div>*/}
+            </CarouselProvider>
           </div>
         </section>
         <section className="section pbottom-70">
