@@ -465,7 +465,7 @@ class IndexPage extends Component {
             <div class="row">
               <div class="col-lg-12">
                 <div class="center-heading">
-                  <h2 class="section-title">What people say..</h2>
+                  <h2 class="section-title">Testimonials</h2>
                 </div>
               </div>
             </div>
