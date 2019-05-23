@@ -4,9 +4,14 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import coverImg from "../assets/images/photos/parallax.jpg"
+import coverImg from "../images/about_cover.jpg"
 import img1 from "../assets/images/photos/about/1.jpg"
 import img2 from "../assets/images/photos/team/1.jpg"
+
+import about_overview from "../images/about_overview.jpg"
+import about_mission from "../images/about_mission.jpg"
+import about_vision from "../images/about_vision.jpeg"
+import about_services from "../images/about_services.jpg"
 
 const SecondPage = () => (
   <Layout headerClass={"header-area header-white"}>
@@ -16,7 +21,15 @@ const SecondPage = () => (
     <p>Welcome to page 2</p>
     <Link to="/">Go back to the homepage</Link> /*/}
     <section className="page">
-      <div className="cover" style={{ backgroundImage: `url(${coverImg})` }}>
+      <div
+        className="cover"
+        style={{
+          backgroundImage: `url(${coverImg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="page-top">
           <div className="container">
             <div className="row">
@@ -41,40 +54,61 @@ const SecondPage = () => (
             <div className="col-lg-12">
               <div className="about">
                 <div className="about-image">
-                  <img src={img1} alt="" />
+                  <img src={about_overview} alt="" />
                 </div>
                 <div className="about-text">
-                  <h2>We're makers and creative</h2>
+                  <h2>Overview</h2>
                   <p>
-                    Praesent posuere nec nisl quis hendrerit. Duis sit amet
-                    rutrum lorem. Ut maximus orci in metus blandit, et placerat
-                    dolor congue.
+                    According to Forbes survey the use of internet appropriately
+                    will boom up in coming years. Compelling each and every
+                    offline business to make its’ stand digitally. Opinta
+                    Solutions arrives as a ray of hope to boom their business
+                    globally.
                   </p>
-                  <p>
-                    Proin tempor ligula nec dolor facilisis mattis. Suspendisse
-                    potenti. Suspendisse efficitur turpis quis risus molestie
-                    cursus. Cras malesuada a massa et aliquet. Nunc vel urna eu
-                    neque consectetur imperdiet. Sed pretium neque ligula, ac
-                    vehicula massa aliquet eu.
-                  </p>
+                  <p />
                 </div>
               </div>
               <div className="about left mbottom-30">
                 <div className="about-image">
-                  <img src={img1} alt="" />
+                  <img src={about_mission} alt="" />
                 </div>
                 <div className="about-text">
-                  <h2>Our ideas are beyond their limits.</h2>
+                  <h2>Mission</h2>
                   <p>
-                    Praesent posuere nec nisl quis hendrerit. Duis sit amet
-                    rutrum lorem. Ut maximus orci in metus blandit, et placerat
-                    dolor congue.
+                    To aware businesses about the need to have an online
+                    presence, create ideas into online businesses while ensuring
+                    exceptional customer support throughout the process.
                   </p>
+                  <p />
+                </div>
+              </div>
+              <div className="about">
+                <div className="about-image">
+                  <img src={about_vision} alt="" />
+                </div>
+                <div className="about-text">
+                  <h2>Vision</h2>
                   <p>
-                    Proin tempor ligula nec dolor facilisis mattis. Suspendisse
-                    potenti. Suspendisse efficitur turpis quis risus molestie
-                    cursus.
+                    To become a prime performer in the global marketplace by
+                    providing highly innovative web development, mobile
+                    development and digital marketing.
                   </p>
+                  <p />
+                </div>
+              </div>
+              <div className="about left mbottom-30">
+                <div className="about-image">
+                  <img src={about_services} alt="" />
+                </div>
+                <div className="about-text">
+                  <h2>Services</h2>
+                  <p>
+                    Opinta Solutions is a Start-up company mainly designed and
+                    started for the Digital Marketing, Custom Software
+                    Development, Web Development and Mobile App development for
+                    proper digitalization.{" "}
+                  </p>
+                  <p />
                 </div>
               </div>
             </div>
@@ -88,12 +122,20 @@ const SecondPage = () => (
           <div className="row">
             <div className="col-lg-12">
               <div className="info">
+                <br />
+                <b>
+                  “If your business is not on the internet, then your business
+                  will be out of business”
+                </b>
                 <p>
-                  We design and develop <span>mobile apps</span> that delight
-                  your users and grow your business.
+                  -<em>Bill Gates</em>
                 </p>
-                <Link className="btn-white-line" href="#">
-                  Contact Us
+                <Link
+                  className="btn-white-line"
+                  style={{ marginBottom: "30px" }}
+                  href="#"
+                >
+                  Get Started Now
                 </Link>
               </div>
             </div>
