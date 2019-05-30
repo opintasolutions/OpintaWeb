@@ -4,7 +4,12 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import img1 from "../assets/images/photos/services/1.jpg"
+import img1 from "../assets/images/photos/services/web_development_opinta.png"
+import img6 from "../assets/images/photos/services/IVR.png"
+import img3 from "../assets/images/photos/services/app_development_opinta.png"
+import img4 from "../assets/images/photos/services/Bulk-Messages.png"
+import img5 from "../assets/images/photos/services/Digital_Marketing_Opinta.png"
+import img2 from "../assets/images/photos/services/software_development_opinta.png"
 
 const ServicePage = () => (
   <Layout headerClass={"header-area header-white"}>
@@ -41,7 +46,7 @@ const ServicePage = () => (
                   <div className="icon">
                     <i className="fa fa-chevron-right" />
                   </div>
-                  <h3>Mobility Services Strategy</h3>
+                  <h3>Web Development</h3>
                   <div className="text">
                     Mauris tellus sem, ultrices varius nisl at, convallis
                     iaculis mauris. Sed eget sem vitae purus tempus dignissim.
@@ -52,13 +57,13 @@ const ServicePage = () => (
             <div className="col-lg-4 col-md-6 col-sm-12">
               <Link to="blue-services-single.html" className="services-post">
                 <div className="img">
-                  <img src={img1} alt="" />
+                  <img src={img2} alt="" />
                 </div>
                 <div className="post-content">
                   <div className="icon">
                     <i className="fa fa-chevron-right" />
                   </div>
-                  <h3>Native App Development</h3>
+                  <h3>Software Development</h3>
                   <div className="text">
                     Cras imperdiet faucibus sem, a dignissim urna feugiat sed.
                     Interdum et malesuada fames ac ante ipsum primis.
@@ -69,13 +74,13 @@ const ServicePage = () => (
             <div className="col-lg-4 col-md-6 col-sm-12">
               <Link to="blue-services-single.html" className="services-post">
                 <div className="img">
-                  <img src={img1} alt="" />
+                  <img src={img3} alt="" />
                 </div>
                 <div className="post-content">
                   <div className="icon">
                     <i className="fa fa-chevron-right" />
                   </div>
-                  <h3>Design & User Experience</h3>
+                  <h3>App Development</h3>
                   <div className="text">
                     Quisque euismod nec lacus sit amet maximus. Ut convallis
                     sagittis lorem auctor malesuada. Morbi auctor.
@@ -86,13 +91,13 @@ const ServicePage = () => (
             <div className="col-lg-4 col-md-6 col-sm-12">
               <Link to="blue-services-single.html" className="services-post">
                 <div className="img">
-                  <img src={img1} alt="" />
+                  <img src={img4} alt="" />
                 </div>
                 <div className="post-content">
                   <div className="icon">
                     <i className="fa fa-chevron-right" />
                   </div>
-                  <h3>Maintenance and App Monitoring</h3>
+                  <h3>Bulk Messages</h3>
                   <div className="text">
                     Quisque euismod nec lacus sit amet maximus. Ut convallis
                     sagittis lorem auctor malesuada. Morbi auctor.
@@ -103,13 +108,13 @@ const ServicePage = () => (
             <div className="col-lg-4 col-md-6 col-sm-12">
               <Link to="blue-services-single.html" className="services-post">
                 <div className="img">
-                  <img src={img1} alt="" />
+                  <img src={img5} alt="" />
                 </div>
                 <div className="post-content">
                   <div className="icon">
                     <i className="fa fa-chevron-right" />
                   </div>
-                  <h3>User Definition and User Profiling</h3>
+                  <h3>Digital Marketing</h3>
                   <div className="text">
                     Quisque euismod nec lacus sit amet maximus. Ut convallis
                     sagittis lorem auctor malesuada. Morbi auctor.
@@ -120,13 +125,13 @@ const ServicePage = () => (
             <div className="col-lg-4 col-md-6 col-sm-12">
               <Link to="blue-services-single.html" className="services-post">
                 <div className="img">
-                  <img src={img1} alt="" />
+                  <img src={img6} alt="" />
                 </div>
                 <div className="post-content">
                   <div className="icon">
                     <i className="fa fa-chevron-right" />
                   </div>
-                  <h3>Graphic Assets for App Stores</h3>
+                  <h3>IVR (Toll-Free)</h3>
                   <div className="text">
                     Quisque euismod nec lacus sit amet maximus. Ut convallis
                     sagittis lorem auctor malesuada. Morbi auctor.

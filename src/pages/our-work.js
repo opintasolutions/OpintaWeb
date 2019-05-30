@@ -6,6 +6,15 @@ import SEO from "../components/seo"
 
 import img1 from "../assets/images/icons/apps/1.png"
 
+import "../style.css"
+
+import img11 from "../assets/images/icons/apps/1.jpg"
+import img12 from "../assets/images/icons/apps/2.png"
+import img13 from "../assets/images/icons/apps/3.jpg"
+import img14 from "../assets/images/icons/apps/4.jpg"
+import img15 from "../assets/images/icons/apps/5.png"
+import img16 from "../assets/images/icons/apps/6.png"
+
 const OurWorkPage = () => (
   <Layout headerClass={"header-area header-white"}>
     <SEO title="Work" />
@@ -37,10 +46,10 @@ const OurWorkPage = () => (
               <Link to="blue-app-single.html" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <img src={img1} alt="" />
+                    <img src={img11} className="img-apps-colored" alt="" />
                   </div>
                   <div className="app-title">
-                    <h5 className="title">Mobile Stats</h5>
+                    <h5 className="title">SMSA Infracon</h5>
                     <ul className="stars">
                       <li>
                         <i className="fa fa-star active" />
@@ -98,10 +107,10 @@ const OurWorkPage = () => (
               <Link to="blue-app-single.html" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <img src={img1} alt="" />
+                    <img src={img12} className="img-apps-colored" alt="" />
                   </div>
                   <div className="app-title">
-                    <h5 className="title">Online Shopping</h5>
+                    <h5 className="title">Extra Save</h5>
                     <ul className="stars">
                       <li>
                         <i className="fa fa-star active" />
@@ -162,10 +171,10 @@ const OurWorkPage = () => (
               <Link to="blue-app-single.html" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <img src={img1} alt="" />
+                    <img src={img13} className="img-apps-colored" alt="" />
                   </div>
                   <div className="app-title">
-                    <h5 className="title">Pocket Office</h5>
+                    <h5 className="title">Swaraj Khabar</h5>
                     <ul className="stars">
                       <li>
                         <i className="fa fa-star active" />
@@ -226,10 +235,10 @@ const OurWorkPage = () => (
               <Link to="blue-app-single.html" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <img src={img1} alt="" />
+                    <img src={img14} className="img-apps-colored" alt="" />
                   </div>
                   <div className="app-title">
-                    <h5 className="title">Awesome Mail</h5>
+                    <h5 className="title">Jankari Junction</h5>
                     <ul className="stars">
                       <li>
                         <i className="fa fa-star active" />
@@ -288,10 +297,10 @@ const OurWorkPage = () => (
               <Link to="blue-app-single.html" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <img src={img1} alt="" />
+                    <img src={img15} className="img-apps-colored" alt="" />
                   </div>
                   <div className="app-title">
-                    <h5 className="title">Coding Life</h5>
+                    <h5 className="title">Prayatna Eduventures</h5>
                     <ul className="stars">
                       <li>
                         <i className="fa fa-star active" />
@@ -350,10 +359,10 @@ const OurWorkPage = () => (
               <Link to="blue-app-single.html" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <img src={img1} alt="" />
+                    <img src={img16} className="img-apps-colored" alt="" />
                   </div>
                   <div className="app-title">
-                    <h5 className="title">Call Recorder</h5>
+                    <h5 className="title">KNS Restaurant</h5>
                     <ul className="stars">
                       <li>
                         <i className="fa fa-star active" />

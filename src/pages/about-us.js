@@ -54,7 +54,11 @@ const SecondPage = () => (
             <div className="col-lg-12">
               <div className="about">
                 <div className="about-image">
-                  <img src={about_overview} alt="" />
+                  <img
+                    src={about_overview}
+                    style={{ width: "100%", objectFit: "cover" }}
+                    alt=""
+                  />
                 </div>
                 <div className="about-text">
                   <h2>Overview</h2>

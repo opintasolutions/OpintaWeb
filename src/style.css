@@ -9,6 +9,10 @@
   width: 75px;
   margin-bottom: 0;
 }
+.img-apps-colored {
+  width: 75px;
+  margin-bottom: 0;
+}
 .img-apps:hover {
   filter: none;
 }

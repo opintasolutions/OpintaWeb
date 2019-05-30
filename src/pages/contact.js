@@ -29,8 +29,7 @@ const ContactPage = () => (
       </div>
       <div className="page-bottom">
         <div className="map-wrapper">
-          <div
-            className="map-canvas"
+          {/*          <div
             data-zoom="12"
             data-lat="-37.811085"
             data-lng="144.955631"
@@ -39,7 +38,20 @@ const ContactPage = () => (
             data-title="Gaus"
             data-icon-path="assets/images/marker-blue.png"
             data-content="455 West Orchard Street<br>Kings Mountain, NC 28086<br><br><Link to='mailto:support@yourbrand.com'>support@yourbrand.com</Link>"
-          />
+          /> */}
+          <div class="mapouter">
+            <div className="map-canvas">
+              <iframe
+                style={{ width: "100%", height: "100%" }}
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=opinta%20solutions&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              />
+            </div>
+          </div>
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -49,11 +61,10 @@ const ContactPage = () => (
                       <div className="item">
                         <i className="fa fa-location-arrow" />
                         <div className="txt">
-                          <span>
-                            455 West Orchard Street
-                            <br />
-                            Kings Mountain, NC 28086
-                          </span>
+                          GAT NO-123 H.NO-3131, 01,
+                          <br />
+                          Moshi - Alandi Rd, Tal Haveli, Alandi, Pune,
+                          Maharashtra 412105
                         </div>
                       </div>
                     </div>
@@ -62,9 +73,8 @@ const ContactPage = () => (
                         <i className="fa fa-phone" />
                         <div className="txt">
                           <span>
-                            (272) 211-7370
+                            +91 8448450015
                             <br />
-                            (524) 386-5730
                           </span>
                         </div>
                       </div>
@@ -75,12 +85,9 @@ const ContactPage = () => (
                         <div className="txt">
                           <span>
                             <Link to="mailto:support@yourbrand.com">
-                              support@yourbrand.com
+                              mail@opintasolutions.com
                             </Link>
                             <br />
-                            <Link to="mailto:info@yourbrand.com">
-                              info@yourbrand.com
-                            </Link>
                           </span>
                         </div>
                       </div>
@@ -98,9 +105,10 @@ const ContactPage = () => (
               <h5 className="mbottom-30">Get in touch</h5>
               <div className="contact-text">
                 <p>
-                  Orci varius natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mus. Etiam tempus magna vel turpis pharetra
-                  dictum.{" "}
+                  Got stuck contact us. What do you think let’s start now ? Get
+                  in touch with our team to find out how our services can help
+                  you transform and perform, and to discuss your business needs
+                  in detail.
                 </p>
                 <p>
                   Sed blandit tempus purus, sed sodales leo rutrum vel. Nam
