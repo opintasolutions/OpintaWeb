@@ -34,3 +34,11 @@
 .play-button:hover {
   color: #532ca2;
 }
+.wordpressBlogContent img {
+  width: 100%;
+  height: auto;
+}
+.wordpressBlogContent figure {
+  width: auto !important;
+  text-align: center;
+}

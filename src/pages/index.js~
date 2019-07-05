@@ -535,18 +535,13 @@ class IndexPage extends Component {
                       <img src={node.featured_media.localFile.url} alt="" />
                     </div>
                     <div className="post-content">
-                      <div className="date">
-                        {new Date(node.date).toDateString().slice(4)}
-                      </div>
+                      <div className="date">{node.date.slice(0, 10)}</div>
                       <h3>
                         <Link to="blue-blog-single.html">{node.title}</Link>
                       </h3>
-                      <div
-                        className="text"
-                        dangerouslySetInnerHTML={{ __html: node.excerpt }}
-                      />
+                      <div className="text">{node.excerpt}</div>
                       <Link
-                        to={`/post/${node.slug}`}
+                        to="blue-blog-single.html"
                         className="btn-primary-line"
                       >
                         Read More
