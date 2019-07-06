@@ -23,7 +23,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-      allWordpressCategory {
+      allWordpressCategory(filter: { count: { ne: 0 } }) {
         edges {
           node {
             slug
