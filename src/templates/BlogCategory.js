@@ -1,10 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const BlogPage = ({ data }) => {
+const BlogCategory = ({ data }) => {
   let blogs = data.allWordpressPost.edges
   let categories = data.allWordpressCategory.edges
   console.log(blogs)
@@ -86,7 +85,7 @@ const BlogPage = ({ data }) => {
                         </div>
                       </div>
                     ))}
-                    {blogs.slice(0, 4).map(({ node }) => (
+                    {blogs.map(({ node }) => (
                       <div className="col-lg-6 col-md-6 col-sm-12">
                         <div className="blog-post-thumb">
                           <div className="img">
@@ -138,40 +137,40 @@ const BlogPage = ({ data }) => {
                   </div>
                 </div>
                 {
-                  //  <nav>
-                  // <ul className="pagination justify-content-center">
-                  //   <li className="page-item">
-                  //     <Link
-                  //       className="page-link"
-                  //       href="#"
-                  //       aria-label="Previous"
-                  //     >
-                  //       <span aria-hidden="true">&laquo;</span>
-                  //       <span className="sr-only">Previous</span>
-                  //     </Link>
-                  //   </li>
-                  //   <li className="page-item">
-                  //     <Link className="page-link" href="#">
-                  //       1
-                  //     </Link>
-                  //   </li>
-                  //   <li className="page-item">
-                  //     <Link className="page-link" href="#">
-                  //       2
-                  //     </Link>
-                  //   </li>
-                  //   <li className="page-item">
-                  //     <Link className="page-link" href="#">
-                  //       3
-                  //     </Link>
-                  //   </li>
-                  //   <li className="page-item">
-                  //     <Link className="page-link" href="#" aria-label="Next">
-                  //       <span aria-hidden="true">&raquo;</span>
-                  //       <span className="sr-only">Next</span>
-                  //     </Link>
-                  //   </li>
-                  // </ul>
+                  // <nav>
+                  //   <ul className="pagination justify-content-center">
+                  //     <li className="page-item">
+                  //       <Link
+                  //         className="page-link"
+                  //         href="#"
+                  //         aria-label="Previous"
+                  //       >
+                  //         <span aria-hidden="true">&laquo;</span>
+                  //         <span className="sr-only">Previous</span>
+                  //       </Link>
+                  //     </li>
+                  //     <li className="page-item">
+                  //       <Link className="page-link" href="#">
+                  //         1
+                  //       </Link>
+                  //     </li>
+                  //     <li className="page-item">
+                  //       <Link className="page-link" href="#">
+                  //         2
+                  //       </Link>
+                  //     </li>
+                  //     <li className="page-item">
+                  //       <Link className="page-link" href="#">
+                  //         3
+                  //       </Link>
+                  //     </li>
+                  //     <li className="page-item">
+                  //       <Link className="page-link" href="#" aria-label="Next">
+                  //         <span aria-hidden="true">&raquo;</span>
+                  //         <span className="sr-only">Next</span>
+                  //       </Link>
+                  //     </li>
+                  //   </ul>
                   // </nav>
                 }
               </div>
@@ -189,6 +188,7 @@ const BlogPage = ({ data }) => {
                       //     </form>
                       //   </div>
                       // </div>
+                      //
                     }
                     <ul>
                       {categories.map(({ node }) => (
@@ -239,11 +239,14 @@ const BlogPage = ({ data }) => {
   )
 }
 
-export default BlogPage
+export default BlogCategory
 
 export const pageQuery = graphql`
-  query {
-    allWordpressPost(sort: { fields: [date] }) {
+  query($catId: String!) {
+    allWordpressPost(
+      filter: { categories: { elemMatch: { id: { eq: $catId } } } }
+      sort: { fields: [date] }
+    ) {
       edges {
         node {
           title

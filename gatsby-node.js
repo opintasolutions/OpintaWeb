@@ -11,6 +11,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   const BlogPostTemplate = path.resolve("./src/templates/BlogPost.js")
+  const BlogCategoryTemplate = path.resolve("./src/templates/BlogCategory.js")
 
   return graphql(`
     {
@@ -19,6 +20,14 @@ exports.createPages = ({ graphql, actions }) => {
           node {
             slug
             wordpress_id
+          }
+        }
+      }
+      allWordpressCategory {
+        edges {
+          node {
+            slug
+            id
           }
         }
       }
@@ -35,6 +44,17 @@ exports.createPages = ({ graphql, actions }) => {
         component: BlogPostTemplate,
         context: {
           id: post.node.wordpress_id,
+        },
+      })
+    })
+
+    const BlogCategories = result.data.allWordpressCategory.edges
+    BlogCategories.forEach(category => {
+      createPage({
+        path: `/category/${category.node.slug}`,
+        component: BlogCategoryTemplate,
+        context: {
+          catId: category.node.id,
         },
       })
     })
