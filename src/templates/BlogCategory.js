@@ -16,14 +16,17 @@ const BlogCategory = ({ data }) => {
             <div className="container">
               <div className="row">
                 <div className="col-lg-12">
-                  <h1>Blog</h1>
+                  <h1>{blogs[0].node.categories[0].name}</h1>
                 </div>
                 <div className="col-lg-12 text-center">
                   <ol className="breadcrumb">
                     <li>
-                      <Link to="blue-index.html">Home</Link>
+                      <Link to="/">Home</Link>
                     </li>
-                    <li className="active">Blog</li>
+                    <li>
+                      <Link to="/blog">Blog</Link>
+                    </li>
+                    <li className="active">Blog Category</li>
                   </ol>
                 </div>
               </div>
