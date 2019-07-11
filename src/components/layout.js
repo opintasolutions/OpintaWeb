@@ -64,11 +64,10 @@ const Layout = ({ children, headerClass }) => (
                     alt=""
                   />
                   <div className="text">
-                    Opinta Solutions provide the services that refer to the
-                    application of business and technical expertise to enable
-                    organisation in the creation, management and the
-                    optimization of or access to information and business
-                    processes.
+                    Opinta Solutions Pvt. Ltd. is certified by INVEST INDIA the
+                    "national investment promotion and facilitation agency" and
+                    endorsed by Centre for Innovation, Incubation and Linkages,
+                    Savitribai Phule Pune University.
                   </div>
                   <div
                     style={{
@@ -97,31 +96,31 @@ const Layout = ({ children, headerClass }) => (
                   </h5>
                   <ul className="footer-nav">
                     <li>
-                      <a href="#">
+                      <a href="/our-work">
                         <i className="fa fa-angle-right" />
                         <span>Our Work</span>
                       </a>{" "}
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/about">
                         <i className="fa fa-angle-right" />
                         <span>About Us</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/services">
                         <i className="fa fa-angle-right" />
                         <span>Services</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/blog">
                         <i className="fa fa-angle-right" />
                         <span>Blog</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/contact">
                         <i className="fa fa-angle-right" />
                         <span>Contact</span>
                       </a>
@@ -202,8 +201,7 @@ const Layout = ({ children, headerClass }) => (
               <div className="row">
                 <div className="col-lg-12">
                   <p className="copyright">
-                    &copy; {new Date().getFullYear()} Opinta Solutions. All
-                    Rights Reserved.
+                    &copy; {new Date().getFullYear()} Opinta Solutions Pvt. Ltd.
                   </p>
                 </div>
               </div>

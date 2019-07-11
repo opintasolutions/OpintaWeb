@@ -10,7 +10,7 @@ import {
 } from "pure-react-carousel"
 import "pure-react-carousel/dist/react-carousel.es.css"
 
-import ScrollAnimation from "react-animate-on-scroll"
+import { Fade } from "react-reveal"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -39,12 +39,15 @@ class IndexPage extends Component {
     this.state = {
       headerClass: "header-area",
       modalIsOpen: false,
+      width: 0,
     }
     this.handleScroll = this.handleScroll.bind(this)
+    this.updateWindowWidth = this.updateWindowWidth.bind(this)
     this.openModal = this.openModal.bind(this)
   }
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll)
+    window.addEventListener("resize", this.updateWindowWidth)
   }
   componentWillUnmount() {
     window.removeEventListener("scroll", this.handleScroll)
@@ -58,6 +61,9 @@ class IndexPage extends Component {
     ) {
       this.setState({ headerClass: "header-area" })
     }
+  }
+  updateWindowWidth = ev => {
+    this.setState({ width: window.innerWidth })
   }
   openModal() {
     this.setState({ modalIsOpen: true })
@@ -155,7 +161,7 @@ class IndexPage extends Component {
                     research and experience in each of our clients industries
                     and on their projects.
                   </p>
-                  <Link className="btn-white-line" to="#">
+                  <Link className="btn-white-line" to="/contact">
                     CONTACT NOW
                   </Link>
                 </div>
@@ -226,11 +232,7 @@ class IndexPage extends Component {
               <div className="offset-lg-1 col-lg-6 col-md-12 col-sm-12 align-self-center">
                 <div className="row">
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <ScrollAnimation
-                      duration={10}
-                      animateIn="fadeInUp"
-                      animateOnce={true}
-                    >
+                    <Fade bottom>
                       <Link
                         to="blue-services-single.html"
                         className="home-services-item"
@@ -245,12 +247,8 @@ class IndexPage extends Component {
                           open, flexible and immediately accesible.
                         </p>
                       </Link>
-                    </ScrollAnimation>
-                    <ScrollAnimation
-                      duration={10}
-                      animateIn="fadeInUp"
-                      animateOnce={true}
-                    >
+                    </Fade>
+                    <Fade bottom>
                       <Link
                         to="blue-services-single.html"
                         className="home-services-item"
@@ -265,14 +263,10 @@ class IndexPage extends Component {
                           of your business and tools to help it grow.
                         </p>
                       </Link>
-                    </ScrollAnimation>
+                    </Fade>
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <ScrollAnimation
-                      duration={10}
-                      animateIn="fadeInUp"
-                      animateOnce={true}
-                    >
+                    <Fade bottom>
                       <Link
                         to="blue-services-single.html"
                         className="home-services-item"
@@ -287,12 +281,8 @@ class IndexPage extends Component {
                           each client and every platform.
                         </p>
                       </Link>
-                    </ScrollAnimation>
-                    <ScrollAnimation
-                      duration={10}
-                      animateIn="fadeInUp"
-                      animateOnce={true}
-                    >
+                    </Fade>
+                    <Fade bottom>
                       <Link
                         to="blue-services-single.html"
                         className="home-services-item"
@@ -307,7 +297,7 @@ class IndexPage extends Component {
                           and increase your consumer base.
                         </p>
                       </Link>
-                    </ScrollAnimation>
+                    </Fade>
                   </div>
                 </div>
               </div>
@@ -337,50 +327,57 @@ class IndexPage extends Component {
               </div>
               <div className="col-lg-7 col-md-12 col-sm-12 col-xs-12 align-self-center">
                 <ul className="features">
-                  <li data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s">
-                    <div className="count">
-                      <span>
-                        <i className="fa fa-bookmark-o" />
-                      </span>
-                    </div>
-                    <div className="text">
-                      <h5 className="title">Quality Standards</h5>
-                      <p>
-                        At Opinta we give more emphasis to the quality of every
-                        product with the idea to be remembered for quality.
-                      </p>
-                    </div>
-                  </li>
-                  <li data-scroll-reveal="enter bottom move 30px over 0.6s after 0.3s">
-                    <div className="count">
-                      <span>
-                        <i className="fa fa-clock-o" />
-                      </span>
-                    </div>
-                    <div className="text">
-                      <h5 className="title">Timely Completion</h5>
-                      <p>
-                        We believe deliverence is the key to successful business
-                        relation. We stand for quality products delivered on
-                        time.
-                      </p>
-                    </div>
-                  </li>
-                  <li data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
-                    <div className="count">
-                      <span>
-                        <i className="fa fa-heart-o" />
-                      </span>
-                    </div>
-                    <div className="text">
-                      <h5 className="title">Trusted Resources</h5>
-                      <p>
-                        We use an array of most reliable resources for making
-                        robust applications that approve of our quality and
-                        standards.
-                      </p>
-                    </div>
-                  </li>
+                  <Fade bottom>
+                    <li>
+                      <div className="count">
+                        <span>
+                          <i className="fa fa-bookmark-o" />
+                        </span>
+                      </div>
+                      <div className="text">
+                        <h5 className="title">Quality Standards</h5>
+                        <p>
+                          At Opinta we give more emphasis to the quality of
+                          every product with the idea to be remembered for
+                          quality.
+                        </p>
+                      </div>
+                    </li>
+                  </Fade>
+                  <Fade bottom>
+                    <li>
+                      <div className="count">
+                        <span>
+                          <i className="fa fa-clock-o" />
+                        </span>
+                      </div>
+                      <div className="text">
+                        <h5 className="title">Timely Completion</h5>
+                        <p>
+                          We believe deliverence is the key to successful
+                          business relation. We stand for quality products
+                          delivered on time.
+                        </p>
+                      </div>
+                    </li>
+                  </Fade>
+                  <Fade bottom>
+                    <li>
+                      <div className="count">
+                        <span>
+                          <i className="fa fa-heart-o" />
+                        </span>
+                      </div>
+                      <div className="text">
+                        <h5 className="title">Trusted Resources</h5>
+                        <p>
+                          We use an array of most reliable resources for making
+                          robust applications that approve of our quality and
+                          standards.
+                        </p>
+                      </div>
+                    </li>
+                  </Fade>
                 </ul>
               </div>
             </div>
@@ -403,95 +400,123 @@ class IndexPage extends Component {
                 </div>
               </div>
             </div>
-            <div className="row">
-              <div className="col-lg-1 col-md-6 col-sm-6 col-xs-12">
-                <div className="team-item" />
-              </div>
-              <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <div className="team-item">
-                  <div className="header">
-                    <div className="img">
-                      <img src={img3} alt="" />
+            <Fade bottom>
+              <div className="row">
+                <div className="col-lg-1 col-md-6 col-sm-6 col-xs-12">
+                  <div className="team-item" />
+                </div>
+                <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                  <div className="team-item">
+                    <div className="header">
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                        }}
+                      >
+                        <img
+                          style={{ margin: "16px", borderRadius: "8px" }}
+                          src={img3}
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className="info"
+                        style={{ margin: "0", textAlign: "center" }}
+                      >
+                        <strong>Lance Bogrol</strong>
+                        <span>Visual Designer</span>
+                      </div>
                     </div>
-                    <div className="info">
-                      <strong>Lance Bogrol</strong>
-                      <span>Visual Designer</span>
+                    <ul className="social">
+                      <li>
+                        <Link to="#">
+                          <i className="fa fa-facebook" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <i className="fa fa-twitter" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <i className="fa fa-linkedin" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <i className="fa fa-github" />
+                        </Link>
+                      </li>
+                    </ul>
+                    <div className="body">
+                      Proin arcu ligula, malesuada id tincidunt laoreet,
+                      facilisis at justo. Sed at lorem.
                     </div>
-                  </div>
-                  <ul className="social">
-                    <li>
-                      <Link to="#">
-                        <i className="fa fa-facebook" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="#">
-                        <i className="fa fa-twitter" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="#">
-                        <i className="fa fa-linkedin" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="#">
-                        <i className="fa fa-github" />
-                      </Link>
-                    </li>
-                  </ul>
-                  <div className="body">
-                    Proin arcu ligula, malesuada id tincidunt laoreet, facilisis
-                    at justo. Sed at lorem.
                   </div>
                 </div>
-              </div>
-              <div className="col-lg-2 col-md-6 col-sm-6 col-xs-12">
-                <div className="team-item" />
-              </div>
-              <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <div className="team-item">
-                  <div className="header">
-                    <div className="img">
-                      <img src={img3} alt="" />
+                <div className="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                  <div className="team-item" />
+                </div>
+                <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                  <div className="team-item">
+                    <div className="header">
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                        }}
+                      >
+                        <img
+                          style={{ margin: "16px", borderRadius: "8px" }}
+                          src={img3}
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className="info"
+                        style={{ margin: "0", textAlign: "center" }}
+                      >
+                        <strong>Valent Morose</strong>
+                        <span>Android Developer</span>
+                      </div>
                     </div>
-                    <div className="info">
-                      <strong>Valent Morose</strong>
-                      <span>Android Developer</span>
+                    <ul className="social">
+                      <li>
+                        <Link to="#">
+                          <i className="fa fa-facebook" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <i className="fa fa-twitter" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <i className="fa fa-linkedin" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <i className="fa fa-github" />
+                        </Link>
+                      </li>
+                    </ul>
+                    <div className="body">
+                      Proin arcu ligula, malesuada id tincidunt laoreet,
+                      facilisis at justo. Sed at lorem.
                     </div>
-                  </div>
-                  <ul className="social">
-                    <li>
-                      <Link to="#">
-                        <i className="fa fa-facebook" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="#">
-                        <i className="fa fa-twitter" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="#">
-                        <i className="fa fa-linkedin" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="#">
-                        <i className="fa fa-github" />
-                      </Link>
-                    </li>
-                  </ul>
-                  <div className="body">
-                    Proin arcu ligula, malesuada id tincidunt laoreet, facilisis
-                    at justo. Sed at lorem.
                   </div>
                 </div>
+                <div className="col-lg-1 col-md-6 col-sm-6 col-xs-12">
+                  <div className="team-item" />
+                </div>
               </div>
-              <div className="col-lg-1 col-md-6 col-sm-6 col-xs-12">
-                <div className="team-item" />
-              </div>
-            </div>
+            </Fade>
           </div>
         </section>
         <section class="section pbottom-70 background">
@@ -548,7 +573,7 @@ class IndexPage extends Component {
                 <div className="center-text">
                   <p>
                     Blogs at Opinta are powered by partners in "tech blogging".{" "}
-                    <a target="_blank" href="learntogrow.in">
+                    <a target="_blank" href="https://learntogrow.in">
                       learntogrow.in
                     </a>
                   </p>
