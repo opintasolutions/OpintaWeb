@@ -10,6 +10,8 @@ import {
 } from "pure-react-carousel"
 import "pure-react-carousel/dist/react-carousel.es.css"
 
+import ScrollAnimation from "react-animate-on-scroll"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ModalVideo from "react-modal-video"
@@ -224,60 +226,88 @@ class IndexPage extends Component {
               <div className="offset-lg-1 col-lg-6 col-md-12 col-sm-12 align-self-center">
                 <div className="row">
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <Link
-                      to="blue-services-single.html"
-                      className="home-services-item"
-                      data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s"
+                    <ScrollAnimation
+                      duration={10}
+                      animateIn="fadeInUp"
+                      animateOnce={true}
                     >
-                      <i className="fa fa-object-ungroup" />
-                      <h5 className="services-title">
-                        Web Design & Development
-                      </h5>
-                      <p>
-                        We make websites and web applications that are most
-                        open, flexible and immediately accesible.
-                      </p>
-                    </Link>
-                    <Link
-                      to="blue-services-single.html"
-                      className="home-services-item"
-                      data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s"
+                      <Link
+                        to="blue-services-single.html"
+                        className="home-services-item"
+                        data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s"
+                      >
+                        <i className="fa fa-object-ungroup" />
+                        <h5 className="services-title">
+                          Web Design & Development
+                        </h5>
+                        <p>
+                          We make websites and web applications that are most
+                          open, flexible and immediately accesible.
+                        </p>
+                      </Link>
+                    </ScrollAnimation>
+                    <ScrollAnimation
+                      duration={10}
+                      animateIn="fadeInUp"
+                      animateOnce={true}
                     >
-                      <i className="fa fa-connectdevelop" />
-                      <h5 className="services-title">Native App Development</h5>
-                      <p>
-                        We create native custom softwares that fit the needs of
-                        your business and tools to help it grow.
-                      </p>
-                    </Link>
+                      <Link
+                        to="blue-services-single.html"
+                        className="home-services-item"
+                        data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s"
+                      >
+                        <i className="fa fa-connectdevelop" />
+                        <h5 className="services-title">
+                          Native App Development
+                        </h5>
+                        <p>
+                          We create native custom softwares that fit the needs
+                          of your business and tools to help it grow.
+                        </p>
+                      </Link>
+                    </ScrollAnimation>
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <Link
-                      to="blue-services-single.html"
-                      className="home-services-item"
-                      data-scroll-reveal="enter bottom move 30px over 0.6s after 0.3s"
+                    <ScrollAnimation
+                      duration={10}
+                      animateIn="fadeInUp"
+                      animateOnce={true}
                     >
-                      <i className="fa fa-clone" />
-                      <h5 className="services-title">Mobile App Development</h5>
-                      <p>
-                        Our teams rapidly deploy customized mobile apps for each
-                        client and every platform.
-                      </p>
-                    </Link>
-                    <Link
-                      to="blue-services-single.html"
-                      className="home-services-item"
-                      data-scroll-reveal="enter bottom move 30px over 0.6s after 0.3s"
+                      <Link
+                        to="blue-services-single.html"
+                        className="home-services-item"
+                        data-scroll-reveal="enter bottom move 30px over 0.6s after 0.3s"
+                      >
+                        <i className="fa fa-clone" />
+                        <h5 className="services-title">
+                          Mobile App Development
+                        </h5>
+                        <p>
+                          Our teams rapidly deploy customized mobile apps for
+                          each client and every platform.
+                        </p>
+                      </Link>
+                    </ScrollAnimation>
+                    <ScrollAnimation
+                      duration={10}
+                      animateIn="fadeInUp"
+                      animateOnce={true}
                     >
-                      <i className="fa fa-line-chart" />
-                      <h5 className="services-title">
-                        Digital & Social <br /> Media Marketing
-                      </h5>
-                      <p>
-                        Our experts spread your words across all media outlets
-                        and increase your consumer base.
-                      </p>
-                    </Link>
+                      <Link
+                        to="blue-services-single.html"
+                        className="home-services-item"
+                        data-scroll-reveal="enter bottom move 30px over 0.6s after 0.3s"
+                      >
+                        <i className="fa fa-line-chart" />
+                        <h5 className="services-title">
+                          Digital & Social <br /> Media Marketing
+                        </h5>
+                        <p>
+                          Our experts spread your words across all media outlets
+                          and increase your consumer base.
+                        </p>
+                      </Link>
+                    </ScrollAnimation>
                   </div>
                 </div>
               </div>
