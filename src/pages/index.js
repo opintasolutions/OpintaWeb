@@ -72,6 +72,19 @@ class IndexPage extends Component {
     let testimonials = [
       <div class="team-item testimonial">
         <div class="header text-center mt-10">
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <img
+              style={{ marginTop: "16px", borderRadius: "8px" }}
+              src={img3}
+              alt=""
+            />
+          </div>
           <div class="info">
             <strong>Anil Pandey</strong>
             <span>Jankari Junctions</span>
@@ -83,12 +96,25 @@ class IndexPage extends Component {
             Thanks for the fantastic job on our site www.jankarijunction.com it
             was pleasure working with Opinta Solutions as they worked closely
             with us every step of the way, and we valued their creative input
-            that exceeded our expectations.{" "}
+            that exceeded our expectations.
           </p>
         </div>
       </div>,
       <div class="team-item testimonial">
         <div class="header text-center mt-10">
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <img
+              style={{ marginTop: "16px", borderRadius: "8px" }}
+              src={img3}
+              alt=""
+            />
+          </div>
           <div class="info">
             <strong>Raju Singh</strong>
             <span>Patanjali Dealer</span>
@@ -106,6 +132,19 @@ class IndexPage extends Component {
       </div>,
       <div class="team-item testimonial">
         <div class="header text-center mt-10">
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <img
+              style={{ marginTop: "16px", borderRadius: "8px" }}
+              src={img3}
+              alt=""
+            />
+          </div>
           <div class="info">
             <strong>Kiran Soni</strong>
             <span>KNS Restaurants</span>
@@ -123,6 +162,19 @@ class IndexPage extends Component {
       </div>,
       <div class="team-item testimonial">
         <div class="header text-center mt-10">
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <img
+              style={{ marginTop: "16px", borderRadius: "8px" }}
+              src={img3}
+              alt=""
+            />
+          </div>
           <div class="info">
             <strong>Sunil Kumar</strong>
             <span>Prayatna Eduventures</span>
@@ -174,32 +226,32 @@ class IndexPage extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="apps">
-                  <Link to="blue-app-single.html" className="app-item">
+                  <Link to="#" className="app-item">
                     <div className="icon allign-center">
                       <img src={img11} className="img-fluid img-apps" alt="" />
                     </div>
                   </Link>
-                  <Link to="blue-app-single.html" className="app-item">
+                  <Link to="#" className="app-item">
                     <div className="icon allign-center">
                       <img src={img12} className="img-fluid img-apps" alt="" />
                     </div>
                   </Link>
-                  <Link to="blue-app-single.html" className="app-item">
+                  <Link to="#" className="app-item">
                     <div className="icon allign-center">
                       <img src={img13} className="img-fluid img-apps" alt="" />
                     </div>
                   </Link>
-                  <Link to="blue-app-single.html" className="app-item">
+                  <Link to="#" className="app-item">
                     <div className="icon allign-center">
                       <img src={img14} className="img-fluid img-apps" alt="" />
                     </div>
                   </Link>
-                  <Link to="blue-app-single.html" className="app-item">
+                  <Link to="#" className="app-item">
                     <div className="icon allign-center">
                       <img src={img15} className="img-fluid img-apps" alt="" />
                     </div>
                   </Link>
-                  <Link to="blue-app-single.html" className="app-item">
+                  <Link to="#" className="app-item">
                     <div className="icon allign-center">
                       <img src={img16} className="img-fluid img-apps" alt="" />
                     </div>
@@ -225,7 +277,7 @@ class IndexPage extends Component {
                     processes.
                   </p>
                 </div>
-                <Link to="#" className="btn-primary-line">
+                <Link to="/services" className="btn-primary-line">
                   Services
                 </Link>
               </div>
@@ -234,33 +286,37 @@ class IndexPage extends Component {
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <Fade bottom>
                       <Link
-                        to="blue-services-single.html"
+                        to="#"
                         className="home-services-item"
                         data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s"
                       >
                         <i className="fa fa-object-ungroup" />
                         <h5 className="services-title">
-                          Web Design & Development
+                          Web Design &<br /> Development
                         </h5>
                         <p>
-                          We make websites and web applications that are most
-                          open, flexible and immediately accesible.
+                          {
+                            // We make websites and web applications that are most
+                            // open, flexible and immediately accesible.
+                          }
                         </p>
                       </Link>
                     </Fade>
                     <Fade bottom>
                       <Link
-                        to="blue-services-single.html"
+                        to="#"
                         className="home-services-item"
                         data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s"
                       >
                         <i className="fa fa-connectdevelop" />
                         <h5 className="services-title">
-                          Native App Development
+                          UI/UX Design <br />& Development
                         </h5>
                         <p>
-                          We create native custom softwares that fit the needs
-                          of your business and tools to help it grow.
+                          {
+                            // We create native custom softwares that fit the needs
+                            // of your business and tools to help it grow.
+                          }
                         </p>
                       </Link>
                     </Fade>
@@ -268,23 +324,26 @@ class IndexPage extends Component {
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <Fade bottom>
                       <Link
-                        to="blue-services-single.html"
+                        to="#"
                         className="home-services-item"
                         data-scroll-reveal="enter bottom move 30px over 0.6s after 0.3s"
                       >
                         <i className="fa fa-clone" />
                         <h5 className="services-title">
-                          Mobile App Development
+                          Mobile App
+                          <br /> Development
                         </h5>
                         <p>
-                          Our teams rapidly deploy customized mobile apps for
-                          each client and every platform.
+                          {
+                            // Our teams rapidly deploy customized mobile apps for
+                            // each client and every platform.
+                          }
                         </p>
                       </Link>
                     </Fade>
                     <Fade bottom>
                       <Link
-                        to="blue-services-single.html"
+                        to="#"
                         className="home-services-item"
                         data-scroll-reveal="enter bottom move 30px over 0.6s after 0.3s"
                       >
@@ -293,8 +352,10 @@ class IndexPage extends Component {
                           Digital & Social <br /> Media Marketing
                         </h5>
                         <p>
-                          Our experts spread your words across all media outlets
-                          and increase your consumer base.
+                          {
+                            // Our experts spread your words across all media outlets
+                            // and increase your consumer base.
+                          }
                         </p>
                       </Link>
                     </Fade>
@@ -432,22 +493,7 @@ class IndexPage extends Component {
                     <ul className="social">
                       <li>
                         <Link to="#">
-                          <i className="fa fa-facebook" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="#">
-                          <i className="fa fa-twitter" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="#">
                           <i className="fa fa-linkedin" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="#">
-                          <i className="fa fa-github" />
                         </Link>
                       </li>
                     </ul>
@@ -487,22 +533,7 @@ class IndexPage extends Component {
                     <ul className="social">
                       <li>
                         <Link to="#">
-                          <i className="fa fa-facebook" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="#">
-                          <i className="fa fa-twitter" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="#">
                           <i className="fa fa-linkedin" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="#">
-                          <i className="fa fa-github" />
                         </Link>
                       </li>
                     </ul>
@@ -594,7 +625,7 @@ class IndexPage extends Component {
                         {new Date(node.date).toDateString().slice(4)}
                       </div>
                       <h3>
-                        <Link to="blue-blog-single.html">{node.title}</Link>
+                        <Link to={`/post/${node.slug}`}>{node.title}</Link>
                       </h3>
                       <div
                         className="text"

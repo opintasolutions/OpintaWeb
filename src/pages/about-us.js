@@ -39,7 +39,7 @@ const SecondPage = () => (
               <div className="col-lg-12 text-center">
                 <ol className="breadcrumb">
                   <li>
-                    <Link to="blue-index.html">Home</Link>
+                    <Link to="/">Home</Link>
                   </li>
                   <li className="active">About Us</li>
                 </ol>
@@ -56,7 +56,11 @@ const SecondPage = () => (
                 <div className="about-image">
                   <img
                     src={about_overview}
-                    style={{ width: "100%", objectFit: "cover" }}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
                     alt=""
                   />
                 </div>
@@ -74,7 +78,15 @@ const SecondPage = () => (
               </div>
               <div className="about left mbottom-30">
                 <div className="about-image">
-                  <img src={about_mission} alt="" />
+                  <img
+                    src={about_mission}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                    alt=""
+                  />
                 </div>
                 <div className="about-text">
                   <h2>Mission</h2>
@@ -88,7 +100,15 @@ const SecondPage = () => (
               </div>
               <div className="about">
                 <div className="about-image">
-                  <img src={about_vision} alt="" />
+                  <img
+                    src={about_vision}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                    alt=""
+                  />
                 </div>
                 <div className="about-text">
                   <h2>Vision</h2>
@@ -102,7 +122,15 @@ const SecondPage = () => (
               </div>
               <div className="about left mbottom-30">
                 <div className="about-image">
-                  <img src={about_services} alt="" />
+                  <img
+                    src={about_services}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                    alt=""
+                  />
                 </div>
                 <div className="about-text">
                   <h2>Services</h2>
@@ -137,7 +165,7 @@ const SecondPage = () => (
                 <Link
                   className="btn-white-line"
                   style={{ marginBottom: "30px" }}
-                  href="#"
+                  to="/contact"
                 >
                   Get Started Now
                 </Link>

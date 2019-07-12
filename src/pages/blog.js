@@ -22,7 +22,7 @@ const BlogPage = ({ data }) => {
                 <div className="col-lg-12 text-center">
                   <ol className="breadcrumb">
                     <li>
-                      <Link to="blue-index.html">Home</Link>
+                      <Link to="/">Home</Link>
                     </li>
                     <li className="active">Blog</li>
                   </ol>
@@ -68,7 +68,7 @@ const BlogPage = ({ data }) => {
                               </li>
                             </ul>
                             <h3>
-                              <Link to="blue-blog-single.html">
+                              <Link to={`/post/${node.slug}`}>
                                 {node.title}
                               </Link>
                             </h3>
@@ -116,7 +116,7 @@ const BlogPage = ({ data }) => {
                               </li>
                             </ul>
                             <h3>
-                              <Link to="blue-blog-single.html">
+                              <Link to={`/post/${node.slug}`}>
                                 {node.title}
                               </Link>
                             </h3>

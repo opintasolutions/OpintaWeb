@@ -21,13 +21,13 @@ const Header = ({ siteTitle, headerClass }) => (
                 <img
                   className="light-logo"
                   src={logo}
-                  style={{ width: "90px" }}
+                  style={{ width: "120px" }}
                   alt="Gaus"
                 />
                 <img
                   className="dark-logo"
                   src={logoB}
-                  style={{ width: "90px" }}
+                  style={{ width: "120px" }}
                   alt="Gaus"
                 />
               </div>

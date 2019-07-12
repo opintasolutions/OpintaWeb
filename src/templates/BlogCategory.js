@@ -70,7 +70,7 @@ const BlogCategory = ({ data }) => {
                               </li>
                             </ul>
                             <h3>
-                              <Link to="blue-blog-single.html">
+                              <Link to={`/post/${node.slug}`}>
                                 {node.title}
                               </Link>
                             </h3>
@@ -118,7 +118,7 @@ const BlogCategory = ({ data }) => {
                               </li>
                             </ul>
                             <h3>
-                              <Link to="blue-blog-single.html">
+                              <Link to={`/post/${node.slug}`}>
                                 {node.title}
                               </Link>
                             </h3>

@@ -50,24 +50,26 @@ const OurWorkPage = () => (
                   </div>
                   <div className="app-title">
                     <h5 className="title">SMSA Infracon</h5>
-                    <ul className="stars">
-                      <li>
-                        <i className="fa fa-star active" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star active" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star active" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>(144)</li>
-                    </ul>
+                    {
+                      // <ul className="stars">
+                      //   <li>
+                      //     <i className="fa fa-star active" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star active" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star active" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star" />
+                      //   </li>
+                      //   <li>(144)</li>
+                      // </ul>
+                    }
                   </div>
                 </div>
                 <div className="app-content">
@@ -76,30 +78,32 @@ const OurWorkPage = () => (
                     urna sed odio varius vehicula. Aenean tincidunt venenatis
                     ex.
                   </div>
-                  <ul className="app-table">
-                    <li>
-                      <div className="table-title">Size</div>
-                      <div className="table-content">16.8 MB</div>
-                    </li>
-                    <li>
-                      <div className="table-title">Category</div>
-                      <div className="table-content">Office</div>
-                    </li>
-                    <li>
-                      <div className="table-title">Languages</div>
-                      <div className="table-content">
-                        English, Arabic, Croatian, Czech, Danish, Dutch
-                      </div>
-                    </li>
-                    <li>
-                      <div className="table-title">Age Rating</div>
-                      <div className="table-content">Rated 12+</div>
-                    </li>
-                    <li>
-                      <div className="table-title">Price</div>
-                      <div className="table-content">Free</div>
-                    </li>
-                  </ul>
+                  {
+                    // <ul className="app-table">
+                    //   <li>
+                    //     <div className="table-title">Size</div>
+                    //     <div className="table-content">16.8 MB</div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Category</div>
+                    //     <div className="table-content">Office</div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Languages</div>
+                    //     <div className="table-content">
+                    //       English, Arabic, Croatian, Czech, Danish, Dutch
+                    //     </div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Age Rating</div>
+                    //     <div className="table-content">Rated 12+</div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Price</div>
+                    //     <div className="table-content">Free</div>
+                    //   </li>
+                    // </ul>
+                  }
                 </div>
               </Link>
             </div>
@@ -111,24 +115,26 @@ const OurWorkPage = () => (
                   </div>
                   <div className="app-title">
                     <h5 className="title">Extra Save</h5>
-                    <ul className="stars">
-                      <li>
-                        <i className="fa fa-star active" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star active" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star active" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>(72)</li>
-                    </ul>
+                    {
+                      // <ul className="stars">
+                      //   <li>
+                      //     <i className="fa fa-star active" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star active" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star active" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star" />
+                      //   </li>
+                      //   <li>(72)</li>
+                      // </ul>
+                    }
                   </div>
                 </div>
                 <div className="app-content">
@@ -137,32 +143,34 @@ const OurWorkPage = () => (
                     urna sed odio varius vehicula. Aenean tincidunt venenatis
                     ex.
                   </div>
-                  <ul className="app-table">
-                    <li>
-                      <div className="table-title">Size</div>
-                      <div className="table-content">23.2 MB</div>
-                    </li>
-                    <li>
-                      <div className="table-title">Category</div>
-                      <div className="table-content">e-Commerce</div>
-                    </li>
-                    <li>
-                      <div className="table-title">Languages</div>
-                      <div className="table-content">
-                        English, Arabic, Croatian, Czech, Danish, Dutch
-                      </div>
-                    </li>
-                    <li>
-                      <div className="table-title">Age Rating</div>
-                      <div className="table-content">Rated 12+</div>
-                    </li>
-                    <li>
-                      <div className="table-title">Price</div>
-                      <div className="table-content">
-                        <div className="price">$9.99</div>
-                      </div>
-                    </li>
-                  </ul>
+                  {
+                    // <ul className="app-table">
+                    //   <li>
+                    //     <div className="table-title">Size</div>
+                    //     <div className="table-content">23.2 MB</div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Category</div>
+                    //     <div className="table-content">e-Commerce</div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Languages</div>
+                    //     <div className="table-content">
+                    //       English, Arabic, Croatian, Czech, Danish, Dutch
+                    //     </div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Age Rating</div>
+                    //     <div className="table-content">Rated 12+</div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Price</div>
+                    //     <div className="table-content">
+                    //       <div className="price">$9.99</div>
+                    //     </div>
+                    //   </li>
+                    // </ul>
+                  }
                 </div>
               </Link>
             </div>
@@ -175,24 +183,26 @@ const OurWorkPage = () => (
                   </div>
                   <div className="app-title">
                     <h5 className="title">Swaraj Khabar</h5>
-                    <ul className="stars">
-                      <li>
-                        <i className="fa fa-star active" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star active" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star " />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>(21)</li>
-                    </ul>
+                    {
+                      // <ul className="stars">
+                      //   <li>
+                      //     <i className="fa fa-star active" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star active" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star " />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star" />
+                      //   </li>
+                      //   <li>(21)</li>
+                      // </ul>
+                    }
                   </div>
                 </div>
                 <div className="app-content">
@@ -201,32 +211,34 @@ const OurWorkPage = () => (
                     urna sed odio varius vehicula. Aenean tincidunt venenatis
                     ex.
                   </div>
-                  <ul className="app-table">
-                    <li>
-                      <div className="table-title">Size</div>
-                      <div className="table-content">168.8 MB</div>
-                    </li>
-                    <li>
-                      <div className="table-title">Category</div>
-                      <div className="table-content">Office</div>
-                    </li>
-                    <li>
-                      <div className="table-title">Languages</div>
-                      <div className="table-content">
-                        English, Arabic, Croatian, Czech, Danish, Dutch
-                      </div>
-                    </li>
-                    <li>
-                      <div className="table-title">Age Rating</div>
-                      <div className="table-content">Rated 12+</div>
-                    </li>
-                    <li>
-                      <div className="table-title">Price</div>
-                      <div className="table-content">
-                        <div className="price">$1.99</div>
-                      </div>
-                    </li>
-                  </ul>
+                  {
+                    // <ul className="app-table">
+                    //   <li>
+                    //     <div className="table-title">Size</div>
+                    //     <div className="table-content">168.8 MB</div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Category</div>
+                    //     <div className="table-content">Office</div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Languages</div>
+                    //     <div className="table-content">
+                    //       English, Arabic, Croatian, Czech, Danish, Dutch
+                    //     </div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Age Rating</div>
+                    //     <div className="table-content">Rated 12+</div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Price</div>
+                    //     <div className="table-content">
+                    //       <div className="price">$1.99</div>
+                    //     </div>
+                    //   </li>
+                    // </ul>
+                  }
                 </div>
               </Link>
             </div>
@@ -239,24 +251,26 @@ const OurWorkPage = () => (
                   </div>
                   <div className="app-title">
                     <h5 className="title">Jankari Junction</h5>
-                    <ul className="stars">
-                      <li>
-                        <i className="fa fa-star active" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star active" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star active" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>(123)</li>
-                    </ul>
+                    {
+                      // <ul className="stars">
+                      //   <li>
+                      //     <i className="fa fa-star active" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star active" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star active" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star" />
+                      //   </li>
+                      //   <li>(123)</li>
+                      // </ul>
+                    }
                   </div>
                 </div>
                 <div className="app-content">
@@ -265,30 +279,32 @@ const OurWorkPage = () => (
                     urna sed odio varius vehicula. Aenean tincidunt venenatis
                     ex.
                   </div>
-                  <ul className="app-table">
-                    <li>
-                      <div className="table-title">Size</div>
-                      <div className="table-content">16.8 MB</div>
-                    </li>
-                    <li>
-                      <div className="table-title">Category</div>
-                      <div className="table-content">Tools</div>
-                    </li>
-                    <li>
-                      <div className="table-title">Languages</div>
-                      <div className="table-content">
-                        English, Arabic, Croatian, Czech, Danish, Dutch
-                      </div>
-                    </li>
-                    <li>
-                      <div className="table-title">Age Rating</div>
-                      <div className="table-content">Rated 12+</div>
-                    </li>
-                    <li>
-                      <div className="table-title">Price</div>
-                      <div className="table-content">Free</div>
-                    </li>
-                  </ul>
+                  {
+                    // <ul className="app-table">
+                    //   <li>
+                    //     <div className="table-title">Size</div>
+                    //     <div className="table-content">16.8 MB</div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Category</div>
+                    //     <div className="table-content">Tools</div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Languages</div>
+                    //     <div className="table-content">
+                    //       English, Arabic, Croatian, Czech, Danish, Dutch
+                    //     </div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Age Rating</div>
+                    //     <div className="table-content">Rated 12+</div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Price</div>
+                    //     <div className="table-content">Free</div>
+                    //   </li>
+                    // </ul>
+                  }
                 </div>
               </Link>
             </div>
@@ -301,24 +317,26 @@ const OurWorkPage = () => (
                   </div>
                   <div className="app-title">
                     <h5 className="title">Prayatna Eduventures</h5>
-                    <ul className="stars">
-                      <li>
-                        <i className="fa fa-star active" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star active" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star active" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star active" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star active" />
-                      </li>
-                      <li>(374)</li>
-                    </ul>
+                    {
+                      // <ul className="stars">
+                      //   <li>
+                      //     <i className="fa fa-star active" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star active" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star active" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star active" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star active" />
+                      //   </li>
+                      //   <li>(374)</li>
+                      // </ul>
+                    }
                   </div>
                 </div>
                 <div className="app-content">
@@ -327,30 +345,32 @@ const OurWorkPage = () => (
                     urna sed odio varius vehicula. Aenean tincidunt venenatis
                     ex.
                   </div>
-                  <ul className="app-table">
-                    <li>
-                      <div className="table-title">Size</div>
-                      <div className="table-content">74.3 MB</div>
-                    </li>
-                    <li>
-                      <div className="table-title">Category</div>
-                      <div className="table-content">Business</div>
-                    </li>
-                    <li>
-                      <div className="table-title">Languages</div>
-                      <div className="table-content">
-                        English, Arabic, Croatian, Czech, Danish, Dutch
-                      </div>
-                    </li>
-                    <li>
-                      <div className="table-title">Age Rating</div>
-                      <div className="table-content">Rated 12+</div>
-                    </li>
-                    <li>
-                      <div className="table-title">Price</div>
-                      <div className="table-content">Free</div>
-                    </li>
-                  </ul>
+                  {
+                    // <ul className="app-table">
+                    //   <li>
+                    //     <div className="table-title">Size</div>
+                    //     <div className="table-content">74.3 MB</div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Category</div>
+                    //     <div className="table-content">Business</div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Languages</div>
+                    //     <div className="table-content">
+                    //       English, Arabic, Croatian, Czech, Danish, Dutch
+                    //     </div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Age Rating</div>
+                    //     <div className="table-content">Rated 12+</div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Price</div>
+                    //     <div className="table-content">Free</div>
+                    //   </li>
+                    // </ul>
+                  }
                 </div>
               </Link>
             </div>
@@ -363,24 +383,26 @@ const OurWorkPage = () => (
                   </div>
                   <div className="app-title">
                     <h5 className="title">KNS Restaurant</h5>
-                    <ul className="stars">
-                      <li>
-                        <i className="fa fa-star active" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>(98)</li>
-                    </ul>
+                    {
+                      // <ul className="stars">
+                      //   <li>
+                      //     <i className="fa fa-star active" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star" />
+                      //   </li>
+                      //   <li>
+                      //     <i className="fa fa-star" />
+                      //   </li>
+                      //   <li>(98)</li>
+                      // </ul>
+                    }
                   </div>
                 </div>
                 <div className="app-content">
@@ -389,32 +411,34 @@ const OurWorkPage = () => (
                     urna sed odio varius vehicula. Aenean tincidunt venenatis
                     ex.
                   </div>
-                  <ul className="app-table">
-                    <li>
-                      <div className="table-title">Size</div>
-                      <div className="table-content">16.8 MB</div>
-                    </li>
-                    <li>
-                      <div className="table-title">Category</div>
-                      <div className="table-content">Office</div>
-                    </li>
-                    <li>
-                      <div className="table-title">Languages</div>
-                      <div className="table-content">
-                        English, Arabic, Croatian, Czech, Danish, Dutch
-                      </div>
-                    </li>
-                    <li>
-                      <div className="table-title">Age Rating</div>
-                      <div className="table-content">Rated 12+</div>
-                    </li>
-                    <li>
-                      <div className="table-title">Price</div>
-                      <div className="table-content">
-                        <div className="price">$12.99</div>
-                      </div>
-                    </li>
-                  </ul>
+                  {
+                    // <ul className="app-table">
+                    //   <li>
+                    //     <div className="table-title">Size</div>
+                    //     <div className="table-content">16.8 MB</div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Category</div>
+                    //     <div className="table-content">Office</div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Languages</div>
+                    //     <div className="table-content">
+                    //       English, Arabic, Croatian, Czech, Danish, Dutch
+                    //     </div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Age Rating</div>
+                    //     <div className="table-content">Rated 12+</div>
+                    //   </li>
+                    //   <li>
+                    //     <div className="table-title">Price</div>
+                    //     <div className="table-content">
+                    //       <div className="price">$12.99</div>
+                    //     </div>
+                    //   </li>
+                    // </ul>
+                  }
                 </div>
               </Link>
             </div>

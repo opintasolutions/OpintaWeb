@@ -60,22 +60,11 @@ const ContactPage = () => (
                     <div className="col-lg-4 col-md-4 col-sm-12">
                       <div className="item">
                         <i className="fa fa-location-arrow" />
-                        <div className="txt">
+                        <div className="txt" style={{ fontSize: "12px" }}>
                           GAT NO-123 H.NO-3131, 01,
                           <br />
                           Moshi - Alandi Rd, Tal Haveli, Alandi, Pune,
                           Maharashtra 412105
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-lg-4 col-md-4 col-sm-12">
-                      <div className="item">
-                        <i className="fa fa-phone" />
-                        <div className="txt">
-                          <span>
-                            +91 8448450015
-                            <br />
-                          </span>
                         </div>
                       </div>
                     </div>
@@ -88,6 +77,18 @@ const ContactPage = () => (
                               mail@opintasolutions.com
                             </Link>
                             <br />
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-4 col-md-4 col-sm-12">
+                      <div className="item">
+                        <i className="fa fa-phone" />
+                        <div className="txt">
+                          <span>
+                            +91 84484 50015
+                            <br />
+                            +91 90968 87733
                           </span>
                         </div>
                       </div>

@@ -59,7 +59,7 @@ const Layout = ({ children, headerClass }) => (
                 <div className="col-lg-4 col-md-8 col-sm-12">
                   <img
                     src={img}
-                    style={{ width: "90px" }}
+                    style={{ width: "130px" }}
                     className="logo"
                     alt=""
                   />
@@ -80,12 +80,12 @@ const Layout = ({ children, headerClass }) => (
                   >
                     <img
                       src={investIndia}
-                      style={{ width: "150px", margin: "10px 5px 20px 0" }}
+                      style={{ width: "147px", margin: "10px 5px 20px 0" }}
                       alt="invest-india-logo"
                     />
                     <img
                       src={cBridgeLogo}
-                      style={{ width: "150px", margin: "5px 5px 20px 5px" }}
+                      style={{ width: "147px", margin: "5px 5px 20px 5px" }}
                       alt="c-bridge-logo"
                     />
                   </div>
@@ -201,7 +201,8 @@ const Layout = ({ children, headerClass }) => (
               <div className="row">
                 <div className="col-lg-12">
                   <p className="copyright">
-                    &copy; {new Date().getFullYear()} Opinta Solutions Pvt. Ltd.
+                    &copy; {new Date().getFullYear()} | Opinta Solutions Pvt.
+                    Ltd.
                   </p>
                 </div>
               </div>
