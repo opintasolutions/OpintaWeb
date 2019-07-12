@@ -289,8 +289,16 @@ class IndexPage extends Component {
                         to="#"
                         className="home-services-item"
                         data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s"
+                        style={{
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "center",
+                        }}
                       >
-                        <i className="fa fa-object-ungroup" />
+                        <i
+                          className="fa fa-object-ungroup"
+                          style={{ fontSize: "35px" }}
+                        />
                         <h5 className="services-title">
                           Web Design &<br /> Development
                         </h5>
