@@ -32,7 +32,7 @@ h4,
 h5,
 h6 {
   margin-bottom: 20px !important;
-  color: #3b566e;
+  color: #532CA2;
 }
 
 h1 {
@@ -488,7 +488,7 @@ global styles
   font-size: 24px;
   line-height: 38px;
   letter-spacing: 1.75px;
-  color: #3b566e;
+  color: #532CA2;
   margin-bottom: 20px;
 }
 
@@ -574,7 +574,7 @@ blockquote .text:before {
   position: absolute;
   left: 0px;
   top: 0px;
-  color: #3b566e;
+  color: #532CA2;
   z-index: 1;
   font-size: 40px;
   color: #e1ecf4;
@@ -586,21 +586,21 @@ blockquote .text:after {
   position: absolute;
   right: 0px;
   bottom: 0px;
-  color: #3b566e;
+  color: #532CA2;
   z-index: 1;
   font-size: 40px;
   color: #e1ecf4;
 }
 
 blockquote .author {
-  color: #3b566e;
+  color: #532CA2;
   text-align: center;
 }
 
 .left-heading .section-title {
   font-weight: 400;
   font-size: 28px;
-  color: #3b566e;
+  color: #532CA2;
   letter-spacing: 1.75px;
   line-height: 42px;
   margin-bottom: 20px !important;
@@ -613,7 +613,7 @@ blockquote .author {
 .center-heading .section-title {
   font-weight: 400;
   font-size: 30px;
-  color: #3b566e;
+  color: #532CA2;
   letter-spacing: 1.3px;
   line-height: 40px;
   margin-bottom: 20px !important;
@@ -708,7 +708,7 @@ blockquote .author {
   margin-bottom: 10px !important;
   font-weight: 400;
   font-size: 16px;
-  color: #3b566e;
+  color: #532CA2;
   letter-spacing: 1px;
   line-height: 26px;
   -webkit-transition: all 0.3s ease 0s;
@@ -954,7 +954,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: blue;
+  background-color: #532CA2;
   display: block;
   position: absolute;
   width: 26px;
@@ -1025,7 +1025,7 @@ header
   -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
   -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
   transform: translateY(6px) translateX(1px) rotate(45deg);
-  background-color: blue;
+  background-color: #532CA2;
 }
 .header-area .main-nav .menu-trigger.active span:after {
   -moz-transform: translateY(-6px) translateX(1px) rotate(-45deg);
@@ -1040,7 +1040,7 @@ header
   -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   transform: translateY(-6px) translateX(1px) rotate(-45deg);
-  background-color: blue;
+  background-color: #532CA2;
 }
 
 .header-area.header-sticky,
@@ -1072,12 +1072,12 @@ header
 
 .header-area.header-sticky .nav li a,
 .header-area.header-white .nav li a {
-  color: #3b566e;
+  color: #532CA2;
 }
 
 .header-area.header-sticky .nav li a:hover,
 .header-area.header-white .nav li a:hover {
-  color: #3b566e;
+  color: #532CA2;
 }
 
 .header-area.header-sticky .nav li a.btn-nav-line,
@@ -1401,7 +1401,7 @@ home
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: #3b566e;
+  color: #532CA2;
   margin-bottom: 23px !important;
   letter-spacing: 0.7px;
   -webkit-transition: all 0.3s ease 0s;
@@ -1493,7 +1493,7 @@ home
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 1px;
-  color: #3b566e;
+  color: #532CA2;
   margin-top: 5px;
   margin-bottom: 24px !important;
 }
@@ -1587,7 +1587,7 @@ home
   display: block;
   font-weight: 400;
   font-size: 14px;
-  color: #3b566e;
+  color: #532CA2;
   letter-spacing: 0.6px;
   margin-top: 3px;
   margin-bottom: 3px;
@@ -1861,7 +1861,7 @@ blog
 .blog-post-thumb .post-content h3 a {
   font-weight: 400;
   font-size: 16px;
-  color: #3b566e;
+  color: #532CA2;
   letter-spacing: 1px;
   line-height: 26px;
   -webkit-transition: all 0.3s ease 0s;
@@ -2015,7 +2015,7 @@ blog
 
 .section-comments ul li .comment-content .comment-by strong {
   display: block;
-  color: #3b566e;
+  color: #532CA2;
 }
 
 .section-comments ul li .comment-content .comment-by span {
@@ -2191,7 +2191,7 @@ our work
 .page-app .app-top .app-title .title {
   font-weight: 400;
   font-size: 16px;
-  color: #3b566e;
+  color: #532CA2;
   letter-spacing: 0.7px;
   margin-bottom: 0px !important;
 }
@@ -2244,7 +2244,7 @@ our work
 .page-app .app-content .app-table li .table-title {
   float: left;
   width: 25%;
-  color: #3b566e;
+  color: #532CA2;
 }
 
 .page-app .app-content .app-table li .table-content {
@@ -2625,7 +2625,7 @@ aside.default-aside .sidebar ul li a:after {
   content: "\f105";
   position: absolute;
   left: 30px;
-  color: #3b566e;
+  color: #532CA2;
 }
 
 aside.default-aside .sidebar ul li a span {
