@@ -33,7 +33,7 @@ const Header = ({ siteTitle, headerClass }) => (
               </div>
             </Link>
 
-            <ul className="nav" style={{ display: "none", marginLeft: "0" }}>
+            <ul className="nav">
               <li>
                 <Link to="/">HOME</Link>
               </li>

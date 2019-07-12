@@ -207,11 +207,11 @@ class IndexPage extends Component {
             <div className="container">
               <div className="row">
                 <div className="offset-lg-3 offset-md-2 col-lg-6 col-md-8 col-sm-12">
-                  <h1>Make Digital Presence of Your Business</h1>
+                  <h1>Grow Digital Presence of Your Businesses</h1>
                   <p>
                     Everything we do, every recommendation we make, is based on
                     research and experience in each of our clients industries
-                    and on their projects.
+                    and projects.
                   </p>
                   <Link className="btn-white-line" to="/contact">
                     CONTACT NOW
