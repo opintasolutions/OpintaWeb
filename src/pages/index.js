@@ -395,6 +395,12 @@ class IndexPage extends Component {
                 />
               </div>
               <div className="col-lg-7 col-md-12 col-sm-12 col-xs-12 align-self-center">
+                <div
+                  className="center-heading"
+                  style={{ marginBottom: "50px" }}
+                >
+                  <h2 className="section-title">We Promise You</h2>
+                </div>
                 <ul className="features">
                   <Fade bottom>
                     <li>

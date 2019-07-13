@@ -35,7 +35,16 @@ const Header = ({ siteTitle, headerClass }) => (
 
             <ul className="nav">
               <li>
-                <Link to="/">HOME</Link>
+                <Link
+                  to="/"
+                  style={{
+                    display: "flex",
+                    justifyContent: "flex-start",
+                    width: "100%",
+                  }}
+                >
+                  <span>HOME</span>
+                </Link>
               </li>
               <li>
                 <Link to="/our-work/">OUR WORK</Link>
