@@ -11,7 +11,15 @@ const ServiceSingle = () => (
   <Layout headerClass={"header-area header-white"}>
     <SEO title="App Development" />
     <section className="page">
-      <div className="cover">
+      <div
+        className="cover"
+        style={{
+          backgroundImage: `url(${img1})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="page-top">
           <div className="container">
             <div className="row">

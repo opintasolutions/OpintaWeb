@@ -5,7 +5,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import coverImg from "../images/about_cover.jpg"
-import img1 from "../assets/images/photos/about/1.jpg"
+import PranavBhaskar from "../assets/images/photos/about/Pranav Bhaskar.jpg"
+import RajnishKumar from "../assets/images/photos/about/Rajnish Kumar.jpg"
+import SupriyaPatil from "../assets/images/photos/about/Supriya Patil.jpg"
 import img2 from "../assets/images/photos/team/1.jpg"
 
 import about_overview from "../images/about_overview.jpg"
@@ -197,7 +199,7 @@ const SecondPage = () => (
             <div className="team-item">
               <div className="header">
                 <div className="img">
-                  <img src={img2} alt="" />
+                  <img src={RajnishKumar} alt="" />
                 </div>
                 <div className="info">
                   <strong>Rajnish Kumar</strong>
@@ -238,7 +240,7 @@ const SecondPage = () => (
             <div className="team-item">
               <div className="header">
                 <div className="img">
-                  <img src={img2} alt="" />
+                  <img src={PranavBhaskar} alt="" />
                 </div>
                 <div className="info">
                   <strong>Pranav Bhaskar</strong>
@@ -279,7 +281,7 @@ const SecondPage = () => (
             <div className="team-item">
               <div className="header">
                 <div className="img">
-                  <img src={img2} alt="" />
+                  <img src={SupriyaPatil} alt="" />
                 </div>
                 <div className="info">
                   <strong>Supriya Patil</strong>

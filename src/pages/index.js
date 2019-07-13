@@ -286,7 +286,7 @@ class IndexPage extends Component {
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <Fade bottom>
                       <Link
-                        to="#"
+                        to="/services"
                         className="home-services-item"
                         data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s"
                         style={{
@@ -312,7 +312,7 @@ class IndexPage extends Component {
                     </Fade>
                     <Fade bottom>
                       <Link
-                        to="#"
+                        to="/services"
                         style={{
                           display: "flex",
                           justifyContent: "space-between",
@@ -340,7 +340,7 @@ class IndexPage extends Component {
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <Fade bottom>
                       <Link
-                        to="#"
+                        to="/services"
                         style={{
                           display: "flex",
                           justifyContent: "space-between",
@@ -367,7 +367,7 @@ class IndexPage extends Component {
                     </Fade>
                     <Fade bottom>
                       <Link
-                        to="#"
+                        to="/services"
                         style={{
                           display: "flex",
                           justifyContent: "space-between",
