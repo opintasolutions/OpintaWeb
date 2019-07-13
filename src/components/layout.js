@@ -7,8 +7,8 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
-import Helmet from "react-helmet"
+import { StaticQuery, graphql, Link } from "gatsby"
+// import Helmet from "react-helmet"
 
 // import style assets
 import "../assets/css/bootstrap.min.css"
@@ -97,34 +97,34 @@ const Layout = ({ children, headerClass }) => (
                   </h5>
                   <ul className="footer-nav">
                     <li>
-                      <a href="/our-work">
+                      <Link to="/our-work">
                         <i className="fa fa-angle-right" />
                         <span>Our Work</span>
-                      </a>{" "}
+                      </Link>{" "}
                     </li>
                     <li>
-                      <a href="/about">
+                      <Link to="/about">
                         <i className="fa fa-angle-right" />
                         <span>About Us</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/services">
+                      <Link to="/services">
                         <i className="fa fa-angle-right" />
                         <span>Services</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/blog">
+                      <Link to="/blog">
                         <i className="fa fa-angle-right" />
                         <span>Blog</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/contact">
+                      <Link to="/contact">
                         <i className="fa fa-angle-right" />
                         <span>Contact</span>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -148,29 +148,29 @@ const Layout = ({ children, headerClass }) => (
                         <br />
                         <ul className="social" style={{ marginLeft: "0" }}>
                           <li>
-                            <a href="#">
+                            <Link to="#">
                               <i className="fa fa-facebook-square" />
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
+                            <Link to="#">
                               <i className="fa fa-twitter-square" />
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
+                            <Link to="#">
                               <i className="fa fa-linkedin-square" />
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
+                            <Link to="#">
                               <i className="fa fa-google-plus-square" />
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
+                            <Link to="#">
                               <i className="fa fa-github-square" />
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -192,7 +192,7 @@ const Layout = ({ children, headerClass }) => (
                         <p>Phone: +91 8448450015</p>
                         <p>
                           <span>E-Mail: </span>
-                          <a href="#">mail@opintasolutions.com</a>
+                          <Link to="#">mail@opintasolutions.com</Link>
                         </p>
                       </div>
                     </div>

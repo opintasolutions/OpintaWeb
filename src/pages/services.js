@@ -25,7 +25,7 @@ const ServicePage = () => (
               <div className="col-lg-12 text-center">
                 <ol className="breadcrumb">
                   <li>
-                    <Link to="blue-index.html">Home</Link>
+                    <Link to="/">Home</Link>
                   </li>
                   <li className="active">Services</li>
                 </ol>
@@ -38,7 +38,7 @@ const ServicePage = () => (
         <div className="container">
           <div className="row">
             <div className="col-lg-4 col-md-6 col-sm-12">
-              <Link to="blue-services-single.html" className="services-post">
+              <Link to="/service-web-development" className="services-post">
                 <div className="img">
                   <img src={img1} alt="" />
                 </div>
@@ -55,7 +55,10 @@ const ServicePage = () => (
               </Link>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12">
-              <Link to="blue-services-single.html" className="services-post">
+              <Link
+                to="/service-software-development"
+                className="services-post"
+              >
                 <div className="img">
                   <img src={img2} alt="" />
                 </div>
@@ -72,7 +75,7 @@ const ServicePage = () => (
               </Link>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12">
-              <Link to="blue-services-single.html" className="services-post">
+              <Link to="/service-app-development" className="services-post">
                 <div className="img">
                   <img src={img3} alt="" />
                 </div>
@@ -89,7 +92,7 @@ const ServicePage = () => (
               </Link>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12">
-              <Link to="blue-services-single.html" className="services-post">
+              <Link to="/service-bulk-messages" className="services-post">
                 <div className="img">
                   <img src={img4} alt="" />
                 </div>
@@ -106,7 +109,7 @@ const ServicePage = () => (
               </Link>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12">
-              <Link to="blue-services-single.html" className="services-post">
+              <Link to="/service-digital-marketing" className="services-post">
                 <div className="img">
                   <img src={img5} alt="" />
                 </div>
@@ -123,7 +126,7 @@ const ServicePage = () => (
               </Link>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12">
-              <Link to="blue-services-single.html" className="services-post">
+              <Link to="/service-ivr" className="services-post">
                 <div className="img">
                   <img src={img6} alt="" />
                 </div>

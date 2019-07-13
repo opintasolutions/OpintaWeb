@@ -42,14 +42,14 @@
   width: auto !important;
   text-align: center;
 }
-.home-services-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.home-services-item i {
-  font-size: 35px;
-}
+/* .home-services-item { */
+/*   display: flex; */
+/*   justify-content: space-between; */
+/*   align-items: center; */
+/* } */
+/* .home-services-item i { */
+/*   font-size: 35px; */
+/* } */
 @media (max-width: 991px) {
   .home-services-item {
     display: flex;

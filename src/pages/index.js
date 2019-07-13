@@ -5,8 +5,8 @@ import {
   CarouselProvider,
   Slider,
   Slide,
-  ButtonBack,
-  ButtonNext,
+  // ButtonBack,
+  // ButtonNext,
 } from "pure-react-carousel"
 import "pure-react-carousel/dist/react-carousel.es.css"
 
@@ -19,7 +19,7 @@ import ModalVideo from "react-modal-video"
 import "../style.css"
 import "react-modal-video/css/modal-video.min.css"
 
-import bgImg from "../assets/images/photos/bgImg.png"
+// import bgImg from "../assets/images/photos/bgImg.png"
 import bgVid from "../assets/vidBG.mp4"
 
 import img11 from "../assets/images/icons/apps/1.jpg"
@@ -31,7 +31,7 @@ import img16 from "../assets/images/icons/apps/6.png"
 
 import img2 from "../assets/images/photos/Opinta-Video.png"
 import img3 from "../assets/images/photos/team/1.jpg"
-import img4 from "../assets/images/photos/blog/1.jpg"
+// import img4 from "../assets/images/photos/blog/1.jpg"
 
 class IndexPage extends Component {
   constructor(props) {
@@ -70,8 +70,8 @@ class IndexPage extends Component {
   }
   render() {
     let testimonials = [
-      <div class="team-item testimonial">
-        <div class="header text-center mt-10">
+      <div className="team-item testimonial">
+        <div className="header text-center mt-10">
           <div
             style={{
               display: "flex",
@@ -85,13 +85,13 @@ class IndexPage extends Component {
               alt=""
             />
           </div>
-          <div class="info">
+          <div className="info">
             <strong>Anil Pandey</strong>
             <span>Jankari Junctions</span>
           </div>
         </div>
-        <div class="body">
-          <i class="fa fa-quote-left" />
+        <div className="body">
+          <i className="fa fa-quote-left" />
           <p>
             Thanks for the fantastic job on our site www.jankarijunction.com it
             was pleasure working with Opinta Solutions as they worked closely
@@ -100,8 +100,8 @@ class IndexPage extends Component {
           </p>
         </div>
       </div>,
-      <div class="team-item testimonial">
-        <div class="header text-center mt-10">
+      <div className="team-item testimonial">
+        <div className="header text-center mt-10">
           <div
             style={{
               display: "flex",
@@ -115,13 +115,13 @@ class IndexPage extends Component {
               alt=""
             />
           </div>
-          <div class="info">
+          <div className="info">
             <strong>Raju Singh</strong>
             <span>Patanjali Dealer</span>
           </div>
         </div>
-        <div class="body">
-          <i class="fa fa-quote-left" />
+        <div className="body">
+          <i className="fa fa-quote-left" />
           <p>
             Thanks for the fantastic job on our site www.jankarijunction.com it
             was pleasure working with Opinta Solutions as they worked closely
@@ -130,8 +130,8 @@ class IndexPage extends Component {
           </p>
         </div>
       </div>,
-      <div class="team-item testimonial">
-        <div class="header text-center mt-10">
+      <div className="team-item testimonial">
+        <div className="header text-center mt-10">
           <div
             style={{
               display: "flex",
@@ -145,13 +145,13 @@ class IndexPage extends Component {
               alt=""
             />
           </div>
-          <div class="info">
+          <div className="info">
             <strong>Kiran Soni</strong>
             <span>KNS Restaurants</span>
           </div>
         </div>
-        <div class="body">
-          <i class="fa fa-quote-left" />
+        <div className="body">
+          <i className="fa fa-quote-left" />
           <p>
             Thanks for the fantastic job on our site www.jankarijunction.com it
             was pleasure working with Opinta Solutions as they worked closely
@@ -160,8 +160,8 @@ class IndexPage extends Component {
           </p>
         </div>
       </div>,
-      <div class="team-item testimonial">
-        <div class="header text-center mt-10">
+      <div className="team-item testimonial">
+        <div className="header text-center mt-10">
           <div
             style={{
               display: "flex",
@@ -175,13 +175,13 @@ class IndexPage extends Component {
               alt=""
             />
           </div>
-          <div class="info">
+          <div className="info">
             <strong>Sunil Kumar</strong>
             <span>Prayatna Eduventures</span>
           </div>
         </div>
-        <div class="body">
-          <i class="fa fa-quote-left" />
+        <div className="body">
+          <i className="fa fa-quote-left" />
           <p>
             Thanks for the fantastic job on our site www.jankarijunction.com it
             was pleasure working with Opinta Solutions as they worked closely
@@ -199,7 +199,7 @@ class IndexPage extends Component {
         <SEO title="Home" />
         <section className="welcome-area">
           <div className="welcome-bg">
-            <video id="background-video" poster={bgImg} autoPlay loop muted>
+            <video id="background-video" autoPlay loop muted>
               <source src={bgVid} type="video/mp4" />
             </video>
           </div>
@@ -313,10 +313,18 @@ class IndexPage extends Component {
                     <Fade bottom>
                       <Link
                         to="#"
+                        style={{
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "center",
+                        }}
                         className="home-services-item"
                         data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s"
                       >
-                        <i className="fa fa-connectdevelop" />
+                        <i
+                          className="fa fa-connectdevelop"
+                          style={{ fontSize: "35px" }}
+                        />
                         <h5 className="services-title">
                           UI/UX Design <br />& Development
                         </h5>
@@ -333,10 +341,18 @@ class IndexPage extends Component {
                     <Fade bottom>
                       <Link
                         to="#"
+                        style={{
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "center",
+                        }}
                         className="home-services-item"
                         data-scroll-reveal="enter bottom move 30px over 0.6s after 0.3s"
                       >
-                        <i className="fa fa-clone" />
+                        <i
+                          className="fa fa-clone"
+                          style={{ fontSize: "35px" }}
+                        />
                         <h5 className="services-title">
                           Mobile App
                           <br /> Development
@@ -352,10 +368,18 @@ class IndexPage extends Component {
                     <Fade bottom>
                       <Link
                         to="#"
+                        style={{
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "center",
+                        }}
                         className="home-services-item"
                         data-scroll-reveal="enter bottom move 30px over 0.6s after 0.3s"
                       >
-                        <i className="fa fa-line-chart" />
+                        <i
+                          className="fa fa-line-chart"
+                          style={{ fontSize: "35px" }}
+                        />
                         <h5 className="services-title">
                           Digital & Social <br /> Media Marketing
                         </h5>
@@ -564,12 +588,12 @@ class IndexPage extends Component {
             </Fade>
           </div>
         </section>
-        <section class="section pbottom-70 background">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="center-heading">
-                  <h2 class="section-title">Testimonials</h2>
+        <section className="section pbottom-70 background">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="center-heading">
+                  <h2 className="section-title">Testimonials</h2>
                 </div>
               </div>
             </div>
@@ -587,7 +611,7 @@ class IndexPage extends Component {
                       }}
                     >
                       <div
-                        class="item"
+                        className="item"
                         style={{
                           maxWidth: "900px",
                           margin: "0 auto",

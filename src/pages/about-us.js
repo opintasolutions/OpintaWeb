@@ -200,14 +200,16 @@ const SecondPage = () => (
                   <img src={img2} alt="" />
                 </div>
                 <div className="info">
-                  <strong>Fletch Skinner</strong>
-                  <span>Product Strategist</span>
+                  <strong>Rajnish Kumar</strong>
+                  <span>Founder, CEO</span>
                 </div>
               </div>
-              <div className="body">
-                Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at
-                justo. Sed at lorem malesuada.
-              </div>
+              {
+                // <div className="body">
+                //   Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at
+                //   justo. Sed at lorem malesuada.
+                // </div>
+              }
               <ul className="social">
                 <li>
                   <Link to="#">
@@ -239,14 +241,16 @@ const SecondPage = () => (
                   <img src={img2} alt="" />
                 </div>
                 <div className="info">
-                  <strong>Lance Bogrol</strong>
-                  <span>Visual Designer</span>
+                  <strong>Pranav Bhaskar</strong>
+                  <span>Head Developer, CTO</span>
                 </div>
               </div>
-              <div className="body">
-                Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at
-                justo. Sed at lorem malesuada.
-              </div>
+              {
+                // <div className="body">
+                //   Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at
+                //   justo. Sed at lorem malesuada.
+                // </div>
+              }
               <ul className="social">
                 <li>
                   <Link to="#">
@@ -278,14 +282,16 @@ const SecondPage = () => (
                   <img src={img2} alt="" />
                 </div>
                 <div className="info">
-                  <strong>Valentino Morose</strong>
+                  <strong>Supriya Patil</strong>
                   <span>Android Developer</span>
                 </div>
               </div>
-              <div className="body">
-                Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at
-                justo. Sed at lorem malesuada.
-              </div>
+              {
+                // <div className="body">
+                //   Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at
+                //   justo. Sed at lorem malesuada.
+                // </div>
+              }
               <ul className="social">
                 <li>
                   <Link to="#">
@@ -317,14 +323,16 @@ const SecondPage = () => (
                   <img src={img2} alt="" />
                 </div>
                 <div className="info">
-                  <strong>Giles Posture</strong>
-                  <span>iOS Developer</span>
+                  <strong>Tushar Palei</strong>
+                  <span>Graphic Designer</span>
                 </div>
               </div>
-              <div className="body">
-                Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at
-                justo. Sed at lorem malesuada.
-              </div>
+              {
+                // <div className="body">
+                //   Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at
+                //   justo. Sed at lorem malesuada.
+                // </div>
+              }
               <ul className="social">
                 <li>
                   <Link to="#">
