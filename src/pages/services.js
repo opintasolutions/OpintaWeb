@@ -48,8 +48,11 @@ const ServicePage = () => (
                   </div>
                   <h3>Web Development</h3>
                   <div className="text">
-                    Mauris tellus sem, ultrices varius nisl at, convallis
-                    iaculis mauris. Sed eget sem vitae purus tempus dignissim.
+                    Get Your Business Recognized Globally
+                    <ul>
+                      <li> &#9679; Create an online store/portfolio</li>
+                      <li> &#9679; Communicate your services</li>
+                    </ul>
                   </div>
                 </div>
               </Link>
@@ -85,8 +88,11 @@ const ServicePage = () => (
                   </div>
                   <h3>App Development</h3>
                   <div className="text">
-                    Quisque euismod nec lacus sit amet maximus. Ut convallis
-                    sagittis lorem auctor malesuada. Morbi auctor.
+                    Enjoy Mobile Freindly Web Pages
+                    <ul>
+                      <li> &#9679; Develop compatible websites</li>
+                      <li> &#9679; Innovate your brand</li>
+                    </ul>
                   </div>
                 </div>
               </Link>
@@ -102,8 +108,11 @@ const ServicePage = () => (
                   </div>
                   <h3>Bulk Messages</h3>
                   <div className="text">
-                    Quisque euismod nec lacus sit amet maximus. Ut convallis
-                    sagittis lorem auctor malesuada. Morbi auctor.
+                    Get Efficient In Time With Bulk Sms
+                    <ul>
+                      <li> &#9679; Share your message within seconds</li>
+                      <li> &#9679; Track the metrics</li>
+                    </ul>
                   </div>
                 </div>
               </Link>
@@ -119,8 +128,11 @@ const ServicePage = () => (
                   </div>
                   <h3>Digital Marketing</h3>
                   <div className="text">
-                    Quisque euismod nec lacus sit amet maximus. Ut convallis
-                    sagittis lorem auctor malesuada. Morbi auctor.
+                    Rank Your Business At The Top
+                    <ul>
+                      <li> &#9679; Content Marketing</li>
+                      <li> &#9679; Search Engine Optimization</li>
+                    </ul>
                   </div>
                 </div>
               </Link>
@@ -136,8 +148,11 @@ const ServicePage = () => (
                   </div>
                   <h3>IVR (Toll-Free)</h3>
                   <div className="text">
-                    Quisque euismod nec lacus sit amet maximus. Ut convallis
-                    sagittis lorem auctor malesuada. Morbi auctor.
+                    Discover The Modern IVR{" "}
+                    <ul>
+                      <li> &#9679; Connect Faster Anywhere</li>
+                      <li> &#9679; Connect Professionaly</li>
+                    </ul>
                   </div>
                 </div>
               </Link>
