@@ -5,6 +5,28 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
+/*
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "Organization",
+	"name": "Opinta Solutions Pvt. Ltd.",
+	"image": "https://sulcdn.azureedge.net/biz-live/img/opinta-solutions-10562704-45ac2719.jpeg",
+	"logo": "https://sulcdn.azureedge.net/biz-live/img/opinta-solutions-10562704-45ac2719.jpeg",
+	"url": "https://opintasolutions.com",
+	"telephone": "9096887733",
+	"sameAs": ["https://twitter.com/opintasolutions","https://in.linkedin.com/company/opintasolutions","https://www.facebook.com/opintasolutions/","https://www.youtube.com/channel/UCB96elYiZB7EeOU1CPkngTw","https://www.instagram.com/opintasolutions/"],
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "Alandi",
+		"addressLocality": "pune",
+		"postalCode": "412105",
+		"addressCountry": "India"
+	}
+}
+</script>
+*/
+
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
@@ -49,7 +71,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: `organisation`,
         },
         {
           name: `twitter:card`,
@@ -77,7 +99,27 @@ function SEO({ description, lang, meta, keywords, title }) {
             : []
         )
         .concat(meta)}
-    />
+    >
+      <script type="application/ld+json">{`
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "Opinta Solutions Pvt. Ltd.",
+          "image": "https://sulcdn.azureedge.net/biz-live/img/opinta-solutions-10562704-45ac2719.jpeg",
+          "logo": "https://sulcdn.azureedge.net/biz-live/img/opinta-solutions-10562704-45ac2719.jpeg",
+          "url": "https://opintasolutions.com",
+          "telephone": "9096887733",
+          "sameAs": ["https://twitter.com/opintasolutions","https://in.linkedin.com/company/opintasolutions","https://www.facebook.com/opintasolutions/","https://www.youtube.com/channel/UCB96elYiZB7EeOU1CPkngTw","https://www.instagram.com/opintasolutions/"],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Alandi",
+            "addressLocality": "pune",
+            "postalCode": "412105",
+            "addressCountry": "India"
+          }
+        }
+      `}</script>
+    </Helmet>
   )
 }
 

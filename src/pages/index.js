@@ -31,7 +31,8 @@ import img16 from "../assets/images/icons/apps/6.png"
 
 import img2 from "../assets/images/photos/Opinta-Video.png"
 import img3 from "../assets/images/photos/team/1.jpg"
-// import img4 from "../assets/images/photos/blog/1.jpg"
+import anshu from "../assets/images/photos/AnshuShrivastav.jpeg"
+import apoorva from "../assets/images/photos/ApoorvaPalkar.jpeg"
 
 class IndexPage extends Component {
   constructor(props) {
@@ -493,8 +494,8 @@ class IndexPage extends Component {
               <div className="offset-lg-3 col-lg-6">
                 <div className="center-text">
                   <p>
-                    Fusce placerat pretium mauris, vel sollicitudin elit lacinia
-                    vitae. Quisque sit amet nisi erat.
+                    Opinta Solutions is very grateful to have these mentors who
+                    guide us through the nuances of business and IT management.
                   </p>
                 </div>
               </div>
@@ -514,30 +515,41 @@ class IndexPage extends Component {
                           alignItems: "center",
                         }}
                       >
-                        <img
-                          style={{ margin: "16px", borderRadius: "8px" }}
-                          src={img3}
-                          alt=""
+                        <div
+                          style={{
+                            backgroundImage: `url(${anshu})`,
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                            width: "200px",
+                            height: "200px",
+                            overflow: "hidden",
+                            borderRadius: "50%",
+                            margin: "1.2rem",
+                          }}
                         />
                       </div>
                       <div
                         className="info"
                         style={{ margin: "0", textAlign: "center" }}
                       >
-                        <strong>Lance Bogrol</strong>
-                        <span>Visual Designer</span>
+                        <strong>Anshu Shrivastav</strong>
+                        <span>Mentor</span>
                       </div>
                     </div>
                     <ul className="social">
                       <li>
-                        <Link to="#">
+                        <a
+                          target="_blank"
+                          href="https://www.linkedin.com/in/anshus"
+                        >
                           <i className="fa fa-linkedin" />
-                        </Link>
+                        </a>
                       </li>
                     </ul>
                     <div className="body">
-                      Proin arcu ligula, malesuada id tincidunt laoreet,
-                      facilisis at justo. Sed at lorem.
+                      Mentor and Founder with a history of accelerating revenue
+                      acquisition for start-ups and planning growth strategies
+                      for companies.
                     </div>
                   </div>
                 </div>
@@ -554,30 +566,40 @@ class IndexPage extends Component {
                           alignItems: "center",
                         }}
                       >
-                        <img
-                          style={{ margin: "16px", borderRadius: "8px" }}
-                          src={img3}
-                          alt=""
+                        <div
+                          style={{
+                            backgroundImage: `url(${apoorva})`,
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                            width: "200px",
+                            height: "200px",
+                            overflow: "hidden",
+                            borderRadius: "50%",
+                            margin: "1.2rem",
+                          }}
                         />
                       </div>
                       <div
                         className="info"
                         style={{ margin: "0", textAlign: "center" }}
                       >
-                        <strong>Valent Morose</strong>
-                        <span>Android Developer</span>
+                        <strong>Apoorva Palkar</strong>
+                        <span>Director, CIIL</span>
                       </div>
                     </div>
                     <ul className="social">
                       <li>
-                        <Link to="#">
+                        <a
+                          target="_blank"
+                          href="https://www.linkedin.com/in/apoorvapalkar"
+                        >
                           <i className="fa fa-linkedin" />
-                        </Link>
+                        </a>
                       </li>
                     </ul>
                     <div className="body">
-                      Proin arcu ligula, malesuada id tincidunt laoreet,
-                      facilisis at justo. Sed at lorem.
+                      Director, Innovation,Incubation Linkages Savitribai Phule
+                      Pune University ( Formerly Pune University )
                     </div>
                   </div>
                 </div>

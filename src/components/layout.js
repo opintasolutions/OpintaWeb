@@ -103,7 +103,7 @@ const Layout = ({ children, headerClass }) => (
                       </Link>{" "}
                     </li>
                     <li>
-                      <Link to="/about">
+                      <Link to="/about-us">
                         <i className="fa fa-angle-right" />
                         <span>About Us</span>
                       </Link>

@@ -1,21 +1,23 @@
 import React from "react"
 import { Link } from "gatsby"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import coverImg from "../images/about_cover.jpg"
+import coverImg from "../images/about/cover.jpg"
 import PranavBhaskar from "../assets/images/photos/about/Pranav Bhaskar.jpg"
 import RajnishKumar from "../assets/images/photos/about/Rajnish Kumar.jpg"
 import SupriyaPatil from "../assets/images/photos/about/Supriya Patil.jpg"
 import img2 from "../assets/images/photos/team/1.jpg"
 
-import about_overview from "../images/about_overview.jpg"
-import about_mission from "../images/about_mission.jpg"
-import about_vision from "../images/about_vision.jpeg"
-import about_services from "../images/about_services.jpg"
+// import about_overview from "../images/about_overview.jpg"
+// import about_mission from "../images/about_mission.jpg"
+// import about_vision from "../images/about_vision.jpeg"
+// import about_services from "../images/about_services.jpg"
 
-const SecondPage = () => (
+const SecondPage = ({ data }) => (
   <Layout headerClass={"header-area header-white"}>
     <SEO title="About" />
     {/* 
@@ -56,8 +58,8 @@ const SecondPage = () => (
             <div className="col-lg-12">
               <div className="about">
                 <div className="about-image">
-                  <img
-                    src={about_overview}
+                  <Img
+                    fluid={data.overview.childImageSharp.fluid}
                     style={{
                       width: "100%",
                       height: "100%",
@@ -80,8 +82,8 @@ const SecondPage = () => (
               </div>
               <div className="about left mbottom-30">
                 <div className="about-image">
-                  <img
-                    src={about_mission}
+                  <Img
+                    fluid={data.mission.childImageSharp.fluid}
                     style={{
                       width: "100%",
                       height: "100%",
@@ -102,8 +104,8 @@ const SecondPage = () => (
               </div>
               <div className="about">
                 <div className="about-image">
-                  <img
-                    src={about_vision}
+                  <Img
+                    fluid={data.vision.childImageSharp.fluid}
                     style={{
                       width: "100%",
                       height: "100%",
@@ -124,8 +126,8 @@ const SecondPage = () => (
               </div>
               <div className="about left mbottom-30">
                 <div className="about-image">
-                  <img
-                    src={about_services}
+                  <Img
+                    fluid={data.services.childImageSharp.fluid}
                     style={{
                       width: "100%",
                       height: "100%",
@@ -366,3 +368,43 @@ const SecondPage = () => (
 )
 
 export default SecondPage
+
+export const pageQuery = graphql`
+  query {
+    cover: file(relativePath: { eq: "about/cover.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 777) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    mission: file(relativePath: { eq: "about/mission.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 777) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    vision: file(relativePath: { eq: "about/vision.jpeg" }) {
+      childImageSharp {
+        fluid(maxWidth: 777) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    overview: file(relativePath: { eq: "about/overview.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 777) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    services: file(relativePath: { eq: "about/services.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 777) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

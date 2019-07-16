@@ -2175,6 +2175,8 @@ our work
 .page-app .app-top {
   overflow: hidden;
   padding: 25px;
+  display: flex;
+  align-items: center;
 }
 
 .page-app .app-top .icon {
@@ -2189,7 +2191,7 @@ our work
   float: right;
   width: calc(100% - 77px);
   width: -webkit-calc(100% - 77px);
-  padding-top: 17px;
+  /* padding-top: 17px; */
   padding-left: 25px;
 }
 
