@@ -21,6 +21,13 @@ module.exports = {
         hostingWPCOM: false,
         useACF: false,
         // acfOptionPageIds: [],
+        auth: {
+          // If auth.user and auth.pass are filled, then the source plugin will be allowed
+          // to access endpoints that are protected with .htaccess.
+          htaccess_user: "learntogrow.in",
+          htaccess_pass: "*Irx1ypIgWtj^j(qM(eEf*cf",
+          // htaccess_sendImmediately: false,
+        },
         verboseOutput: false,
         // Set how many pages are retrieved per API request.
         perPage: 100,
