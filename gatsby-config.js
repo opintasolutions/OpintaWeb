@@ -16,15 +16,17 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        baseUrl: `learntogrow.in`,
-        protocol: `https`,
+        baseUrl: "learntogrow.in",
+        protocol: "https",
         hostingWPCOM: false,
-        useACF: true,
+        useACF: false,
         acfOptionPageIds: [],
         verboseOutput: false,
+        // Set how many pages are retrieved per API request.
         perPage: 100,
+        // Search and Replace Urls across WordPress content.
         // Set how many simultaneous requests are sent at once.
-        concurrentRequests: 20,
+        concurrentRequests: 10,
         includedRoutes: [
           "**/categories",
           "**/posts",
@@ -34,7 +36,6 @@ module.exports = {
           "**/taxonomies",
           "**/users",
         ],
-        excludedRoutes: [],
         normalizer: function({ entities }) {
           return entities
         },
