@@ -239,12 +239,12 @@ class IndexPage extends Component {
                   </Link>
                   <Link to="#" className="app-item">
                     <div className="icon allign-center">
-                      <img src={img13} className="img-fluid img-apps" alt="" />
+                      <img src={img14} className="img-fluid img-apps" alt="" />
                     </div>
                   </Link>
                   <Link to="#" className="app-item">
                     <div className="icon allign-center">
-                      <img src={img14} className="img-fluid img-apps" alt="" />
+                      <img src={img13} className="img-fluid img-apps" alt="" />
                     </div>
                   </Link>
                   <Link to="#" className="app-item">
