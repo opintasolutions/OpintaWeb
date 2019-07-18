@@ -20,7 +20,7 @@ module.exports = {
         protocol: "https",
         hostingWPCOM: false,
         useACF: false,
-        acfOptionPageIds: [],
+        // acfOptionPageIds: [],
         verboseOutput: false,
         // Set how many pages are retrieved per API request.
         perPage: 100,
