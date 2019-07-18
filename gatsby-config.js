@@ -24,7 +24,7 @@ module.exports = {
         verboseOutput: false,
         perPage: 100,
         // Set how many simultaneous requests are sent at once.
-        concurrentRequests: 10,
+        concurrentRequests: 20,
         includedRoutes: [
           "**/categories",
           "**/posts",

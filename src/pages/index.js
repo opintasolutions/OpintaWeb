@@ -23,7 +23,7 @@ import "react-modal-video/css/modal-video.min.css"
 import bgVid from "../assets/vidBG.mp4"
 
 import img11 from "../assets/images/icons/apps/1.jpg"
-import img12 from "../assets/images/icons/apps/2.png"
+import img12 from "../assets/images/icons/apps/Trawis Connect.png"
 import img13 from "../assets/images/icons/apps/3.jpg"
 import img14 from "../assets/images/icons/apps/4.jpg"
 import img15 from "../assets/images/icons/apps/5.png"
@@ -517,6 +517,56 @@ class IndexPage extends Component {
                       >
                         <div
                           style={{
+                            backgroundImage: `url(${apoorva})`,
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                            width: "200px",
+                            height: "200px",
+                            overflow: "hidden",
+                            borderRadius: "50%",
+                            margin: "1.2rem",
+                          }}
+                        />
+                      </div>
+                      <div
+                        className="info"
+                        style={{ margin: "0", textAlign: "center" }}
+                      >
+                        <strong>Apoorva Palkar</strong>
+                        <span>Director, CIIL</span>
+                      </div>
+                    </div>
+                    <ul className="social">
+                      <li>
+                        <a
+                          target="_blank"
+                          href="https://www.linkedin.com/in/apoorvapalkar"
+                        >
+                          <i className="fa fa-linkedin" />
+                        </a>
+                      </li>
+                    </ul>
+                    <div className="body">
+                      Director, Innovation,Incubation Linkages Savitribai Phule
+                      Pune University ( Formerly Pune University )
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                  <div className="team-item" />
+                </div>
+                <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                  <div className="team-item">
+                    <div className="header">
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          style={{
                             backgroundImage: `url(${anshu})`,
                             backgroundSize: "cover",
                             backgroundPosition: "center",
@@ -550,56 +600,6 @@ class IndexPage extends Component {
                       Mentor and Founder with a history of accelerating revenue
                       acquisition for start-ups and planning growth strategies
                       for companies.
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-2 col-md-6 col-sm-6 col-xs-12">
-                  <div className="team-item" />
-                </div>
-                <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                  <div className="team-item">
-                    <div className="header">
-                      <div
-                        style={{
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
-                        }}
-                      >
-                        <div
-                          style={{
-                            backgroundImage: `url(${apoorva})`,
-                            backgroundSize: "cover",
-                            backgroundPosition: "center",
-                            width: "200px",
-                            height: "200px",
-                            overflow: "hidden",
-                            borderRadius: "50%",
-                            margin: "1.2rem",
-                          }}
-                        />
-                      </div>
-                      <div
-                        className="info"
-                        style={{ margin: "0", textAlign: "center" }}
-                      >
-                        <strong>Apoorva Palkar</strong>
-                        <span>Director, CIIL</span>
-                      </div>
-                    </div>
-                    <ul className="social">
-                      <li>
-                        <a
-                          target="_blank"
-                          href="https://www.linkedin.com/in/apoorvapalkar"
-                        >
-                          <i className="fa fa-linkedin" />
-                        </a>
-                      </li>
-                    </ul>
-                    <div className="body">
-                      Director, Innovation,Incubation Linkages Savitribai Phule
-                      Pune University ( Formerly Pune University )
                     </div>
                   </div>
                 </div>
