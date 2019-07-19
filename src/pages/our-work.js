@@ -9,7 +9,7 @@ import img1 from "../assets/images/icons/apps/1.png"
 import "../style.css"
 
 import img11 from "../assets/images/icons/apps/1.jpg"
-import img12 from "../assets/images/icons/apps/2.png"
+import img12 from "../assets/images/icons/apps/Trawis Connect.png"
 import img13 from "../assets/images/icons/apps/3.jpg"
 import img14 from "../assets/images/icons/apps/4.jpg"
 import img15 from "../assets/images/icons/apps/5.png"
@@ -114,7 +114,7 @@ const OurWorkPage = () => (
                     <img src={img12} className="img-apps-colored" alt="" />
                   </div>
                   <div className="app-title">
-                    <h5 className="title">Extra Save</h5>
+                    <h5 className="title">Trawis Connect</h5>
                     {
                       // <ul className="stars">
                       //   <li>

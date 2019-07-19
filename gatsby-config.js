@@ -19,15 +19,8 @@ module.exports = {
         baseUrl: "learntogrow.in",
         protocol: "https",
         hostingWPCOM: false,
-        useACF: false,
-        // acfOptionPageIds: [],
-        auth: {
-          // If auth.user and auth.pass are filled, then the source plugin will be allowed
-          // to access endpoints that are protected with .htaccess.
-          htaccess_user: "learntogrow.in",
-          htaccess_pass: "*Irx1ypIgWtj^j(qM(eEf*cf",
-          // htaccess_sendImmediately: false,
-        },
+        useACF: true,
+        acfOptionPageIds: [],
         verboseOutput: false,
         // Set how many pages are retrieved per API request.
         perPage: 100,
@@ -43,9 +36,9 @@ module.exports = {
           "**/taxonomies",
           "**/users",
         ],
-        normalizer: function({ entities }) {
-          return entities
-        },
+        // normalizer: function({ entities }) {
+        //   return entities
+        // },
       },
     },
     `gatsby-transformer-sharp`,

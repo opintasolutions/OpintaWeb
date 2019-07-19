@@ -628,10 +628,10 @@ pre tt:after {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  bottom: 0px;
-  right: -320px;
-  font-size: 100px;
-  opacity: 0.2;
+  bottom: 30px;
+  left: -380px;
+  font-size: 70px;
+  opacity: 0.15;
 }
 .fa-quote-left:before {
   content: "\f10d";

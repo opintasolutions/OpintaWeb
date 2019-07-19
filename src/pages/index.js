@@ -33,6 +33,11 @@ import img2 from "../assets/images/photos/Opinta-Video.png"
 import img3 from "../assets/images/photos/team/1.jpg"
 import anshu from "../assets/images/photos/AnshuShrivastav.jpeg"
 import apoorva from "../assets/images/photos/ApoorvaPalkar.jpeg"
+import kiran from "../assets/images/photos/KumarSoni.jpg"
+import vishal from "../assets/images/photos/VishalKumar.jpg"
+import rajesh from "../assets/images/photos/RajeshOjha.jpg"
+import anil from "../assets/images/photos/anilpandey.png"
+import raju from "../assets/images/photos/rajusingh.png"
 
 class IndexPage extends Component {
   constructor(props) {
@@ -77,27 +82,33 @@ class IndexPage extends Component {
             style={{
               display: "flex",
               justifyContent: "center",
-              alignItems: "center",
+              alignItems: "flex-end",
             }}
           >
-            <img
-              style={{ marginTop: "16px", borderRadius: "8px" }}
-              src={img3}
-              alt=""
+            <div
+              style={{
+                backgroundImage: `url(${anil})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                width: "130px",
+                height: "130px",
+                overflow: "hidden",
+                borderRadius: "50%",
+                margin: "1.2rem 0 0 0",
+              }}
             />
           </div>
           <div className="info">
             <strong>Anil Pandey</strong>
-            <span>Jankari Junctions</span>
+            <span>Jankari Junction</span>
           </div>
         </div>
         <div className="body">
           <i className="fa fa-quote-left" />
           <p>
-            Thanks for the fantastic job on our site www.jankarijunction.com it
-            was pleasure working with Opinta Solutions as they worked closely
-            with us every step of the way, and we valued their creative input
-            that exceeded our expectations.
+            सुसज्जित, सुशिक्षित और ऊर्जावान लोगो के सानिध्य में जानकारी जंक्शन
+            को कम समय मे एक मार्क बनाने के लिए रजनीश जी को नन्हें रिपोर्टर व
+            जानकारी जंक्शन -jj न्यूज़ की पूरी टीम की ओर से धन्यवाद व शुभकामनाएं।
           </p>
         </div>
       </div>,
@@ -107,13 +118,20 @@ class IndexPage extends Component {
             style={{
               display: "flex",
               justifyContent: "center",
-              alignItems: "center",
+              alignItems: "flex-end",
             }}
           >
-            <img
-              style={{ marginTop: "16px", borderRadius: "8px" }}
-              src={img3}
-              alt=""
+            <div
+              style={{
+                backgroundImage: `url(${raju})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                width: "130px",
+                height: "130px",
+                overflow: "hidden",
+                borderRadius: "50%",
+                margin: "1.2rem 0 0 0",
+              }}
             />
           </div>
           <div className="info">
@@ -124,10 +142,8 @@ class IndexPage extends Component {
         <div className="body">
           <i className="fa fa-quote-left" />
           <p>
-            Thanks for the fantastic job on our site www.jankarijunction.com it
-            was pleasure working with Opinta Solutions as they worked closely
-            with us every step of the way, and we valued their creative input
-            that exceeded our expectations.{" "}
+            The team always kept in contact and was professional. They did a
+            great job optimizing my website."
           </p>
         </div>
       </div>,
@@ -137,27 +153,32 @@ class IndexPage extends Component {
             style={{
               display: "flex",
               justifyContent: "center",
-              alignItems: "center",
+              alignItems: "flex-end",
             }}
           >
-            <img
-              style={{ marginTop: "16px", borderRadius: "8px" }}
-              src={img3}
-              alt=""
+            <div
+              style={{
+                backgroundImage: `url(${rajesh})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                width: "130px",
+                height: "130px",
+                overflow: "hidden",
+                borderRadius: "50%",
+                margin: "1.2rem 0 0 0",
+              }}
             />
           </div>
           <div className="info">
-            <strong>Kiran Soni</strong>
-            <span>KNS Restaurants</span>
+            <strong>Rajesh Ojha</strong>
+            <span>Good Morning News</span>
           </div>
         </div>
         <div className="body">
           <i className="fa fa-quote-left" />
           <p>
-            Thanks for the fantastic job on our site www.jankarijunction.com it
-            was pleasure working with Opinta Solutions as they worked closely
-            with us every step of the way, and we valued their creative input
-            that exceeded our expectations.{" "}
+            Very kind and very helpful and also very fast. He done exactly as
+            requested. A big thank you.
           </p>
         </div>
       </div>,
@@ -167,27 +188,69 @@ class IndexPage extends Component {
             style={{
               display: "flex",
               justifyContent: "center",
-              alignItems: "center",
+              alignItems: "flex-end",
             }}
           >
-            <img
-              style={{ marginTop: "16px", borderRadius: "8px" }}
-              src={img3}
-              alt=""
+            <div
+              style={{
+                backgroundImage: `url(${kiran})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                width: "130px",
+                height: "130px",
+                overflow: "hidden",
+                borderRadius: "50%",
+                margin: "1.2rem 0 0 0",
+              }}
             />
           </div>
           <div className="info">
-            <strong>Sunil Kumar</strong>
+            <strong>Kumar Soni</strong>
             <span>Prayatna Eduventures</span>
           </div>
         </div>
         <div className="body">
           <i className="fa fa-quote-left" />
           <p>
-            Thanks for the fantastic job on our site www.jankarijunction.com it
-            was pleasure working with Opinta Solutions as they worked closely
-            with us every step of the way, and we valued their creative input
-            that exceeded our expectations.{" "}
+            I am amazed by their exemplary services in Website development and
+            Digital marketing. Because of them, I was able to market my product
+            online. Highly recommended!!!{" "}
+          </p>
+        </div>
+      </div>,
+      <div className="team-item testimonial">
+        <div className="header text-center mt-10">
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "flex-end",
+            }}
+          >
+            <div
+              style={{
+                backgroundImage: `url(${vishal})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                width: "130px",
+                height: "130px",
+                overflow: "hidden",
+                borderRadius: "50%",
+                margin: "1.2rem 0 0 0",
+              }}
+            />
+          </div>
+          <div className="info">
+            <strong>Vishal Kumar</strong>
+            <span>Good Morning News</span>
+          </div>
+        </div>
+        <div className="body">
+          <i className="fa fa-quote-left" />
+          <p>
+            A quick and easy process from the very beginning. Opinta Team was
+            quick to respond, offer a reasonable quote and get the job done. I
+            felt his rate was more than fair and his service even better!
           </p>
         </div>
       </div>,
@@ -520,8 +583,8 @@ class IndexPage extends Component {
                             backgroundImage: `url(${apoorva})`,
                             backgroundSize: "cover",
                             backgroundPosition: "center",
-                            width: "200px",
-                            height: "200px",
+                            width: "180px",
+                            height: "180px",
                             overflow: "hidden",
                             borderRadius: "50%",
                             margin: "1.2rem",
@@ -570,8 +633,8 @@ class IndexPage extends Component {
                             backgroundImage: `url(${anshu})`,
                             backgroundSize: "cover",
                             backgroundPosition: "center",
-                            width: "200px",
-                            height: "200px",
+                            width: "180px",
+                            height: "180px",
                             overflow: "hidden",
                             borderRadius: "50%",
                             margin: "1.2rem",
@@ -597,9 +660,9 @@ class IndexPage extends Component {
                       </li>
                     </ul>
                     <div className="body">
-                      Mentor and Founder with a history of accelerating revenue
-                      acquisition for start-ups and planning growth strategies
-                      for companies.
+                      Mentor with a history of accelerating revenue acquisition
+                      for start-ups and planning growth strategies for
+                      companies.
                     </div>
                   </div>
                 </div>
@@ -619,10 +682,10 @@ class IndexPage extends Component {
                 </div>
               </div>
             </div>
-            <CarouselProvider totalSlides={4} interval={2500} isPlaying>
+            <CarouselProvider totalSlides={5} interval={2500} isPlaying>
               <Slider>
                 {testimonials.map((testi, i) => (
-                  <Slide index={i} style={{ height: "370px" }}>
+                  <Slide index={i} style={{ height: "570px" }}>
                     <div
                       style={{
                         width: "100%",
@@ -689,7 +752,12 @@ class IndexPage extends Component {
                       </h3>
                       <div
                         className="text"
-                        dangerouslySetInnerHTML={{ __html: node.excerpt }}
+                        dangerouslySetInnerHTML={{
+                          __html: node.excerpt
+                            .split(" ")
+                            .slice(0, 20)
+                            .join(" "),
+                        }}
                       />
                       <Link
                         to={`/post/${node.slug}`}
