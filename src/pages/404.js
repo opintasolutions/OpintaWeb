@@ -7,9 +7,15 @@ const NotFoundPage = () => (
   <Layout headerClass="header-area header-white">
     <SEO title="404: Not found" />
 
-    <div style={{ margin: "110px 50px 50px 50px" }}>
-      <h1>NOT FOUND</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <div
+      style={{
+        margin: "110px 50px 50px 50px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <h1>404 | NOT FOUND</h1>
     </div>
   </Layout>
 )

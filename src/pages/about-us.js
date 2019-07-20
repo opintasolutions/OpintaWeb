@@ -7,15 +7,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import coverImg from "../images/about/cover.jpg"
-import PranavBhaskar from "../assets/images/photos/about/Pranav Bhaskar.jpg"
-import RajnishKumar from "../assets/images/photos/about/Rajnish Kumar.jpg"
-import SupriyaPatil from "../assets/images/photos/about/Supriya Patil.jpg"
+import PranavBhaskar from "../assets/images/photos/team/Pranav Bhaskar.jpg"
+import RajnishKumar from "../assets/images/photos/team/Rajnish Kumar.jpg"
+import SupriyaPatil from "../assets/images/photos/team/Supriya Patil.jpg"
 import img2 from "../assets/images/photos/team/1.jpg"
-
-// import about_overview from "../images/about_overview.jpg"
-// import about_mission from "../images/about_mission.jpg"
-// import about_vision from "../images/about_vision.jpeg"
-// import about_services from "../images/about_services.jpg"
 
 const SecondPage = ({ data }) => (
   <Layout headerClass={"header-area header-white"}>

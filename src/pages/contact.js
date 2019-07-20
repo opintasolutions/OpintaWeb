@@ -23,7 +23,7 @@ const ContactPage = () => {
                 <div className="col-lg-12 text-center">
                   <ol className="breadcrumb">
                     <li>
-                      <Link to="blue-index.html">Home</Link>
+                      <Link to="/">Home</Link>
                     </li>
                     <li className="active">Contact Us</li>
                   </ol>

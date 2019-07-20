@@ -14,6 +14,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#532CA2`,
+      },
+    },
+    {
       resolve: `gatsby-source-wordpress`,
       options: {
         baseUrl: "learntogrow.in",

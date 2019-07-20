@@ -71,8 +71,11 @@ const ServicePage = () => (
                   </div>
                   <h3>Software Development</h3>
                   <div className="text">
-                    Cras imperdiet faucibus sem, a dignissim urna feugiat sed.
-                    Interdum et malesuada fames ac ante ipsum primis.
+                    A customized solution for any platform
+                    <ul>
+                      <li> &#9679; A desktop application for specific needs</li>
+                      <li> &#9679; On demand automation solutions</li>
+                    </ul>
                   </div>
                 </div>
               </Link>

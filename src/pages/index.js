@@ -24,7 +24,7 @@ import bgVid from "../assets/vidBG.mp4"
 
 import img11 from "../assets/images/icons/apps/1.jpg"
 import img12 from "../assets/images/icons/apps/Trawis Connect.png"
-import img13 from "../assets/images/icons/apps/3.jpg"
+import img13 from "../assets/images/icons/apps/Swaraj Khabar.png"
 import img14 from "../assets/images/icons/apps/4.jpg"
 import img15 from "../assets/images/icons/apps/5.png"
 import img16 from "../assets/images/icons/apps/6.png"
@@ -36,7 +36,7 @@ import apoorva from "../assets/images/photos/ApoorvaPalkar.jpeg"
 import kiran from "../assets/images/photos/KumarSoni.jpg"
 import vishal from "../assets/images/photos/VishalKumar.jpg"
 import rajesh from "../assets/images/photos/RajeshOjha.jpg"
-import anil from "../assets/images/photos/anilpandey.png"
+import anil from "../assets/images/photos/AnilPandey.jpeg"
 import raju from "../assets/images/photos/rajusingh.png"
 
 class IndexPage extends Component {
@@ -205,8 +205,8 @@ class IndexPage extends Component {
             />
           </div>
           <div className="info">
-            <strong>Kumar Soni</strong>
-            <span>Prayatna Eduventures</span>
+            <strong>Kiran Soni</strong>
+            <span>KNS Restaurants</span>
           </div>
         </div>
         <div className="body">
@@ -242,7 +242,7 @@ class IndexPage extends Component {
           </div>
           <div className="info">
             <strong>Vishal Kumar</strong>
-            <span>Good Morning News</span>
+            <span>Swaraj Khabar</span>
           </div>
         </div>
         <div className="body">
@@ -360,8 +360,8 @@ class IndexPage extends Component {
                         }}
                       >
                         <i
-                          className="fa fa-object-ungroup"
-                          style={{ fontSize: "35px" }}
+                          className="fa fa-desktop"
+                          style={{ fontSize: "38px" }}
                         />
                         <h5 className="services-title">
                           Web Design &<br /> Development
@@ -387,7 +387,7 @@ class IndexPage extends Component {
                       >
                         <i
                           className="fa fa-connectdevelop"
-                          style={{ fontSize: "35px" }}
+                          style={{ fontSize: "38px" }}
                         />
                         <h5 className="services-title">
                           UI/UX Design <br />& Development
@@ -415,7 +415,7 @@ class IndexPage extends Component {
                       >
                         <i
                           className="fa fa-clone"
-                          style={{ fontSize: "35px" }}
+                          style={{ fontSize: "38px" }}
                         />
                         <h5 className="services-title">
                           Mobile App
@@ -441,8 +441,8 @@ class IndexPage extends Component {
                         data-scroll-reveal="enter bottom move 30px over 0.6s after 0.3s"
                       >
                         <i
-                          className="fa fa-line-chart"
-                          style={{ fontSize: "35px" }}
+                          className="fa fa-bullhorn"
+                          style={{ fontSize: "38px" }}
                         />
                         <h5 className="services-title">
                           Digital & Social <br /> Media Marketing
