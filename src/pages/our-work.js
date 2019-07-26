@@ -1,21 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
 import img1 from "../assets/images/icons/apps/1.png"
 
 import "../style.css"
 
-import img11 from "../assets/images/icons/apps/1.jpg"
-import img12 from "../assets/images/icons/apps/Trawis Connect.png"
-import img13 from "../assets/images/icons/apps/Swaraj Khabar.png"
-import img14 from "../assets/images/icons/apps/4.jpg"
-import img15 from "../assets/images/icons/apps/5.png"
-import img16 from "../assets/images/icons/apps/6.png"
-
-const OurWorkPage = () => (
+const OurWorkPage = ({ data }) => (
   <Layout headerClass={"header-area header-white"}>
     <SEO title="Work" />
     <section className="page">
@@ -46,7 +39,11 @@ const OurWorkPage = () => (
               <Link to="/our-work/#" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <img src={img11} className="img-apps-colored" alt="" />
+                    <Img
+                      fluid={data.smsa.childImageSharp.fluid}
+                      className="img-apps-colored"
+                      alt=""
+                    />
                   </div>
                   <div className="app-title">
                     <h5 className="title">SMSA Infracon</h5>
@@ -65,7 +62,11 @@ const OurWorkPage = () => (
               <Link to="/our-work/#" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <img src={img12} className="img-apps-colored" alt="" />
+                    <Img
+                      fluid={data.tconnect.childImageSharp.fluid}
+                      className="img-apps-colored"
+                      alt=""
+                    />
                   </div>
                   <div className="app-title">
                     <h5 className="title">Trawis Connect</h5>
@@ -85,10 +86,14 @@ const OurWorkPage = () => (
               <Link to="/our-work/#" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <img src={img13} className="img-apps-colored" alt="" />
+                    <Img
+                      fluid={data.goodmorningnews.childImageSharp.fluid}
+                      className="img-apps-colored"
+                      alt=""
+                    />
                   </div>
                   <div className="app-title">
-                    <h5 className="title">Swaraj Khabar</h5>
+                    <h5 className="title">Good Morning News</h5>
                   </div>
                 </div>
                 <div className="app-content">
@@ -105,7 +110,35 @@ const OurWorkPage = () => (
               <Link to="/our-work/#" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <img src={img14} className="img-apps-colored" alt="" />
+                    <Img
+                      fluid={data.matc.childImageSharp.fluid}
+                      className="img-apps-colored"
+                      alt=""
+                    />
+                  </div>
+                  <div className="app-title">
+                    <h5 className="title">M.A.T.C.</h5>
+                  </div>
+                </div>
+                <div className="app-content">
+                  <div className="text">
+                    Nunc luctus ante nec turpis faucibus varius. Sed consectetur
+                    urna sed odio varius vehicula. Aenean tincidunt venenatis
+                    ex.
+                  </div>
+                </div>
+              </Link>
+            </div>
+
+            <div className="col-lg-6 col-md-12 col-sm-12">
+              <Link to="/our-work/#" className="page-app">
+                <div className="app-top">
+                  <div className="icon">
+                    <Img
+                      fluid={data.jankarijunction.childImageSharp.fluid}
+                      className="img-apps-colored"
+                      alt=""
+                    />
                   </div>
                   <div className="app-title">
                     <h5 className="title">Jankari Junction</h5>
@@ -120,32 +153,15 @@ const OurWorkPage = () => (
                 </div>
               </Link>
             </div>
-
             <div className="col-lg-6 col-md-12 col-sm-12">
               <Link to="/our-work/#" className="page-app">
                 <div className="app-top">
                   <div className="icon">
-                    <img src={img15} className="img-apps-colored" alt="" />
-                  </div>
-                  <div className="app-title">
-                    <h5 className="title">Prayatna Eduventures</h5>
-                  </div>
-                </div>
-                <div className="app-content">
-                  <div className="text">
-                    Nunc luctus ante nec turpis faucibus varius. Sed consectetur
-                    urna sed odio varius vehicula. Aenean tincidunt venenatis
-                    ex.
-                  </div>
-                </div>
-              </Link>
-            </div>
-
-            <div className="col-lg-6 col-md-12 col-sm-12">
-              <Link to="/our-work/#" className="page-app">
-                <div className="app-top">
-                  <div className="icon">
-                    <img src={img16} className="img-apps-colored" alt="" />
+                    <Img
+                      fluid={data.kns.childImageSharp.fluid}
+                      className="img-apps-colored"
+                      alt=""
+                    />
                   </div>
                   <div className="app-title">
                     <h5 className="title">KNS Restaurant</h5>
@@ -168,3 +184,57 @@ const OurWorkPage = () => (
 )
 
 export default OurWorkPage
+
+export const pageQuery = graphql`
+  query {
+    smsa: file(relativePath: { eq: "apps/1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    tconnect: file(relativePath: { eq: "apps/Trawis Connect.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    jankarijunction: file(relativePath: { eq: "apps/4.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    kns: file(relativePath: { eq: "apps/6.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    goodmorningnews: file(relativePath: { eq: "apps/GoodMorningNews.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    matc: file(relativePath: { eq: "apps/matc.jpeg" }) {
+      childImageSharp {
+        fluid(maxWidth: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    opintavideo: file(relativePath: { eq: "Opinta-Video.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 445) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

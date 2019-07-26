@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import coverImg from "../images/about/cover.jpg"
+// import coverImg from "../images/about/cover.jpg"
 import PranavBhaskar from "../assets/images/photos/team/Pranav Bhaskar.jpg"
 import RajnishKumar from "../assets/images/photos/team/Rajnish Kumar.jpg"
 import SupriyaPatil from "../assets/images/photos/team/Supriya Patil.jpg"
@@ -22,12 +22,12 @@ const SecondPage = ({ data }) => (
     <section className="page">
       <div
         className="cover"
-        style={{
-          backgroundImage: `url(${coverImg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-        }}
+        // style={{
+        //   backgroundImage: `url(${coverImg})`,
+        //   backgroundSize: "cover",
+        //   backgroundRepeat: "no-repeat",
+        //   backgroundPosition: "center",
+        // }}
       >
         <div className="page-top">
           <div className="container">
