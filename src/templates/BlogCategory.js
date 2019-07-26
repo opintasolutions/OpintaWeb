@@ -44,10 +44,12 @@ const BlogCategory = ({ data }) => {
                       <div className="col-lg-12">
                         <div className="blog-post-thumb big">
                           <div className="img">
-                            <img
-                              src={node.featured_media.localFile.url}
-                              alt=""
-                            />
+                            {node.featured_media.localFile ? (
+                              <img
+                                src={node.featured_media.localFile.url}
+                                alt=""
+                              />
+                            ) : null}
                           </div>
                           <div className="post-content">
                             <div className="date">
@@ -92,10 +94,12 @@ const BlogCategory = ({ data }) => {
                       <div className="col-lg-6 col-md-6 col-sm-12">
                         <div className="blog-post-thumb">
                           <div className="img">
-                            <img
-                              src={node.featured_media.localFile.url}
-                              alt=""
-                            />
+                            {node.featured_media.localFile ? (
+                              <img
+                                src={node.featured_media.localFile.url}
+                                alt=""
+                              />
+                            ) : null}
                           </div>
                           <div className="post-content">
                             <div className="date">
@@ -215,21 +219,6 @@ const BlogCategory = ({ data }) => {
                       <Link className="btn-white-line" to="/contact">
                         Contact Us
                       </Link>
-                    </div>
-                    <div className="widget-tags">
-                      <Link to="#">Team</Link>
-                      <Link to="#">iOS</Link>
-                      <Link to="#">Android</Link>
-                      <Link to="#">App</Link>
-                      <Link to="#">Feature</Link>
-                      <Link to="#">Development</Link>
-                      <Link to="#">Design</Link>
-                      <Link to="#">Store</Link>
-                      <Link to="#">UX</Link>
-                      <Link to="#">Back-End</Link>
-                      <Link to="#">UI</Link>
-                      <Link to="#">Coding</Link>
-                      <Link to="#">Database</Link>
                     </div>
                   </div>
                 </aside>

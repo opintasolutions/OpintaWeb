@@ -10,7 +10,7 @@ import "../style.css"
 
 import img11 from "../assets/images/icons/apps/1.jpg"
 import img12 from "../assets/images/icons/apps/Trawis Connect.png"
-import img13 from "../assets/images/icons/apps/3.jpg"
+import img13 from "../assets/images/icons/apps/Swaraj Khabar.png"
 import img14 from "../assets/images/icons/apps/4.jpg"
 import img15 from "../assets/images/icons/apps/5.png"
 import img16 from "../assets/images/icons/apps/6.png"

@@ -213,21 +213,6 @@ const BlogPage = ({ data }) => {
                         Contact Us
                       </Link>
                     </div>
-                    <div className="widget-tags">
-                      <Link to="#">Team</Link>
-                      <Link to="#">iOS</Link>
-                      <Link to="#">Android</Link>
-                      <Link to="#">App</Link>
-                      <Link to="#">Feature</Link>
-                      <Link to="#">Development</Link>
-                      <Link to="#">Design</Link>
-                      <Link to="#">Store</Link>
-                      <Link to="#">UX</Link>
-                      <Link to="#">Back-End</Link>
-                      <Link to="#">UI</Link>
-                      <Link to="#">Coding</Link>
-                      <Link to="#">Database</Link>
-                    </div>
                   </div>
                 </aside>
               </div>

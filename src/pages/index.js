@@ -28,6 +28,9 @@ import img13 from "../assets/images/icons/apps/Swaraj Khabar.png"
 import img14 from "../assets/images/icons/apps/4.jpg"
 import img15 from "../assets/images/icons/apps/5.png"
 import img16 from "../assets/images/icons/apps/6.png"
+import img17 from "../assets/images/icons/apps/GoodMorningNews.png"
+import img18 from "../assets/images/icons/apps/matc.jpeg"
+import img19 from "../assets/images/icons/apps/2.png"
 
 import img2 from "../assets/images/photos/Opinta-Video.png"
 import img3 from "../assets/images/photos/team/1.jpg"
@@ -312,12 +315,27 @@ class IndexPage extends Component {
                   </Link>
                   <Link to="#" className="app-item">
                     <div className="icon allign-center">
+                      <img src={img16} className="img-fluid img-apps" alt="" />
+                    </div>
+                  </Link>
+                  <Link to="#" className="app-item">
+                    <div className="icon allign-center">
+                      <img src={img17} className="img-fluid img-apps" alt="" />
+                    </div>
+                  </Link>
+                  <Link to="#" className="app-item">
+                    <div className="icon allign-center">
+                      <img src={img18} className="img-fluid img-apps" alt="" />
+                    </div>
+                  </Link>
+                  <Link to="#" className="app-item">
+                    <div className="icon allign-center">
                       <img src={img15} className="img-fluid img-apps" alt="" />
                     </div>
                   </Link>
                   <Link to="#" className="app-item">
                     <div className="icon allign-center">
-                      <img src={img16} className="img-fluid img-apps" alt="" />
+                      <img src={img19} className="img-fluid img-apps" alt="" />
                     </div>
                   </Link>
                 </div>

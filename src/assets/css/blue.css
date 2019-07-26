@@ -2177,6 +2177,7 @@ our work
   padding: 25px;
   display: flex;
   align-items: center;
+  min-height: 120px;
 }
 
 .page-app .app-top .icon {
