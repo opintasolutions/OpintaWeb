@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import {
   CarouselProvider,
   Slider,
@@ -22,25 +23,14 @@ import "react-modal-video/css/modal-video.min.css"
 // import bgImg from "../assets/images/photos/bgImg.png"
 import bgVid from "../assets/vidBG.mp4"
 
-import img11 from "../assets/images/icons/apps/1.jpg"
-import img12 from "../assets/images/icons/apps/Trawis Connect.png"
-import img13 from "../assets/images/icons/apps/Swaraj Khabar.png"
-import img14 from "../assets/images/icons/apps/4.jpg"
-import img15 from "../assets/images/icons/apps/5.png"
-import img16 from "../assets/images/icons/apps/6.png"
-import img17 from "../assets/images/icons/apps/GoodMorningNews.png"
-import img18 from "../assets/images/icons/apps/matc.jpeg"
-import img19 from "../assets/images/icons/apps/2.png"
-
-import img2 from "../assets/images/photos/Opinta-Video.png"
-import img3 from "../assets/images/photos/team/1.jpg"
-import anshu from "../assets/images/photos/AnshuShrivastav.jpeg"
-import apoorva from "../assets/images/photos/ApoorvaPalkar.jpeg"
-import kiran from "../assets/images/photos/KumarSoni.jpg"
-import vishal from "../assets/images/photos/VishalKumar.jpg"
-import rajesh from "../assets/images/photos/RajeshOjha.jpg"
-import anil from "../assets/images/photos/AnilPandey.jpeg"
-import raju from "../assets/images/photos/rajusingh.png"
+// import img2 from "../assets/images/photos/Opinta-Video.png"
+import anshu from "../assets/images/photos/AnshuShrivastav.webp"
+import apoorva from "../assets/images/photos/ApoorvaPalkar.webp"
+import kiran from "../assets/images/photos/KumarSoni.webp"
+import vishal from "../assets/images/photos/VishalKumar.webp"
+import rajesh from "../assets/images/photos/RajeshOjha.webp"
+import anil from "../assets/images/photos/AnilPandey.webp"
+import raju from "../assets/images/photos/rajusingh.webp"
 
 class IndexPage extends Component {
   constructor(props) {
@@ -295,47 +285,60 @@ class IndexPage extends Component {
                 <div className="apps">
                   <Link to="#" className="app-item">
                     <div className="icon allign-center">
-                      <img src={img11} className="img-fluid img-apps" alt="" />
+                      <Img
+                        fluid={this.props.data.smsa.childImageSharp.fluid}
+                        className="img-fluid img-apps"
+                        alt=""
+                      />
                     </div>
                   </Link>
                   <Link to="#" className="app-item">
                     <div className="icon allign-center">
-                      <img src={img12} className="img-fluid img-apps" alt="" />
+                      <Img
+                        fluid={this.props.data.matc.childImageSharp.fluid}
+                        className="img-fluid img-apps"
+                        alt=""
+                      />
                     </div>
                   </Link>
                   <Link to="#" className="app-item">
                     <div className="icon allign-center">
-                      <img src={img14} className="img-fluid img-apps" alt="" />
+                      <Img
+                        fluid={this.props.data.kns.childImageSharp.fluid}
+                        className="img-fluid img-apps"
+                        alt=""
+                      />
                     </div>
                   </Link>
                   <Link to="#" className="app-item">
                     <div className="icon allign-center">
-                      <img src={img13} className="img-fluid img-apps" alt="" />
+                      <Img
+                        fluid={
+                          this.props.data.goodmorningnews.childImageSharp.fluid
+                        }
+                        className="img-fluid img-apps"
+                        alt=""
+                      />
                     </div>
                   </Link>
                   <Link to="#" className="app-item">
                     <div className="icon allign-center">
-                      <img src={img16} className="img-fluid img-apps" alt="" />
+                      <Img
+                        fluid={
+                          this.props.data.jankarijunction.childImageSharp.fluid
+                        }
+                        className="img-fluid img-apps"
+                        alt=""
+                      />
                     </div>
                   </Link>
                   <Link to="#" className="app-item">
                     <div className="icon allign-center">
-                      <img src={img17} className="img-fluid img-apps" alt="" />
-                    </div>
-                  </Link>
-                  <Link to="#" className="app-item">
-                    <div className="icon allign-center">
-                      <img src={img18} className="img-fluid img-apps" alt="" />
-                    </div>
-                  </Link>
-                  <Link to="#" className="app-item">
-                    <div className="icon allign-center">
-                      <img src={img15} className="img-fluid img-apps" alt="" />
-                    </div>
-                  </Link>
-                  <Link to="#" className="app-item">
-                    <div className="icon allign-center">
-                      <img src={img19} className="img-fluid img-apps" alt="" />
+                      <Img
+                        fluid={this.props.data.tconnect.childImageSharp.fluid}
+                        className="img-fluid img-apps"
+                        alt=""
+                      />
                     </div>
                   </Link>
                 </div>
@@ -482,14 +485,17 @@ class IndexPage extends Component {
         <section className="section background">
           <div className="container">
             <div className="row">
-              <div className="col-lg-5 col-md-12 col-sm-12 col-xs-12 align-self-center mobile-bottom-fix">
-                <div onClick={this.openModal}>
+              <div
+                onClick={this.openModal}
+                className="col-lg-5 col-md-12 col-sm-12 col-xs-12 align-self-center mobile-bottom-fix"
+              >
+                <div>
                   <span>
                     <i className="fa fa-play-circle play-button" />
                   </span>
                 </div>
-                <img
-                  src={img2}
+                <Img
+                  fluid={this.props.data.opintavideo.childImageSharp.fluid}
                   className="video-thumbnail img-fluid d-block mx-auto"
                   alt=""
                 />
@@ -812,6 +818,55 @@ export const pageQuery = graphql`
               url
             }
           }
+        }
+      }
+    }
+    smsa: file(relativePath: { eq: "apps/1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    tconnect: file(relativePath: { eq: "apps/Trawis Connect.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    jankarijunction: file(relativePath: { eq: "apps/4.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    kns: file(relativePath: { eq: "apps/6.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    goodmorningnews: file(relativePath: { eq: "apps/GoodMorningNews.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    matc: file(relativePath: { eq: "apps/matc.jpeg" }) {
+      childImageSharp {
+        fluid(maxWidth: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    opintavideo: file(relativePath: { eq: "Opinta-Video.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 445) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
