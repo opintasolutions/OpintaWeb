@@ -8,11 +8,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql, Link } from "gatsby"
-// import Helmet from "react-helmet"
+import Helmet from "react-helmet"
 
 // import style assets
 import "../assets/css/bootstrap.min.css"
-import "../assets/css/font-awesome.min.css"
+// import "../assets/css/font-awesome.min.css"
 import "../assets/css/blue.css"
 
 import Header from "./header"
@@ -42,6 +42,12 @@ const Layout = ({ children, headerClass }) => (
             <div className="diamond" />
           </div>
         </div> */}
+        <Helmet>
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          />
+        </Helmet>
         <Header
           siteTitle={data.site.siteMetadata.title}
           headerClass={headerClass}
