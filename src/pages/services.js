@@ -1,17 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import img1 from "../assets/images/photos/services/web_development_opinta.png"
-import img6 from "../assets/images/photos/services/IVR.png"
-import img3 from "../assets/images/photos/services/app_development_opinta.png"
-import img4 from "../assets/images/photos/services/Bulk-Messages.png"
-import img5 from "../assets/images/photos/services/Digital_Marketing_Opinta.png"
-import img2 from "../assets/images/photos/services/software_development_opinta.png"
-
-const ServicePage = () => (
+const ServicePage = ({ data }) => (
   <Layout headerClass={"header-area header-white"}>
     <SEO title="Services" />
     <section className="page">
@@ -40,7 +33,10 @@ const ServicePage = () => (
             <div className="col-lg-4 col-md-6 col-sm-12">
               <Link to="/service-web-development" className="services-post">
                 <div className="img">
-                  <img src={img1} alt="" />
+                  <Img
+                    fluid={data.webdevelopment.childImageSharp.fluid}
+                    alt=""
+                  />
                 </div>
                 <div className="post-content">
                   <div className="icon">
@@ -63,7 +59,10 @@ const ServicePage = () => (
                 className="services-post"
               >
                 <div className="img">
-                  <img src={img2} alt="" />
+                  <Img
+                    fluid={data.softwaredevelopment.childImageSharp.fluid}
+                    alt=""
+                  />
                 </div>
                 <div className="post-content">
                   <div className="icon">
@@ -83,7 +82,10 @@ const ServicePage = () => (
             <div className="col-lg-4 col-md-6 col-sm-12">
               <Link to="/service-app-development" className="services-post">
                 <div className="img">
-                  <img src={img3} alt="" />
+                  <Img
+                    fluid={data.appdevelopment.childImageSharp.fluid}
+                    alt=""
+                  />
                 </div>
                 <div className="post-content">
                   <div className="icon">
@@ -103,7 +105,7 @@ const ServicePage = () => (
             <div className="col-lg-4 col-md-6 col-sm-12">
               <Link to="/service-bulk-messages" className="services-post">
                 <div className="img">
-                  <img src={img4} alt="" />
+                  <Img fluid={data.bulkmessages.childImageSharp.fluid} alt="" />
                 </div>
                 <div className="post-content">
                   <div className="icon">
@@ -123,7 +125,10 @@ const ServicePage = () => (
             <div className="col-lg-4 col-md-6 col-sm-12">
               <Link to="/service-digital-marketing" className="services-post">
                 <div className="img">
-                  <img src={img5} alt="" />
+                  <Img
+                    fluid={data.digitalmarketing.childImageSharp.fluid}
+                    alt=""
+                  />
                 </div>
                 <div className="post-content">
                   <div className="icon">
@@ -143,7 +148,7 @@ const ServicePage = () => (
             <div className="col-lg-4 col-md-6 col-sm-12">
               <Link to="/service-ivr" className="services-post">
                 <div className="img">
-                  <img src={img6} alt="" />
+                  <Img fluid={data.ivr.childImageSharp.fluid} alt="" />
                 </div>
                 <div className="post-content">
                   <div className="icon">
@@ -168,3 +173,58 @@ const ServicePage = () => (
 )
 
 export default ServicePage
+
+export const pageQuery = graphql`
+  query {
+    webdevelopment: file(
+      relativePath: { eq: "services/web_development_opinta.png" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 350, quality: 80) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    softwaredevelopment: file(
+      relativePath: { eq: "services/software_development_opinta.png" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 350, quality: 80) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    appdevelopment: file(
+      relativePath: { eq: "services/app_development_opinta.png" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 350, quality: 80) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    bulkmessages: file(relativePath: { eq: "services/Bulk-Messages.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 350, quality: 80) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    digitalmarketing: file(
+      relativePath: { eq: "services/Digital_Marketing_Opinta.png" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 350, quality: 80) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ivr: file(relativePath: { eq: "services/IVR.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 350, quality: 80) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

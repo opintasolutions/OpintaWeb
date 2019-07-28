@@ -1,6 +1,5 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import {
   CarouselProvider,
@@ -823,50 +822,50 @@ export const pageQuery = graphql`
     }
     smsa: file(relativePath: { eq: "apps/1.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 75) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 75, quality: 90) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     tconnect: file(relativePath: { eq: "apps/Trawis Connect.png" }) {
       childImageSharp {
-        fluid(maxWidth: 75) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 75, quality: 90) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     jankarijunction: file(relativePath: { eq: "apps/4.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 75) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 75, quality: 90) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     kns: file(relativePath: { eq: "apps/6.png" }) {
       childImageSharp {
-        fluid(maxWidth: 75) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 75, quality: 90) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     goodmorningnews: file(relativePath: { eq: "apps/GoodMorningNews.png" }) {
       childImageSharp {
-        fluid(maxWidth: 75) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 75, quality: 90) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     matc: file(relativePath: { eq: "apps/matc.jpeg" }) {
       childImageSharp {
-        fluid(maxWidth: 75) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 75, quality: 90) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     opintavideo: file(relativePath: { eq: "Opinta-Video.png" }) {
       childImageSharp {
-        fluid(maxWidth: 445) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 445, quality: 80) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }

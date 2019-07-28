@@ -50,9 +50,8 @@ const OurWorkPage = ({ data }) => (
                 </div>
                 <div className="app-content">
                   <div className="text">
-                    Nunc luctus ante nec turpis faucibus varius. Sed consectetur
-                    urna sed odio varius vehicula. Aenean tincidunt venenatis
-                    ex.
+                    Mahila va Bal vikas teacher training website which focuses
+                    on women based in Pune, Nashik, Nagpur and Mumbai
                   </div>
                 </div>
               </Link>
@@ -73,9 +72,9 @@ const OurWorkPage = ({ data }) => (
                 </div>
                 <div className="app-content">
                   <div className="text">
-                    Nunc luctus ante nec turpis faucibus varius. Sed consectetur
-                    urna sed odio varius vehicula. Aenean tincidunt venenatis
-                    ex.
+                    A platform for travellers to meet travel companions, share
+                    benefits, promote their creative skills via blogs and sell
+                    photos.
                   </div>
                 </div>
               </Link>
@@ -97,9 +96,8 @@ const OurWorkPage = ({ data }) => (
                 </div>
                 <div className="app-content">
                   <div className="text">
-                    Nunc luctus ante nec turpis faucibus varius. Sed consectetur
-                    urna sed odio varius vehicula. Aenean tincidunt venenatis
-                    ex.
+                    Good Morning News is an online news agency that provide
+                    latest news from every corner of Bihar.
                   </div>
                 </div>
               </Link>
@@ -121,9 +119,9 @@ const OurWorkPage = ({ data }) => (
                 </div>
                 <div className="app-content">
                   <div className="text">
-                    Nunc luctus ante nec turpis faucibus varius. Sed consectetur
-                    urna sed odio varius vehicula. Aenean tincidunt venenatis
-                    ex.
+                    Martial Arts Training Corps. Jharkhand has more than 15
+                    branches in the state and many more all over India with 150+
+                    black belts.
                   </div>
                 </div>
               </Link>
@@ -145,9 +143,9 @@ const OurWorkPage = ({ data }) => (
                 </div>
                 <div className="app-content">
                   <div className="text">
-                    Nunc luctus ante nec turpis faucibus varius. Sed consectetur
-                    urna sed odio varius vehicula. Aenean tincidunt venenatis
-                    ex.
+                    Jankari Junction is a new web portal with world record of 16
+                    new visitors every second. They cover news of every Indian
+                    state.
                   </div>
                 </div>
               </Link>
@@ -168,9 +166,9 @@ const OurWorkPage = ({ data }) => (
                 </div>
                 <div className="app-content">
                   <div className="text">
-                    Nunc luctus ante nec turpis faucibus varius. Sed consectetur
-                    urna sed odio varius vehicula. Aenean tincidunt venenatis
-                    ex.
+                    KNS is a fast food chain based in Pune. With more than 13
+                    restaurents all over the city providing fast foods on
+                    demand.
                   </div>
                 </div>
               </Link>
@@ -188,50 +186,43 @@ export const pageQuery = graphql`
   query {
     smsa: file(relativePath: { eq: "apps/1.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 75) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 75, quality: 90) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     tconnect: file(relativePath: { eq: "apps/Trawis Connect.png" }) {
       childImageSharp {
-        fluid(maxWidth: 75) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 75, quality: 90) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     jankarijunction: file(relativePath: { eq: "apps/4.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 75) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 75, quality: 90) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     kns: file(relativePath: { eq: "apps/6.png" }) {
       childImageSharp {
-        fluid(maxWidth: 75) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 75, quality: 90) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     goodmorningnews: file(relativePath: { eq: "apps/GoodMorningNews.png" }) {
       childImageSharp {
-        fluid(maxWidth: 75) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 75, quality: 90) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     matc: file(relativePath: { eq: "apps/matc.jpeg" }) {
       childImageSharp {
-        fluid(maxWidth: 75) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    opintavideo: file(relativePath: { eq: "Opinta-Video.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 445) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 75, quality: 90) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
