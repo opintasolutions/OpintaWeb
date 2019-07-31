@@ -764,14 +764,34 @@ class IndexPage extends Component {
                 <div className="col-lg-4 col-md-6 col-sm-12">
                   <div className="blog-post-thumb">
                     <div className="img">
-                      <img src={node.featured_media.localFile.url} alt="" />
+                      <div
+                        style={{
+                          backgroundImage: `url(${
+                            node.featured_media.localFile.url
+                          })`,
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                          width: "100%",
+                          height: "100%",
+                          overflow: "hidden",
+                        }}
+                      />
+                      {
+                        // <img
+                        // src={node.featured_media.localFile.url}
+                        // alt="" />
+                      }
                     </div>
                     <div className="post-content">
                       <div className="date">
                         {new Date(node.date).toDateString().slice(4)}
                       </div>
                       <h3>
-                        <Link to={`/post/${node.slug}`}>{node.title}</Link>
+                        <Link to={`/post/${node.slug}`}>
+                          <span
+                            dangerouslySetInnerHTML={{ __html: node.title }}
+                          />
+                        </Link>
                       </h3>
                       <div
                         className="text"

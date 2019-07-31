@@ -42,10 +42,24 @@ const BlogPage = ({ data }) => {
                       <div className="col-lg-12">
                         <div className="blog-post-thumb big">
                           <div className="img">
-                            <img
-                              src={node.featured_media.localFile.url}
-                              alt=""
+                            <div
+                              style={{
+                                backgroundImage: `url(${
+                                  node.featured_media.localFile.url
+                                })`,
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                                width: "100%",
+                                height: "100%",
+                                overflow: "hidden",
+                              }}
                             />
+                            {
+                              // <img
+                              //   src={node.featured_media.localFile.url}
+                              //   alt=""
+                              // />
+                            }
                           </div>
                           <div className="post-content">
                             <div className="date">
@@ -69,7 +83,11 @@ const BlogPage = ({ data }) => {
                             </ul>
                             <h3>
                               <Link to={`/post/${node.slug}`}>
-                                {node.title}
+                                <span
+                                  dangerouslySetInnerHTML={{
+                                    __html: node.title,
+                                  }}
+                                />
                               </Link>
                             </h3>
                             <div
@@ -90,10 +108,24 @@ const BlogPage = ({ data }) => {
                       <div className="col-lg-6 col-md-6 col-sm-12">
                         <div className="blog-post-thumb">
                           <div className="img">
-                            <img
-                              src={node.featured_media.localFile.url}
-                              alt=""
+                            <div
+                              style={{
+                                backgroundImage: `url(${
+                                  node.featured_media.localFile.url
+                                })`,
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                                width: "100%",
+                                height: "100%",
+                                overflow: "hidden",
+                              }}
                             />
+                            {
+                              // <img
+                              //   src={node.featured_media.localFile.url}
+                              //   alt=""
+                              // />
+                            }
                           </div>
                           <div className="post-content">
                             <div className="date">
@@ -117,12 +149,21 @@ const BlogPage = ({ data }) => {
                             </ul>
                             <h3>
                               <Link to={`/post/${node.slug}`}>
-                                {node.title}
+                                <span
+                                  dangerouslySetInnerHTML={{
+                                    __html: node.title,
+                                  }}
+                                />
                               </Link>
                             </h3>
                             <div
                               className="text"
-                              dangerouslySetInnerHTML={{ __html: node.excerpt }}
+                              dangerouslySetInnerHTML={{
+                                __html: node.excerpt
+                                  .split(" ")
+                                  .slice(0, 30)
+                                  .join(" "),
+                              }}
                             />
                             <Link
                               to={`/post/${node.slug}`}

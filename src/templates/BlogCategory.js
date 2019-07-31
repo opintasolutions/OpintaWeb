@@ -45,9 +45,17 @@ const BlogCategory = ({ data }) => {
                         <div className="blog-post-thumb big">
                           <div className="img">
                             {node.featured_media.localFile ? (
-                              <img
-                                src={node.featured_media.localFile.url}
-                                alt=""
+                              <div
+                                style={{
+                                  backgroundImage: `url(${
+                                    node.featured_media.localFile.url
+                                  })`,
+                                  backgroundSize: "cover",
+                                  backgroundPosition: "center",
+                                  width: "100%",
+                                  height: "100%",
+                                  overflow: "hidden",
+                                }}
                               />
                             ) : null}
                           </div>
@@ -73,7 +81,11 @@ const BlogCategory = ({ data }) => {
                             </ul>
                             <h3>
                               <Link to={`/post/${node.slug}`}>
-                                {node.title}
+                                <span
+                                  dangerouslySetInnerHTML={{
+                                    __html: node.title,
+                                  }}
+                                />
                               </Link>
                             </h3>
                             <div
@@ -95,9 +107,17 @@ const BlogCategory = ({ data }) => {
                         <div className="blog-post-thumb">
                           <div className="img">
                             {node.featured_media.localFile ? (
-                              <img
-                                src={node.featured_media.localFile.url}
-                                alt=""
+                              <div
+                                style={{
+                                  backgroundImage: `url(${
+                                    node.featured_media.localFile.url
+                                  })`,
+                                  backgroundSize: "cover",
+                                  backgroundPosition: "center",
+                                  width: "100%",
+                                  height: "100%",
+                                  overflow: "hidden",
+                                }}
                               />
                             ) : null}
                           </div>
@@ -123,12 +143,21 @@ const BlogCategory = ({ data }) => {
                             </ul>
                             <h3>
                               <Link to={`/post/${node.slug}`}>
-                                {node.title}
+                                <span
+                                  dangerouslySetInnerHTML={{
+                                    __html: node.title,
+                                  }}
+                                />
                               </Link>
                             </h3>
                             <div
                               className="text"
-                              dangerouslySetInnerHTML={{ __html: node.excerpt }}
+                              dangerouslySetInnerHTML={{
+                                __html: node.excerpt
+                                  .split(" ")
+                                  .slice(0, 30)
+                                  .join(" "),
+                              }}
                             />
                             <Link
                               to={`/post/${node.slug}`}

@@ -45,7 +45,7 @@ const OurWorkPage = ({ data }) => (
                     />
                   </div>
                   <div className="app-title">
-                    <h5 className="title">SMSA Infracon</h5>
+                    <h5 className="title">Mahila va Bal Vikaas</h5>
                   </div>
                 </div>
                 <div className="app-content">

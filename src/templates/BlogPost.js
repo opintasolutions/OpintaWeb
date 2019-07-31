@@ -52,11 +52,25 @@ const BlogPostTemplate = ({ data }) => {
                   <div className="col-lg-12">
                     <div className="blog-post-thumb big mbottom-60">
                       <div className="img">
-                        <img
-                          src={data.wordpressPost.featured_media.localFile.url}
-                          alt=""
-                          style={{ width: "100%" }}
+                        <div
+                          style={{
+                            backgroundImage: `url(${
+                              data.wordpressPost.featured_media.localFile.url
+                            })`,
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                            width: "100%",
+                            height: "100%",
+                            overflow: "hidden",
+                          }}
                         />
+                        {
+                          // <img
+                          //   src={data.wordpressPost.featured_media.localFile.url}
+                          //   alt=""
+                          //   style={{ width: "100%" }}
+                          // />
+                        }
                       </div>
 
                       <div className="post-content">
