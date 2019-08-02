@@ -637,9 +637,10 @@ pre tt:after {
   content: "\f10d";
   font-family: "FontAwesome";
   position: absolute;
-  top: 5px;
+  top: 0;
   left: 8px;
   display: block;
+  font-size: 120px;
 }
 .carousel-button-wrapper {
   /* position: absolute; */
