@@ -10,6 +10,7 @@ import SEO from "../components/seo"
 import PranavBhaskar from "../assets/images/photos/team/Pranav Bhaskar.jpg"
 import RajnishKumar from "../assets/images/photos/team/Rajnish Kumar.jpg"
 import SupriyaPatil from "../assets/images/photos/team/Supriya Patil.jpg"
+import TusharPalai from "../assets/images/photos/team/tushar_palai.webp"
 import img2 from "../assets/images/photos/team/1.jpg"
 
 const SecondPage = ({ data }) => (
@@ -185,8 +186,8 @@ const SecondPage = ({ data }) => (
           <div className="offset-lg-3 col-lg-6">
             <div className="center-text">
               <p>
-                Fusce placerat pretium mauris, vel sollicitudin elit lacinia
-                vitae. Quisque sit amet nisi erat.
+                A group of hard working individuals commited to deliver the best
+                product and services on demand.
               </p>
             </div>
           </div>
@@ -195,10 +196,11 @@ const SecondPage = ({ data }) => (
           <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div className="team-item">
               <div className="header">
-                <div className="img">
-                  <img src={RajnishKumar} alt="" />
+                {/* <div className="img">*/}
+                <div className="image-wrapper">
+                  <div className="image-about rajnish" />
                 </div>
-                <div className="info">
+                <div className="info text-center">
                   <strong>Rajnish Kumar</strong>
                   <span>Founder, CEO</span>
                 </div>
@@ -210,7 +212,7 @@ const SecondPage = ({ data }) => (
                 // </div>
               }
               <ul className="social">
-                <li>
+                {/*<li>
                   <Link to="#">
                     <i className="fa fa-facebook" />
                   </Link>
@@ -219,39 +221,36 @@ const SecondPage = ({ data }) => (
                   <Link to="#">
                     <i className="fa fa-twitter" />
                   </Link>
-                </li>
+                </li>*/}
                 <li>
-                  <Link to="#">
+                  <a
+                    href="https://www.linkedin.com/in/rajnishofficial/"
+                    target="_blank"
+                  >
                     <i className="fa fa-linkedin" />
-                  </Link>
+                  </a>
                 </li>
-                <li>
+                {/*<li>
                   <Link to="#">
                     <i className="fa fa-github" />
                   </Link>
-                </li>
+                </li>*/}
               </ul>
             </div>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div className="team-item">
               <div className="header">
-                <div className="img">
-                  <img src={PranavBhaskar} alt="" />
+                <div className="image-wrapper">
+                  <div className="image-about pranav" />
                 </div>
-                <div className="info">
+                <div className="info text-center">
                   <strong>Pranav Bhaskar</strong>
-                  <span>Head Developer, CTO</span>
+                  <span>Lead Developer, CTO</span>
                 </div>
               </div>
-              {
-                // <div className="body">
-                //   Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at
-                //   justo. Sed at lorem malesuada.
-                // </div>
-              }
               <ul className="social">
-                <li>
+                {/*<li>
                   <Link to="#">
                     <i className="fa fa-facebook" />
                   </Link>
@@ -260,39 +259,33 @@ const SecondPage = ({ data }) => (
                   <Link to="#">
                     <i className="fa fa-twitter" />
                   </Link>
-                </li>
+                </li>*/}
                 <li>
-                  <Link to="#">
+                  <a href="https://www.linkedin.com/in/pranav-bhaskar-31100912b/">
                     <i className="fa fa-linkedin" />
-                  </Link>
+                  </a>
                 </li>
-                <li>
+                {/*<li>
                   <Link to="#">
                     <i className="fa fa-github" />
                   </Link>
-                </li>
+                </li>*/}
               </ul>
             </div>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div className="team-item">
               <div className="header">
-                <div className="img">
-                  <img src={SupriyaPatil} alt="" />
+                <div className="image-wrapper">
+                  <div className="image-about supriya" />
                 </div>
-                <div className="info">
+                <div className="info text-center">
                   <strong>Supriya Patil</strong>
                   <span>Android Developer</span>
                 </div>
               </div>
-              {
-                // <div className="body">
-                //   Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at
-                //   justo. Sed at lorem malesuada.
-                // </div>
-              }
               <ul className="social">
-                <li>
+                {/*<li>
                   <Link to="#">
                     <i className="fa fa-facebook" />
                   </Link>
@@ -301,58 +294,58 @@ const SecondPage = ({ data }) => (
                   <Link to="#">
                     <i className="fa fa-twitter" />
                   </Link>
-                </li>
+                </li>*/}
                 <li>
-                  <Link to="#">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/supriyamit/"
+                  >
                     <i className="fa fa-linkedin" />
-                  </Link>
+                  </a>
                 </li>
-                <li>
+                {/*<li>
                   <Link to="#">
                     <i className="fa fa-github" />
                   </Link>
-                </li>
+                </li>*/}
               </ul>
             </div>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div className="team-item">
               <div className="header">
-                <div className="img">
-                  <img src={img2} alt="" />
+                <div className="image-wrapper">
+                  <div className="image-about tushar" />
                 </div>
-                <div className="info">
+                <div className="info text-center">
                   <strong>Tushar Palei</strong>
-                  <span>Graphic Designer</span>
+                  <span>Visual Designer</span>
                 </div>
               </div>
-              {
-                // <div className="body">
-                //   Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at
-                //   justo. Sed at lorem malesuada.
-                // </div>
-              }
               <ul className="social">
+                {/* <li>
+                //   <Link to="#">
+                //     <i className="fa fa-facebook" />
+                //   </Link>
+                // </li>
+                // <li>
+                //   <Link to="#">
+                //     <i className="fa fa-twitter" />
+                //   </Link>
+                  // </li>*/}
                 <li>
-                  <Link to="#">
-                    <i className="fa fa-facebook" />
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#">
-                    <i className="fa fa-twitter" />
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/tushar-palei-0a8361168/"
+                  >
                     <i className="fa fa-linkedin" />
-                  </Link>
+                  </a>
                 </li>
-                <li>
+                {/*<li>
                   <Link to="#">
                     <i className="fa fa-github" />
                   </Link>
-                </li>
+                </li>*/}
               </ul>
             </div>
           </div>

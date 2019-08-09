@@ -23,7 +23,7 @@ import "react-modal-video/css/modal-video.min.css"
 import bgVid from "../assets/vidBG.mp4"
 
 // import img2 from "../assets/images/photos/Opinta-Video.png"
-import anshu from "../assets/images/photos/AnshuShrivastav.webp"
+import deepak from "../assets/images/photos/Deepak_Hardikar.webp"
 import apoorva from "../assets/images/photos/ApoorvaPalkar.webp"
 import kiran from "../assets/images/photos/KumarSoni.webp"
 import vishal from "../assets/images/photos/VishalKumar.webp"
@@ -653,7 +653,7 @@ class IndexPage extends Component {
                       >
                         <div
                           style={{
-                            backgroundImage: `url(${anshu})`,
+                            backgroundImage: `url(${deepak})`,
                             backgroundSize: "cover",
                             backgroundPosition: "center",
                             width: "180px",
@@ -668,7 +668,7 @@ class IndexPage extends Component {
                         className="info"
                         style={{ margin: "0", textAlign: "center" }}
                       >
-                        <strong>Anshu Shrivastav</strong>
+                        <strong>Deepak Hardikar</strong>
                         <span>Mentor</span>
                       </div>
                     </div>
@@ -676,7 +676,7 @@ class IndexPage extends Component {
                       <li>
                         <a
                           target="_blank"
-                          href="https://www.linkedin.com/in/anshus"
+                          href="https://www.linkedin.com/in/deepak.hardikar.7"
                         >
                           <i className="fa fa-linkedin" />
                         </a>

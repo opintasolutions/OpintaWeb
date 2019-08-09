@@ -31,7 +31,7 @@ const ServicePage = ({ data }) => (
         <div className="container">
           <div className="row">
             <div className="col-lg-4 col-md-6 col-sm-12">
-              <Link to="/service-web-development" className="services-post">
+              <Link to="/services/#" className="services-post">
                 <div className="img">
                   <Img
                     fluid={data.webdevelopment.childImageSharp.fluid}
@@ -54,10 +54,7 @@ const ServicePage = ({ data }) => (
               </Link>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12">
-              <Link
-                to="/service-software-development"
-                className="services-post"
-              >
+              <Link to="/services/#" className="services-post">
                 <div className="img">
                   <Img
                     fluid={data.softwaredevelopment.childImageSharp.fluid}
@@ -80,7 +77,7 @@ const ServicePage = ({ data }) => (
               </Link>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12">
-              <Link to="/service-app-development" className="services-post">
+              <Link to="/services/#" className="services-post">
                 <div className="img">
                   <Img
                     fluid={data.appdevelopment.childImageSharp.fluid}
@@ -103,7 +100,7 @@ const ServicePage = ({ data }) => (
               </Link>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12">
-              <Link to="/service-bulk-messages" className="services-post">
+              <Link to="/services/#" className="services-post">
                 <div className="img">
                   <Img fluid={data.bulkmessages.childImageSharp.fluid} alt="" />
                 </div>
@@ -123,7 +120,7 @@ const ServicePage = ({ data }) => (
               </Link>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12">
-              <Link to="/service-digital-marketing" className="services-post">
+              <Link to="/services/#" className="services-post">
                 <div className="img">
                   <Img
                     fluid={data.digitalmarketing.childImageSharp.fluid}
@@ -146,7 +143,7 @@ const ServicePage = ({ data }) => (
               </Link>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12">
-              <Link to="/service-ivr" className="services-post">
+              <Link to="/services/#" className="services-post">
                 <div className="img">
                   <Img fluid={data.ivr.childImageSharp.fluid} alt="" />
                 </div>

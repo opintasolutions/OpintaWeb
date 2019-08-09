@@ -81,3 +81,35 @@
   opacity: 0.8;
   cursor: pointer;
 }
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.image-about {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 1.2rem 0 0 0;
+}
+.pranav {
+  background-image: url("./assets/images/photos/team/Pranav Bhaskar.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.rajnish {
+  background-image: url("./assets/images/photos/team/Rajnish Kumar.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.supriya {
+  background-image: url("./assets/images/photos/team/Supriya Patil.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.tushar {
+  background-image: url("./assets/images/photos/team/tushar_palai.webp");
+  background-size: cover;
+  background-position: center;
+}
