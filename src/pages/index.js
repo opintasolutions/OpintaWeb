@@ -766,9 +766,9 @@ class IndexPage extends Component {
                     <div className="img">
                       <div
                         style={{
-                          backgroundImage: `url(${
-                            node.featured_media.localFile.url
-                          })`,
+                          backgroundImage: node.featured_media.localFile.url
+                            ? `url(${node.featured_media.localFile.url})`
+                            : "",
                           backgroundSize: "cover",
                           backgroundPosition: "center",
                           width: "100%",
