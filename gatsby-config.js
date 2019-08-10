@@ -23,10 +23,8 @@ module.exports = {
       resolve: `gatsby-source-wordpress`,
       options: {
         baseUrl: "learntogrow.in",
-        protocol: "https",
+        protocol: "http",
         hostingWPCOM: false,
-        useACF: true,
-        acfOptionPageIds: [],
         verboseOutput: false,
         // Set how many pages are retrieved per API request.
         perPage: 100,

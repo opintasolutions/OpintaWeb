@@ -47,9 +47,11 @@ const BlogCategory = ({ data }) => {
                             {node.featured_media.localFile ? (
                               <div
                                 style={{
-                                  backgroundImage: `url(${
-                                    node.featured_media.localFile.url
-                                  })`,
+                                  backgroundImage: node.featured_media.localFile
+                                    ? `url(${
+                                        node.featured_media.localFile.url
+                                      })`
+                                    : "",
                                   backgroundSize: "cover",
                                   backgroundPosition: "center",
                                   width: "100%",

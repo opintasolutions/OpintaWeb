@@ -14,9 +14,9 @@ const BlogPostTemplate = ({ data }) => {
         <div
           className="cover"
           style={{
-            backgroundImage: `url(${
-              data.wordpressPost.featured_media.localFile.url
-            })`,
+            backgroundImage: data.wordpressPost.featured_media.localFile
+              ? `url(${data.wordpressPost.featured_media.localFile.url})`
+              : "",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
