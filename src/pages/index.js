@@ -1,35 +1,17 @@
 import React, { Component } from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  // ButtonBack,
-  // ButtonNext,
-} from "pure-react-carousel"
-import "pure-react-carousel/dist/react-carousel.es.css"
-
 import { Fade } from "react-reveal"
-
 import Layout from "../components/layout"
+import Testimonials from "../components/testimonials"
+import appsData from "../data/appsData"
 import SEO from "../components/seo"
 import ModalVideo from "react-modal-video"
-
-import "../style.css"
-import "react-modal-video/css/modal-video.min.css"
-
-// import bgImg from "../assets/images/photos/bgImg.png"
 import bgVid from "../assets/vidBG.mp4"
-
-// import img2 from "../assets/images/photos/Opinta-Video.png"
 import deepak from "../assets/images/photos/Deepak_Hardikar.webp"
 import apoorva from "../assets/images/photos/ApoorvaPalkar.webp"
-import kiran from "../assets/images/photos/KumarSoni.webp"
-import vishal from "../assets/images/photos/VishalKumar.webp"
-import rajesh from "../assets/images/photos/RajeshOjha.webp"
-import anil from "../assets/images/photos/AnilPandey.webp"
-import raju from "../assets/images/photos/rajusingh.webp"
+import "../style.css"
+import "react-modal-video/css/modal-video.min.css"
 
 class IndexPage extends Component {
   constructor(props) {
@@ -41,7 +23,6 @@ class IndexPage extends Component {
     }
     this.handleScroll = this.handleScroll.bind(this)
     this.updateWindowWidth = this.updateWindowWidth.bind(this)
-    this.openModal = this.openModal.bind(this)
   }
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll)
@@ -63,190 +44,7 @@ class IndexPage extends Component {
   updateWindowWidth = ev => {
     this.setState({ width: window.innerWidth })
   }
-  openModal() {
-    this.setState({ modalIsOpen: true })
-  }
   render() {
-    let testimonials = [
-      <div className="team-item testimonial">
-        <div className="header text-center mt-10">
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "flex-end",
-            }}
-          >
-            <div
-              style={{
-                backgroundImage: `url(${anil})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                width: "130px",
-                height: "130px",
-                overflow: "hidden",
-                borderRadius: "50%",
-                margin: "1.2rem 0 0 0",
-              }}
-            />
-          </div>
-          <div className="info">
-            <strong>Anil Pandey</strong>
-            <span>Jankari Junction</span>
-          </div>
-        </div>
-        <div className="body">
-          <i className="fa fa-quote-left" />
-          <p>
-            सुसज्जित, सुशिक्षित और ऊर्जावान लोगो के सानिध्य में जानकारी जंक्शन
-            को कम समय मे एक मार्क बनाने के लिए रजनीश जी को नन्हें रिपोर्टर व
-            जानकारी जंक्शन -jj न्यूज़ की पूरी टीम की ओर से धन्यवाद व शुभकामनाएं।
-          </p>
-        </div>
-      </div>,
-      <div className="team-item testimonial">
-        <div className="header text-center mt-10">
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "flex-end",
-            }}
-          >
-            <div
-              style={{
-                backgroundImage: `url(${raju})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                width: "130px",
-                height: "130px",
-                overflow: "hidden",
-                borderRadius: "50%",
-                margin: "1.2rem 0 0 0",
-              }}
-            />
-          </div>
-          <div className="info">
-            <strong>Raju Singh</strong>
-            <span>Patanjali Dealer</span>
-          </div>
-        </div>
-        <div className="body">
-          <i className="fa fa-quote-left" />
-          <p>
-            The team always kept in contact and was professional. They did a
-            great job optimizing my website."
-          </p>
-        </div>
-      </div>,
-      <div className="team-item testimonial">
-        <div className="header text-center mt-10">
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "flex-end",
-            }}
-          >
-            <div
-              style={{
-                backgroundImage: `url(${rajesh})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                width: "130px",
-                height: "130px",
-                overflow: "hidden",
-                borderRadius: "50%",
-                margin: "1.2rem 0 0 0",
-              }}
-            />
-          </div>
-          <div className="info">
-            <strong>Rajesh Ojha</strong>
-            <span>Good Morning News</span>
-          </div>
-        </div>
-        <div className="body">
-          <i className="fa fa-quote-left" />
-          <p>
-            Very kind and very helpful and also very fast. He done exactly as
-            requested. A big thank you.
-          </p>
-        </div>
-      </div>,
-      <div className="team-item testimonial">
-        <div className="header text-center mt-10">
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "flex-end",
-            }}
-          >
-            <div
-              style={{
-                backgroundImage: `url(${kiran})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                width: "130px",
-                height: "130px",
-                overflow: "hidden",
-                borderRadius: "50%",
-                margin: "1.2rem 0 0 0",
-              }}
-            />
-          </div>
-          <div className="info">
-            <strong>Kiran Soni</strong>
-            <span>KNS Restaurants</span>
-          </div>
-        </div>
-        <div className="body">
-          <i className="fa fa-quote-left" />
-          <p>
-            I am amazed by their exemplary services in Website development and
-            Digital marketing. Because of them, I was able to market my product
-            online. Highly recommended!!!{" "}
-          </p>
-        </div>
-      </div>,
-      <div className="team-item testimonial">
-        <div className="header text-center mt-10">
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "flex-end",
-            }}
-          >
-            <div
-              style={{
-                backgroundImage: `url(${vishal})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                width: "130px",
-                height: "130px",
-                overflow: "hidden",
-                borderRadius: "50%",
-                margin: "1.2rem 0 0 0",
-              }}
-            />
-          </div>
-          <div className="info">
-            <strong>Vishal Kumar</strong>
-            <span>Swaraj Khabar</span>
-          </div>
-        </div>
-        <div className="body">
-          <i className="fa fa-quote-left" />
-          <p>
-            A quick and easy process from the very beginning. Opinta Team was
-            quick to respond, offer a reasonable quote and get the job done. I
-            felt his rate was more than fair and his service even better!
-          </p>
-        </div>
-      </div>,
-    ]
     let data = this.props.data.allWordpressPost.edges
     let latestBlogs = data.slice(data.length - 3)
     console.log(latestBlogs)
@@ -282,64 +80,19 @@ class IndexPage extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="apps">
-                  <Link to="#" className="app-item">
-                    <div className="icon allign-center">
-                      <Img
-                        fluid={this.props.data.smsa.childImageSharp.fluid}
-                        className="img-fluid img-apps"
-                        alt=""
-                      />
-                    </div>
-                  </Link>
-                  <Link to="#" className="app-item">
-                    <div className="icon allign-center">
-                      <Img
-                        fluid={this.props.data.matc.childImageSharp.fluid}
-                        className="img-fluid img-apps"
-                        alt=""
-                      />
-                    </div>
-                  </Link>
-                  <Link to="#" className="app-item">
-                    <div className="icon allign-center">
-                      <Img
-                        fluid={this.props.data.kns.childImageSharp.fluid}
-                        className="img-fluid img-apps"
-                        alt=""
-                      />
-                    </div>
-                  </Link>
-                  <Link to="#" className="app-item">
-                    <div className="icon allign-center">
-                      <Img
-                        fluid={
-                          this.props.data.goodmorningnews.childImageSharp.fluid
-                        }
-                        className="img-fluid img-apps"
-                        alt=""
-                      />
-                    </div>
-                  </Link>
-                  <Link to="#" className="app-item">
-                    <div className="icon allign-center">
-                      <Img
-                        fluid={
-                          this.props.data.jankarijunction.childImageSharp.fluid
-                        }
-                        className="img-fluid img-apps"
-                        alt=""
-                      />
-                    </div>
-                  </Link>
-                  <Link to="#" className="app-item">
-                    <div className="icon allign-center">
-                      <Img
-                        fluid={this.props.data.tconnect.childImageSharp.fluid}
-                        className="img-fluid img-apps"
-                        alt=""
-                      />
-                    </div>
-                  </Link>
+                  {appsData.map(app => (
+                    <a href="#" className="app-item">
+                      <div className="icon allign-center">
+                        <Img
+                          fluid={
+                            this.props.data[app.slug].childImageSharp.fluid
+                          }
+                          className="img-fluid img-apps"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>
@@ -484,15 +237,12 @@ class IndexPage extends Component {
         <section className="section background">
           <div className="container">
             <div className="row">
-              <div
-                onClick={this.openModal}
-                className="col-lg-5 col-md-12 col-sm-12 col-xs-12 align-self-center mobile-bottom-fix"
-              >
-                <div>
-                  <span>
-                    <i className="fa fa-play-circle play-button" />
-                  </span>
-                </div>
+              <div className="col-lg-5 col-md-12 col-sm-12 col-xs-12 align-self-center mobile-bottom-fix">
+                <i
+                  onClick={() => this.setState({ modalIsOpen: true })}
+                  className="fa fa-play-circle play-button"
+                  style={{ fontSize: "135px" }}
+                />
                 <Img
                   fluid={this.props.data.opintavideo.childImageSharp.fluid}
                   className="video-thumbnail img-fluid d-block mx-auto"
@@ -501,6 +251,7 @@ class IndexPage extends Component {
                 <ModalVideo
                   channel="youtube"
                   isOpen={this.state.modalIsOpen}
+                  autoplay={1}
                   videoId="fvfuamxXOSg"
                   onClose={() => this.setState({ modalIsOpen: false })}
                 />
@@ -626,6 +377,7 @@ class IndexPage extends Component {
                       <li>
                         <a
                           target="_blank"
+                          rel="noopener noreferrer"
                           href="https://www.linkedin.com/in/apoorvapalkar"
                         >
                           <i className="fa fa-linkedin" />
@@ -676,6 +428,7 @@ class IndexPage extends Component {
                       <li>
                         <a
                           target="_blank"
+                          rel="noopener noreferrer"
                           href="https://www.linkedin.com/in/deepak.hardikar.7"
                         >
                           <i className="fa fa-linkedin" />
@@ -705,37 +458,7 @@ class IndexPage extends Component {
                 </div>
               </div>
             </div>
-            <CarouselProvider totalSlides={5} interval={2500} isPlaying>
-              <Slider>
-                {testimonials.map((testi, i) => (
-                  <Slide index={i} style={{ height: "570px" }}>
-                    <div
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                      }}
-                    >
-                      <div
-                        className="item"
-                        style={{
-                          maxWidth: "900px",
-                          margin: "0 auto",
-                        }}
-                      >
-                        {testi}
-                      </div>
-                    </div>
-                  </Slide>
-                ))}
-              </Slider>
-              {/*<div className="carousel-button-wrapper">
-                <ButtonBack>‹</ButtonBack>
-                <ButtonNext>›</ButtonNext>
-              </div>*/}
-            </CarouselProvider>
+            <Testimonials />
           </div>
         </section>
         <section className="section pbottom-70">
@@ -750,7 +473,11 @@ class IndexPage extends Component {
                 <div className="center-text">
                   <p>
                     Blogs at Opinta are powered by partners in "tech blogging".{" "}
-                    <a target="_blank" href="https://learntogrow.in">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://learntogrow.in"
+                    >
                       learntogrow.in
                     </a>
                   </p>

@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import Img from "gatsby-image"
+import PageCover from "../components/pageCover"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -11,39 +11,26 @@ const BlogPostTemplate = ({ data }) => {
     <Layout headerClass={"header-area header-white"}>
       <SEO title="Blog" />
       <section className="page">
-        <div
-          className="cover"
-          style={{
-            backgroundImage: data.wordpressPost.featured_media.localFile
-              ? `url(${data.wordpressPost.featured_media.localFile.url})`
-              : "",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="page-top">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <h1>{data.wordpressPost.title}</h1>
-                </div>
-                <div className="col-lg-12 text-center">
-                  <ol className="breadcrumb">
-                    <li>
-                      <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                      <Link to="/blog">Blog</Link>
-                    </li>
-                    <li className="active">Blog Single</li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <PageCover
+          img={
+            data.wordpressPost.featured_media.localFile
+              ? data.wordpressPost.featured_media.localFile.url
+              : ""
+          }
+          h1={data.wordpressPost.title}
+          breadCrumbs={[
+            {
+              text: "Home",
+              link: "/",
+              active: false,
+            },
+            {
+              text: "Blog",
+              link: "/blog",
+              active: false,
+            },
+          ]}
+        />
         <div className="page-bottom pbottom-70">
           <div className="container">
             <div className="row">

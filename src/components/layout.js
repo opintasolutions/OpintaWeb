@@ -1,24 +1,15 @@
 import React from "react"
-// import { lazy, Suspense } from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Helmet from "react-helmet"
 
 // import style assets
 import "../assets/css/bootstrap.min.css"
-// import "../assets/css/font-awesome.min.css"
 import "../assets/css/blue.css"
 
 import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
-
-// import img from "../assets/images/Opinta-white.svg"
-// import investIndia from "../assets/images/investindia-logo.png"
-// import cBridgeLogo from "../assets/images/C-Bridge-Logo.svg"
-
-// const Header = lazy(() => import("./header"))
-// const Footer = lazy(() => import("./footer"))
 
 const Layout = ({ children, headerClass }) => (
   <StaticQuery

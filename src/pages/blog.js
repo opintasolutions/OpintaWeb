@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-
+import PageCover from "../components/pageCover"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -12,25 +12,22 @@ const BlogPage = ({ data }) => {
     <Layout headerClass={"header-area header-white"}>
       <SEO title="Blog" />
       <section className="page">
-        <div className="cover" data-image="assets/images/photos/parallax.jpg">
-          <div className="page-top">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <h1>Blog</h1>
-                </div>
-                <div className="col-lg-12 text-center">
-                  <ol className="breadcrumb">
-                    <li>
-                      <Link to="/">Home</Link>
-                    </li>
-                    <li className="active">Blog</li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <PageCover
+          img=""
+          h1="Blog"
+          breadCrumbs={[
+            {
+              text: "Home",
+              link: "/",
+              active: false,
+            },
+            {
+              text: "Blog",
+              link: "/blog",
+              active: true,
+            },
+          ]}
+        />
         <div className="page-bottom pbottom-70">
           <div className="container">
             <div className="row">
@@ -184,59 +181,10 @@ const BlogPage = ({ data }) => {
                     {/* blog preview ends */}
                   </div>
                 </div>
-                {
-                  //  <nav>
-                  // <ul className="pagination justify-content-center">
-                  //   <li className="page-item">
-                  //     <Link
-                  //       className="page-link"
-                  //       href="#"
-                  //       aria-label="Previous"
-                  //     >
-                  //       <span aria-hidden="true">&laquo;</span>
-                  //       <span className="sr-only">Previous</span>
-                  //     </Link>
-                  //   </li>
-                  //   <li className="page-item">
-                  //     <Link className="page-link" href="#">
-                  //       1
-                  //     </Link>
-                  //   </li>
-                  //   <li className="page-item">
-                  //     <Link className="page-link" href="#">
-                  //       2
-                  //     </Link>
-                  //   </li>
-                  //   <li className="page-item">
-                  //     <Link className="page-link" href="#">
-                  //       3
-                  //     </Link>
-                  //   </li>
-                  //   <li className="page-item">
-                  //     <Link className="page-link" href="#" aria-label="Next">
-                  //       <span aria-hidden="true">&raquo;</span>
-                  //       <span className="sr-only">Next</span>
-                  //     </Link>
-                  //   </li>
-                  // </ul>
-                  // </nav>
-                }
               </div>
               <div className="col-lg-4 col-md-12 col-sm-12">
                 <aside className="default-aside">
                   <div className="sidebar">
-                    {
-                      // <div className="search-widget">
-                      //   <div className="search">
-                      //     <form action="">
-                      //       <input type="text" placeholder="Search" />
-                      //       <button type="submit">
-                      //         <i className="fa fa-search" />
-                      //       </button>
-                      //     </form>
-                      //   </div>
-                      // </div>
-                    }
                     <ul>
                       {categories.map(({ node }) => (
                         <li>

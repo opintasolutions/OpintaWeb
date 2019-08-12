@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-
+import PageCover from "../components/pageCover"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -13,25 +13,22 @@ const ContactPage = () => {
     <Layout headerClass={"header-area header-white"}>
       <SEO title="Contact" />
       <section className="page">
-        <div className="cover" data-image="assets/images/photos/parallax.jpg">
-          <div className="page-top">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <h1>Contact Us</h1>
-                </div>
-                <div className="col-lg-12 text-center">
-                  <ol className="breadcrumb">
-                    <li>
-                      <Link to="/">Home</Link>
-                    </li>
-                    <li className="active">Contact Us</li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <PageCover
+          img=""
+          h1="Contact Us"
+          breadCrumbs={[
+            {
+              text: "Home",
+              link: "/",
+              active: false,
+            },
+            {
+              text: "Contact Us",
+              link: "/contact",
+              active: true,
+            },
+          ]}
+        />
         <div className="page-bottom">
           <div className="map-wrapper">
             {/*          <div
@@ -47,6 +44,7 @@ const ContactPage = () => {
             <div className="mapouter">
               <div className="map-canvas">
                 <iframe
+                  title="Opinta Solutions"
                   style={{ width: "100%", height: "100%" }}
                   id="gmap_canvas"
                   src="https://maps.google.com/maps?q=opinta%20solutions&t=&z=13&ie=UTF8&iwloc=&output=embed"

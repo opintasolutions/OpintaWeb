@@ -3,51 +3,39 @@ import { Link } from "gatsby"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import PageCover from "../components/pageCover"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 // import coverImg from "../images/about/cover.jpg"
-import PranavBhaskar from "../assets/images/photos/team/Pranav Bhaskar.jpg"
-import RajnishKumar from "../assets/images/photos/team/Rajnish Kumar.jpg"
-import SupriyaPatil from "../assets/images/photos/team/Supriya Patil.jpg"
-import TusharPalai from "../assets/images/photos/team/tushar_palai.webp"
-import img2 from "../assets/images/photos/team/1.jpg"
+import teamData from "../data/teamData"
+
+const tileImgStyle = {
+  width: "100%",
+  height: "100%",
+  objectFit: "cover",
+}
 
 const SecondPage = ({ data }) => (
   <Layout headerClass={"header-area header-white"}>
     <SEO title="About" />
-    {/* 
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link> /*/}
     <section className="page">
-      <div
-        className="cover"
-        // style={{
-        //   backgroundImage: `url(${coverImg})`,
-        //   backgroundSize: "cover",
-        //   backgroundRepeat: "no-repeat",
-        //   backgroundPosition: "center",
-        // }}
-      >
-        <div className="page-top">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <h1>About Us</h1>
-              </div>
-              <div className="col-lg-12 text-center">
-                <ol className="breadcrumb">
-                  <li>
-                    <Link to="/">Home</Link>
-                  </li>
-                  <li className="active">About Us</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <PageCover
+        img=""
+        h1="About Us"
+        breadCrumbs={[
+          {
+            text: "Home",
+            link: "/",
+            active: false,
+          },
+          {
+            text: "About Us",
+            link: "/about-us",
+            active: true,
+          },
+        ]}
+      />
       <div className="page-bottom pbottom-70">
         <div className="container">
           <div className="row">
@@ -56,11 +44,7 @@ const SecondPage = ({ data }) => (
                 <div className="about-image">
                   <Img
                     fluid={data.overview.childImageSharp.fluid}
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover",
-                    }}
+                    style={tileImgStyle}
                     alt=""
                   />
                 </div>
@@ -80,11 +64,7 @@ const SecondPage = ({ data }) => (
                 <div className="about-image">
                   <Img
                     fluid={data.mission.childImageSharp.fluid}
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover",
-                    }}
+                    style={tileImgStyle}
                     alt=""
                   />
                 </div>
@@ -102,11 +82,7 @@ const SecondPage = ({ data }) => (
                 <div className="about-image">
                   <Img
                     fluid={data.vision.childImageSharp.fluid}
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover",
-                    }}
+                    style={tileImgStyle}
                     alt=""
                   />
                 </div>
@@ -124,11 +100,7 @@ const SecondPage = ({ data }) => (
                 <div className="about-image">
                   <Img
                     fluid={data.services.childImageSharp.fluid}
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover",
-                    }}
+                    style={tileImgStyle}
                     alt=""
                   />
                 </div>
@@ -193,162 +165,39 @@ const SecondPage = ({ data }) => (
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div className="team-item">
-              <div className="header">
-                {/* <div className="img">*/}
-                <div className="image-wrapper">
-                  <div className="image-about rajnish" />
+          {teamData.map(member => (
+            <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+              <div className="team-item">
+                <div className="header">
+                  {/* <div className="img">*/}
+                  <div className="image-wrapper">
+                    <div className={`image-about ${member.img}`} />
+                  </div>
+                  <div className="info text-center">
+                    <strong>{member.name}</strong>
+                    <span>{member.title}</span>
+                  </div>
                 </div>
-                <div className="info text-center">
-                  <strong>Rajnish Kumar</strong>
-                  <span>Founder, CEO</span>
-                </div>
+                {
+                  // <div className="body">
+                  //   Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at
+                  //   justo. Sed at lorem malesuada.
+                  // </div>
+                }
+                <ul className="social">
+                  <li>
+                    <a
+                      href={`https://www.linkedin.com/in/${member.username}/`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fa fa-linkedin" />
+                    </a>
+                  </li>
+                </ul>
               </div>
-              {
-                // <div className="body">
-                //   Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at
-                //   justo. Sed at lorem malesuada.
-                // </div>
-              }
-              <ul className="social">
-                {/*<li>
-                  <Link to="#">
-                    <i className="fa fa-facebook" />
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#">
-                    <i className="fa fa-twitter" />
-                  </Link>
-                </li>*/}
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/rajnishofficial/"
-                    target="_blank"
-                  >
-                    <i className="fa fa-linkedin" />
-                  </a>
-                </li>
-                {/*<li>
-                  <Link to="#">
-                    <i className="fa fa-github" />
-                  </Link>
-                </li>*/}
-              </ul>
             </div>
-          </div>
-          <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div className="team-item">
-              <div className="header">
-                <div className="image-wrapper">
-                  <div className="image-about pranav" />
-                </div>
-                <div className="info text-center">
-                  <strong>Pranav Bhaskar</strong>
-                  <span>Lead Developer, CTO</span>
-                </div>
-              </div>
-              <ul className="social">
-                {/*<li>
-                  <Link to="#">
-                    <i className="fa fa-facebook" />
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#">
-                    <i className="fa fa-twitter" />
-                  </Link>
-                </li>*/}
-                <li>
-                  <a href="https://www.linkedin.com/in/pranav-bhaskar-31100912b/">
-                    <i className="fa fa-linkedin" />
-                  </a>
-                </li>
-                {/*<li>
-                  <Link to="#">
-                    <i className="fa fa-github" />
-                  </Link>
-                </li>*/}
-              </ul>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div className="team-item">
-              <div className="header">
-                <div className="image-wrapper">
-                  <div className="image-about supriya" />
-                </div>
-                <div className="info text-center">
-                  <strong>Supriya Patil</strong>
-                  <span>Android Developer</span>
-                </div>
-              </div>
-              <ul className="social">
-                {/*<li>
-                  <Link to="#">
-                    <i className="fa fa-facebook" />
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#">
-                    <i className="fa fa-twitter" />
-                  </Link>
-                </li>*/}
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://www.linkedin.com/in/supriyamit/"
-                  >
-                    <i className="fa fa-linkedin" />
-                  </a>
-                </li>
-                {/*<li>
-                  <Link to="#">
-                    <i className="fa fa-github" />
-                  </Link>
-                </li>*/}
-              </ul>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div className="team-item">
-              <div className="header">
-                <div className="image-wrapper">
-                  <div className="image-about tushar" />
-                </div>
-                <div className="info text-center">
-                  <strong>Tushar Palei</strong>
-                  <span>Visual Designer</span>
-                </div>
-              </div>
-              <ul className="social">
-                {/* <li>
-                //   <Link to="#">
-                //     <i className="fa fa-facebook" />
-                //   </Link>
-                // </li>
-                // <li>
-                //   <Link to="#">
-                //     <i className="fa fa-twitter" />
-                //   </Link>
-                  // </li>*/}
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://www.linkedin.com/in/tushar-palei-0a8361168/"
-                  >
-                    <i className="fa fa-linkedin" />
-                  </a>
-                </li>
-                {/*<li>
-                  <Link to="#">
-                    <i className="fa fa-github" />
-                  </Link>
-                </li>*/}
-              </ul>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
