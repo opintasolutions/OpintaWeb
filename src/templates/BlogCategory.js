@@ -195,7 +195,7 @@ const BlogCategory = ({ data }) => {
                       </h5>
                       <div className="phone">
                         <i className="fa fa-phone" />
-                        <span>+91 8448450015</span>
+                        <span>+91 9096887733</span>
                       </div>
                       <Link className="btn-white-line" to="/contact">
                         Contact Us

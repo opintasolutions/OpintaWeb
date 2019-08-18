@@ -60,41 +60,48 @@ const ContactPage = () => {
                 <div className="col-lg-12">
                   <div className="contact-info">
                     <div className="row">
-                      <div className="col-lg-4 col-md-4 col-sm-12">
+                      {/* <div className="col-lg-4 col-md-4 col-sm-12">
+                      //   <div className="item">
+                      //     <i className="fa fa-location-arrow" />
+                      //     <div className="txt" style={{ fontSize: "12px" }}>
+                      //       GAT NO-123 H.NO-3131, 01,
+                      //       <br />
+                      //       Moshi - Alandi Rd, Tal Haveli, Alandi, Pune,
+                      //       Maharashtra 412105
+                      //     </div>
+                      //   </div>
+                            // </div> */}
+                      <div className="col-lg-6 col-md-6 col-sm-12">
                         <div className="item">
-                          <i className="fa fa-location-arrow" />
-                          <div className="txt" style={{ fontSize: "12px" }}>
-                            GAT NO-123 H.NO-3131, 01,
-                            <br />
-                            Moshi - Alandi Rd, Tal Haveli, Alandi, Pune,
-                            Maharashtra 412105
-                          </div>
+                          <a
+                            style={{ color: "inherit" }}
+                            href="mailto:support@yourbrand.com"
+                          >
+                            <i
+                              style={{ fontSize: "33px" }}
+                              className="fa fa-envelope"
+                            />
+                            <div className="txt">
+                              <span>mail@opintasolutions.com</span>
+                            </div>
+                          </a>
                         </div>
                       </div>
-                      <div className="col-lg-4 col-md-4 col-sm-12">
-                        <div className="item">
-                          <i className="fa fa-envelope" />
-                          <div className="txt">
-                            <span>
-                              <Link to="mailto:support@yourbrand.com">
-                                mail@opintasolutions.com
-                              </Link>
-                              <br />
-                            </span>
+                      <div className="col-lg-6 col-md-6 col-sm-12">
+                        <a
+                          style={{ color: "inherit" }}
+                          href="tel:+919096887733"
+                        >
+                          <div className="item">
+                            <i
+                              style={{ fontSize: "33px" }}
+                              className="fa fa-phone"
+                            />
+                            <div className="txt">
+                              <span>+91 90968 87733</span>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-4 col-md-4 col-sm-12">
-                        <div className="item">
-                          <i className="fa fa-phone" />
-                          <div className="txt">
-                            <span>
-                              +91 84484 50015
-                              <br />
-                              +91 90968 87733
-                            </span>
-                          </div>
-                        </div>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -113,10 +120,6 @@ const ContactPage = () => {
                     Get in touch with our team to find out how our services can
                     help you transform and perform, and to discuss your business
                     needs in detail.
-                  </p>
-                  <p>
-                    Sed blandit tempus purus, sed sodales leo rutrum vel. Nam
-                    vulputate ipsum ac est congue, eget commodo magna lobortis.
                   </p>
                 </div>
               </div>
@@ -153,6 +156,9 @@ const ContactPage = () => {
                       <button
                         onClick={() => {
                           contactSend({ name, email, mssg })
+                          setName("")
+                          setEmail("")
+                          setMssg("")
                         }}
                         className="btn-primary-line"
                       >
@@ -171,31 +177,36 @@ const ContactPage = () => {
 }
 
 const contactSend = ({ name, email, mssg }) => {
-  console.log(typeof name, typeof email, typeof mssg)
-  const content = `<h2>Message</h2><b>Name: ${name}</b><br /><b>Email: ${email}</b><br /><p>${mssg}</p>`
+  if (name.length && email.length && mssg.length) {
+    console.log(name, email, mssg)
+    console.log(typeof name, typeof email, typeof mssg)
+    const content = `<h2>Message</h2><b>Name: ${name}</b><br /><b>Email: ${email}</b><br /><p>${mssg}</p>`
 
-  const bodyEncoded = new URLSearchParams()
-  bodyEncoded.append("from_email", email)
-  bodyEncoded.append("to_email", "mail@opintasolutions.com")
-  bodyEncoded.append("subject", "contact from website")
-  bodyEncoded.append("content", content)
+    const bodyEncoded = new URLSearchParams()
+    bodyEncoded.append("from_email", email)
+    bodyEncoded.append("to_email", "mail@opintasolutions.com")
+    bodyEncoded.append("subject", "contact from website")
+    bodyEncoded.append("content", content)
 
-  fetch(
-    "https://wt-4896982400a54bf82243b9417c45f1ea-0.sandbox.auth0-extend.com/sendgrid_Patanjali",
-    {
-      method: "POST",
-      body: bodyEncoded,
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-    }
-  )
-    .then(res => {
-      console.log(res)
-      // res.statusText === "OK" ? alert("mail was sent succesfully") : null
-      alertRes(res)
-    })
-    .catch(err => console.log(err))
+    fetch(
+      "https://wt-4896982400a54bf82243b9417c45f1ea-0.sandbox.auth0-extend.com/sendgrid_Patanjali",
+      {
+        method: "POST",
+        body: bodyEncoded,
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      }
+    )
+      .then(res => {
+        console.log(res)
+        // res.statusText === "OK" ? alert("mail was sent succesfully") : null
+        alertRes(res)
+      })
+      .catch(err => console.log(err))
+  } else {
+    alert("please fill every field")
+  }
 }
 
 const alertRes = res =>

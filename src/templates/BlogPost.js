@@ -147,7 +147,7 @@ const BlogPostTemplate = ({ data }) => {
                       </h5>
                       <div className="phone">
                         <i className="fa fa-phone" />
-                        <span>(272) 211-7370</span>
+                        <span>+91 9096887733</span>
                       </div>
                       <Link className="btn-white-line" href="#">
                         Contact Us
