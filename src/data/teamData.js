@@ -6,7 +6,7 @@ const teamData = [
     img: "rajnish",
   },
   {
-    username: "pranav-bhaskar-31100912b",
+    username: "coderprans",
     name: "Pranav Bhaskar",
     title: "Lead Developer, CTO",
     img: "pranav",
